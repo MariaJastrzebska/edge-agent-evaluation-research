@@ -1,6 +1,6 @@
 # Small language models as local information-collection agents
 
-**Detailed research report — Maria Magdalena Jastrzębska**
+**Detailed research report  -  Maria Magdalena Jastrzębska**
 **Research conducted primarily in 2025, with further work in early 2026**
 
 Most of the research and development described here was completed in 2025, followed by further work and manuscript revisions in early 2026. This English summary was published on 18 October 2026, together with a retrospective assessment. The publication date is not the date of the original research. Original manuscript and figure labels are predominantly Polish. Later August and October 2026 experiments are identified separately.
@@ -34,10 +34,6 @@ The theoretical chapters discuss decoder-only Transformers, agent architectures,
 
 ## Application architecture and data flow
 
-![Original application flow](../figures/original/agent-flow.png)
-
-*Original study architecture diagram. This illustrates the designed application flow, not measured success rates for every agent.*
-
 The system divides information collection into bounded roles rather than asking one model to conduct an unrestricted interview. I divided the workflow between an application-level coordinator, a constant-data agent, an agent for fluctuating data and lifestyle, an agent for periodic laboratory information, and a validation agent. Each role has instructions and a data contract. The application coordinates the stages; specialized agents collect and update the fields appropriate to that stage.
 
 | Component | Responsibility | Evaluation interpretation |
@@ -52,17 +48,11 @@ The system divides information collection into bounded roles rather than asking 
 
 A turn combines the agent's system instructions, relevant stored state, and the user's current message. The model returns structured data including `current_info`, a completion status, and, when needed, `missing_info`. The application can then persist accepted fields and ask about missing information. The source describes statuses such as `INCOMPLETE`, `COMPLETE`, and `SKIPPED`; optional fields can be skipped after a user declines to supply them.
 
-![Structured response contract](../figures/original/state-contract.png)
-
-*The original response schema makes intermediate state inspectable. Its conventions belong to this application. The later experiments use different schemas.*
-
 Pydantic-based definitions are represented as JSON contracts for the Dart application. The Python and Flutter environments therefore share a conceptual data model without requiring a Python runtime inside the mobile app. This separation matters operationally: evaluation code can evolve independently from the deployment interface, while the response contract provides a common point of inspection.
 
 SQLite supplies persistent state. The application retrieves relevant existing records and includes them in the current agent context. This can reduce repeated questions and allow later sessions to resume collection. It also creates a requirement to distinguish confirmed information, newly proposed values, missing fields, and user corrections. Persisting an incorrect extraction would otherwise propagate the error into future turns.
 
 ### Validation and user review
-
-![Original validation flow](../figures/original/validation-flow.png)
 
 I designed the flow around collection, local validation, structural validation, and user review. Structural checks concern field presence, types, and allowed values. User review allows confirmation, correction, or rejection before durable storage. The design is valuable because it makes the transition from generated text to application state explicit. It does not by itself show that every mistaken or unauthorized update is blocked.
 
@@ -107,7 +97,7 @@ This can expose behaviors that scripted references miss, but creates another dep
 | Latency and throughput | Runtime cost for the measured workload | Useful task completion |
 | RAM, swap, and power | Resource behavior within the measurement scope | Portable phone performance or energy per successful task |
 
-![Single-turn evaluation](../figures/original/single-turn-metrics.png)
+![Single-turn evaluation](../figures/english/single-turn-metrics.svg)
 
 *One Llama 3.2 3B turn, labeled round 4 in the source. Several structural checks score 1.0 while argument-value agreement is 0.0. The plot shows metric disagreement, but does not identify an incorrect field value.*
 
@@ -132,21 +122,21 @@ The following numbers are transcribed from my historical comparison figures. The
 | Nemotron Mini 4B, Q5_K_M | 1.40 | 4.023 | 319 |
 | Nemotron Mini 4B, Q8_0 | 1.36 | 3.621 | 466 |
 
-![Model scores](../figures/original/model-scores.png)
+![Model scores](../figures/english/model-scores.svg)
 
-![Quality and latency](../figures/original/quality-latency.png)
+![Quality and latency](../figures/english/quality-latency.svg)
 
 The key pattern is a quality/runtime trade-off, not a universal model ranking. The two Nemotron configurations have short reported request times but very low judge scores. A short response is not necessarily an efficient completion of the task. Differences in generated length, failure behavior, prompt compatibility, or early stopping need inspection before calling a model faster in a useful sense.
 
 Qwen and Llama have similar displayed quality and latency, while their reported CPU power differs substantially. Granite 3.2 has a relatively strong score and lower displayed CPU power but longer request time. These observations motivate comparing quality and resource use together. The archived comparison code aggregates post-request power samples, rather than integrating power throughout generation. These values do not establish average inference power or battery endurance; energy requires a time series with a clear measurement boundary.
 
-![Historical power comparison](../figures/original/model-power.png)
+![Historical power comparison](../figures/english/model-power.svg)
 
 The main performance measurements were made on a **MacBook Air**. I separately checked deployment on an **iPhone 15 Pro**, including syntactic stability over a longer dialogue. The desktop plots should not be relabeled as phone benchmarks. In particular, drawing an 8 GB phone reference line over desktop RAM measurements is a deployment heuristic, not an on-phone measurement or a guaranteed process-memory allowance.
 
 ### Resource trajectories
 
-![Resource health](../figures/original/resource-health.png)
+![Resource health](../figures/english/resource-health.svg)
 
 The archived sampler uses system-wide RAM and swap totals. These plots therefore include the rest of the machine, not just the model process. I can use them to inspect host conditions, but cannot attribute all memory or swap use to a model without process-level measurements and a controlled baseline.
 
@@ -158,13 +148,13 @@ The [gallery](FIGURE_GALLERY.md) retains the original trajectories for Granite 3
 
 The quantization experiments examine Granite 3.1 dense models with 2B and 8B parameter labels, using multiple GGUF quantization formats and an FP16 reference. Weight quantization reduces storage and changes the memory/computation trade-off. Its effect on a structured agent task must be measured at the output level: a small numerical change in model weights can alter a field, status, or requested action.
 
-![Judge-score distributions by quantization](../figures/original/quantization-scores.png)
+![Judge-score distributions by quantization](../figures/english/quantization-scores.svg)
 
 The historical plot shows substantial variation across turns/configurations. The study highlights Q4_1 as a promising 2B option and Q3_K_L as a potentially useful more compressed alternative. These are within-study observations. A higher sample median than FP16 does not show that quantization generally improves reasoning, and differences should not be promoted to statistically established superiority without a defined replication unit and uncertainty analysis.
 
 The 8B configurations generally occupy a higher region of the displayed judge-score plot, with runtime costs visible in the accompanying latency figures. This makes model size a deployment decision rather than a purely quality-driven choice. The most accurate configuration in the figure may not fit the intended latency or memory budget.
 
-![Latency over rounds and heatmap](../figures/original/quantization-rounds.png)
+![Latency over rounds and heatmap](../figures/english/quantization-rounds.svg)
 
 The round-level heatmap preserves the latency values that an overall average would hide. Several larger configurations show much longer later-round requests; smaller configurations also vary. Round number should not be equated with an independent repetition of an identical workload: prompt/context length and generated content can change between turns. Thermal effects, context growth, and task difficulty need separate controls before attributing a trend to one cause.
 
@@ -174,7 +164,7 @@ A useful follow-up would repeat a fixed set of prompts at matched context length
 
 The optimization chapter compares **46 labeled configurations** for Granite 3.1 dense 2B FP16. The design covers thread counts, memory mapping, cache placement/precision, FlashAttention, batching, microbatch sizes, speculative-decoding settings, and combinations of these controls. Configuration count is not an independent-trial count.
 
-![All runtime configurations](../figures/original/all-configurations.png)
+![All runtime configurations](../figures/english/all-configurations.svg)
 
 The complete original ID-to-configuration mapping is reproduced in the [configuration appendix](RUNTIME_CONFIGURATIONS.md). It is essential for interpreting the numbered bars. The subset chart uses its own presentation of selected configurations; do not assume indices transfer unchanged across figures without checking the source.
 
@@ -206,7 +196,7 @@ The first combined configuration reduces reported latency by **27.0%** relative 
 
 **Prefill and decoding.** The aggregate figures break latency into prompt processing and token generation. This distinction guides optimization: a technique that improves generation throughput may have limited impact when prefill dominates. Conversely, changes that increase output length can offset a faster decoding rate.
 
-![Combined settings across rounds](../figures/original/combined-settings.png)
+![Combined settings across rounds](../figures/english/combined-settings.svg)
 
 The repeated downward trend in judge scores over the displayed conversation rounds is another reason to inspect quality alongside speed. A faster configuration is only useful if it preserves the behavior required by the application. However, these figures do not by themselves disentangle increased context from increased task difficulty.
 

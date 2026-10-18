@@ -1,0 +1,1663 @@
+[
+  {
+    "file": "figures/english/model-scores.svg",
+    "source_file": "figures/original/model-scores.png",
+    "source_sha256": "8c9aabd0c8038a66d14d390bf46df9b490d056d9d2f9316337eaa5b7206ad70d",
+    "sha256": "b4cb41d1f6a4cdee46c5ee5edaca9c7368ce588abd38af4b8ae27fdc02d9bd6e",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 2048,
+    "labels": [
+      [
+        0,
+        0,
+        2048,
+        60,
+        "Model score comparison",
+        29,
+        0,
+        false,
+        "white"
+      ],
+      [
+        12,
+        230,
+        43,
+        260,
+        "GPT judge score",
+        24,
+        -90,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/model-power.svg",
+    "source_file": "figures/original/model-power.png",
+    "source_sha256": "a7ee3d3876c3c7af3d369a3a16c127b9e3434bfa663ee41320c4d796c4af6c74",
+    "sha256": "8f3e9d487e45f5abb2888d8eae64cb0e8615cea38cfa657a85c4da3e94c37648",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 2048,
+    "labels": [
+      [
+        0,
+        0,
+        2048,
+        60,
+        "Resource usage comparison",
+        29,
+        0,
+        false,
+        "white"
+      ],
+      [
+        12,
+        260,
+        43,
+        220,
+        "Power (mW)",
+        24,
+        -90,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/model-latency.svg",
+    "source_file": "figures/original/model-latency.png",
+    "source_sha256": "3a0b768586b9d2fac25f4c0c8b82ad8e36b45a00b5caac149f22cfbfbcac12db",
+    "sha256": "437f2137fe2a0da8a8be0ba8af1cfc291c3bab40130bf1fd611d6edfaa9aaed8",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1930,
+    "labels": [
+      [
+        0,
+        0,
+        1930,
+        65,
+        "Model latency comparison",
+        36,
+        0,
+        true,
+        "white"
+      ],
+      [
+        600,
+        68,
+        1050,
+        38,
+        "Model latency comparison",
+        28,
+        0,
+        false,
+        "white"
+      ],
+      [
+        680,
+        1230,
+        900,
+        45,
+        "Mean latency (ms)",
+        24,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/quality-latency.svg",
+    "source_file": "figures/original/quality-latency.png",
+    "source_sha256": "7e0b29535b9f9ac2bb6bc34624bfbfaa27325c2fac5404aa01d2e5cf1b6452f6",
+    "sha256": "26a4ae28055f5bd6aafe7333d9a3e8c9e4893fcc72db25ee58f55f15adfab01d",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1754,
+    "labels": [
+      [
+        0,
+        0,
+        1754,
+        68,
+        "Model performance vs latency",
+        42,
+        0,
+        true,
+        "white"
+      ],
+      [
+        230,
+        76,
+        950,
+        74,
+        "Model performance vs latency\n(Bubble size proportional to model size)",
+        29,
+        0,
+        false,
+        "white"
+      ],
+      [
+        5,
+        430,
+        48,
+        620,
+        "Mean GPT score (0-10) \u2192 Higher is better",
+        24,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        300,
+        1357,
+        1000,
+        47,
+        "Mean latency (ms) \u2192 Lower is better",
+        25,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/model-radar.svg",
+    "source_file": "figures/original/model-radar.png",
+    "source_sha256": "2a53d0cede014d6de2077b1f39519972b1f28958b03c852e7094f5dd894a6484",
+    "sha256": "ccf60e035df9f8816ac81706f8c92aa4156c7dae1c323347e904ad100da3452b",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 810,
+    "labels": [
+      [
+        0,
+        0,
+        810,
+        35,
+        "Mobile performance radar",
+        21,
+        0,
+        true,
+        "white"
+      ],
+      [
+        150,
+        40,
+        350,
+        45,
+        "Mobile performance radar\n(Outer edge = better)",
+        16,
+        0,
+        true,
+        "white"
+      ],
+      [
+        255,
+        104,
+        130,
+        32,
+        "Latency\n(3621-37785 ms)",
+        12,
+        0,
+        true,
+        "white"
+      ],
+      [
+        0,
+        325,
+        118,
+        39,
+        "Model size\n(1.9-4.5 GB)",
+        12,
+        0,
+        true,
+        "white"
+      ],
+      [
+        525,
+        325,
+        90,
+        39,
+        "GPT score\n(0-10)",
+        12,
+        0,
+        true,
+        "white"
+      ],
+      [
+        210,
+        549,
+        220,
+        35,
+        "Energy efficiency\n(343-3958 mW)",
+        12,
+        0,
+        true,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/mobile-performance.svg",
+    "source_file": "figures/original/mobile-performance.png",
+    "source_sha256": "018eaa14b522b46514692582a2ee62bcdd7ba494d56cb800ad262e4c01def718",
+    "sha256": "65384b65b65fc2ff9f0b1333e433a662c4994e283e121fa1c6062db1ef330022",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1400,
+    "labels": [
+      [
+        370,
+        108,
+        800,
+        34,
+        "Model latency comparison (Lower is better)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        1,
+        378,
+        35,
+        236,
+        "Latency (ms)",
+        17,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        300,
+        1015,
+        950,
+        29,
+        "Throughput vs latency (Bubble size proportional to model size)",
+        20,
+        0,
+        false,
+        "white"
+      ],
+      [
+        34,
+        1220,
+        33,
+        340,
+        "Throughput (tokens per second)",
+        17,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        500,
+        1755,
+        520,
+        36,
+        "Mean latency (ms)",
+        18,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/quantization-scores.svg",
+    "source_file": "figures/original/quantization-scores.png",
+    "source_sha256": "daec6ea770a8512379f8736c440213589463dda4a91279c93601bb5df3040382",
+    "sha256": "368fa298ca51c866212dbb8b406ffd28181a6054510a45f74cf6dc5dfab172ca",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1139,
+    "labels": [
+      [
+        125,
+        0,
+        1000,
+        83,
+        "LLM judge score distribution",
+        43,
+        0,
+        true,
+        "white"
+      ],
+      [
+        69,
+        170,
+        34,
+        285,
+        "LLM judge score (%)",
+        16,
+        -90,
+        true,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/quantization-rounds.svg",
+    "source_file": "figures/original/quantization-rounds.png",
+    "source_sha256": "3191577c3f364aa103bb5c716ceea0407d94fb622b4dee8cb817b778d418c7fb",
+    "sha256": "5a5e3b3878d33a695a69d3052c1331d28411f06146fa30b9d03d0a85ab240ce3",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1135,
+    "labels": [
+      [
+        0,
+        0,
+        1135,
+        83,
+        "Latency across conversation rounds",
+        42,
+        0,
+        true,
+        "white"
+      ],
+      [
+        78,
+        170,
+        32,
+        210,
+        "Latency (ms)",
+        19,
+        -90,
+        true,
+        "white"
+      ],
+      [
+        405,
+        490,
+        240,
+        35,
+        "Round",
+        20,
+        0,
+        true,
+        "white"
+      ],
+      [
+        100,
+        596,
+        990,
+        47,
+        "Latency heatmap by model and round (ms)",
+        30,
+        0,
+        true,
+        "white"
+      ],
+      [
+        973,
+        730,
+        35,
+        194,
+        "Latency (ms)",
+        18,
+        -90,
+        true,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/all-configurations.svg",
+    "source_file": "figures/original/all-configurations.png",
+    "source_sha256": "85a495dbe48f23b7334588ed2bc4041a0d40c4c9b88c690bb7de2f498d455a1e",
+    "sha256": "a253635b55cc5a57fdfacf09cf628e574721b539bd6e6e9b1092c217425bf65c",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1984,
+    "labels": [
+      [
+        0,
+        0,
+        1984,
+        54,
+        "Runtime configuration comparison",
+        38,
+        0,
+        true,
+        "white"
+      ],
+      [
+        260,
+        105,
+        520,
+        40,
+        "Total latency",
+        23,
+        0,
+        true,
+        "white"
+      ],
+      [
+        250,
+        740,
+        520,
+        43,
+        "Throughput",
+        23,
+        0,
+        true,
+        "white"
+      ],
+      [
+        1220,
+        289,
+        550,
+        44,
+        "Latency breakdown",
+        25,
+        0,
+        true,
+        "white"
+      ],
+      [
+        0,
+        305,
+        27,
+        160,
+        "Time (ms)",
+        15,
+        -90,
+        true,
+        "white"
+      ],
+      [
+        42,
+        910,
+        30,
+        240,
+        "Tokens per second",
+        15,
+        -90,
+        true,
+        "white"
+      ],
+      [
+        946,
+        535,
+        32,
+        180,
+        "Time (ms)",
+        17,
+        -90,
+        true,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/improved-configurations.svg",
+    "source_file": "figures/original/improved-configurations.png",
+    "source_sha256": "30e9300eb6b387c82862639816c3b70ccfacc8e5c351aec0b02f75e28073f625",
+    "sha256": "1265ec229491da25d79335c25c57b51dc6e2b7a59aaa3d4ef9b86b0e3b52ac22",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1021,
+    "labels": [
+      [
+        0,
+        0,
+        1021,
+        76,
+        "Selected higher-performing configurations",
+        37,
+        0,
+        true,
+        "white"
+      ],
+      [
+        168,
+        125,
+        210,
+        25,
+        "Latency",
+        13,
+        0,
+        true,
+        "white"
+      ],
+      [
+        160,
+        411,
+        210,
+        25,
+        "Throughput",
+        13,
+        0,
+        true,
+        "white"
+      ],
+      [
+        623,
+        248,
+        220,
+        24,
+        "Latency breakdown",
+        13,
+        0,
+        true,
+        "white"
+      ],
+      [
+        21,
+        218,
+        13,
+        100,
+        "Time (ms)",
+        8,
+        -90,
+        true,
+        "white"
+      ],
+      [
+        34,
+        485,
+        11,
+        110,
+        "Tokens per second",
+        8,
+        -90,
+        true,
+        "white"
+      ],
+      [
+        470,
+        342,
+        10,
+        95,
+        "Time (ms)",
+        8,
+        -90,
+        true,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/resource-health.svg",
+    "source_file": "figures/original/resource-health.png",
+    "source_sha256": "a110c3d1bdfb7de93ab86ac48e102ec676ada468a87baf6dab31ba4df443a558",
+    "sha256": "5b9347a6262daa9dae4c803b4c5bfc6b080a794e806fdfeadf9e1c8e5b0e22bd",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1471,
+    "labels": [
+      [
+        7,
+        175,
+        33,
+        220,
+        "RAM usage (GB)",
+        17,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        1243,
+        104,
+        210,
+        28,
+        "RAM usage",
+        17,
+        0,
+        false,
+        "white"
+      ],
+      [
+        300,
+        571,
+        900,
+        40,
+        "Memory pressure: SWAP / SSD",
+        23,
+        0,
+        true,
+        "white"
+      ],
+      [
+        4,
+        746,
+        49,
+        220,
+        "SWAP usage (GB)",
+        17,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        1220,
+        618,
+        235,
+        88,
+        "Warning (1 GB)\nHigh load (2 GB)\nCritical load (4 GB)\nSWAP (virtual memory)",
+        16,
+        0,
+        false,
+        "white"
+      ],
+      [
+        250,
+        1143,
+        1000,
+        38,
+        "CPU stability (No throttling = 100%)",
+        23,
+        0,
+        true,
+        "white"
+      ],
+      [
+        5,
+        1260,
+        35,
+        300,
+        "% of maximum frequency",
+        17,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        1187,
+        1189,
+        268,
+        73,
+        "Nominal frequency (100%)\nClock at start\nClock at end",
+        16,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/single-turn-metrics.svg",
+    "source_file": "figures/original/single-turn-metrics.png",
+    "source_sha256": "6060ce134f9fcc864c3ae54377f29d41bf6b6ce25f4cab33ada211a280bba75a",
+    "sha256": "b21d335e1b589493a37c1760359097a858318f1220b9b98878f5ea2a31d69960",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 684,
+    "labels": [
+      [
+        0,
+        0,
+        684,
+        20,
+        "LLM metrics analysis: single turn",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        0,
+        20,
+        684,
+        17,
+        "Model: llama3.2:3b-instruct-q4_K_M | Agent: constant_data_en | Round: 4",
+        12,
+        0,
+        false,
+        "white"
+      ],
+      [
+        34,
+        265,
+        26,
+        145,
+        "Score (0-1)",
+        11,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        0,
+        762,
+        684,
+        270,
+        "METRICS LEGEND\n\njson_validity: checks whether the response contains parseable JSON\ntool_args_values: direct comparison of argument values (case-insensitive)\nlevenshtein_similarity: edit similarity between response texts\np_bert: BERTScore precision; a semantic comparison measure\nr_bert: BERTScore recall; reference-content coverage\nbleu: BLEU score for output text quality\nrouge: ROUGE-L, the longest common subsequence with the reference\nmeteor: METEOR, using synonyms and word stems\ngpt_judge: mean of all GPT Judge rubric scores\nrequired_fields: checks the presence of required response fields\njaccard_similarity: Jaccard similarity over shared tokens\ngpt_context_relevance: GPT Judge assessment of contextual relevance\ngpt_question_naturalness: GPT Judge assessment of question naturalness\ngpt_reasoning_logic: GPT Judge assessment of written reasoning logic\ngpt_tool_call_correctness: GPT Judge assessment of tool-call correctness",
+        10.5,
+        0,
+        false,
+        "#baddE9"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/granite32-timeline.svg",
+    "source_file": "figures/original/granite32-timeline.png",
+    "source_sha256": "2a2b32211c959c38fae4f273e7727f142830c6ec266ffd8c17e63d71910d6977",
+    "sha256": "b0ac73d68c96bd777504b12160e27f995c1eb581ece6344d802c423a6c25e032",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: granite3.2:2b-instruct-q8_0",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/granite-micro-timeline.svg",
+    "source_file": "figures/original/granite-micro-timeline.png",
+    "source_sha256": "ae38876c36ecf6a3dd8ecf0d3a5f79e1a8252ce52967381925d9dd126ad66730",
+    "sha256": "3d4c9789011094645ac1f03f2c549b595146d14554732b7be8a772d45e613527",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: granite4:micro",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/llama-timeline.svg",
+    "source_file": "figures/original/llama-timeline.png",
+    "source_sha256": "d173a00cf7467abe85eb54413b55778b74987cc28db862149b892ac18d7435f7",
+    "sha256": "b41069229090b13b86c6571b91a36a83c7435145a27d6c22a86bc29225508048",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: llama3.2:3b-instruct-q4_K_M",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/nemotron-q5-timeline.svg",
+    "source_file": "figures/original/nemotron-q5-timeline.png",
+    "source_sha256": "8f631e3a05b8740e9d5caed9bb56e305d0fe45301e12b9e43326bbff48a2d190",
+    "sha256": "3d7a711e40b463211111ad1ebf5d2eff443a4ebb617eafbd85405d109297c71b",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: nemotron-mini:4b-instruct-q5_K_M",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/nemotron-q8-timeline.svg",
+    "source_file": "figures/original/nemotron-q8-timeline.png",
+    "source_sha256": "a3c75b1f14c97ce1b0837bcee305b77134b8b24d63254d393b3f2247e69d6e61",
+    "sha256": "ab59f04db58705016e7e42b4460df6062348254303bae68818e75ffe9cc61e5a",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: nemotron-mini:4b-instruct-q8_0",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/qwen-timeline.svg",
+    "source_file": "figures/original/qwen-timeline.png",
+    "source_sha256": "b52a804bfc5d00981aeac2bed0789b7030cbdee34cc3302fbb2e869f369e594a",
+    "sha256": "b6fe4bd5a9676d28cf9c952dbd3bcdb7a207daba2b73be1ae057ffbffbfdc230",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1440,
+    "labels": [
+      [
+        0,
+        0,
+        1440,
+        43,
+        "Resource timeline: qwen2.5:3b-instruct-q4_K_M",
+        24,
+        0,
+        true,
+        "white"
+      ],
+      [
+        8,
+        173,
+        36,
+        260,
+        "Memory usage (GB)",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        420,
+        581,
+        690,
+        35,
+        "CPU stability (thermal throttling)",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        3,
+        713,
+        37,
+        295,
+        "% of maximum frequency",
+        20,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        520,
+        1126,
+        470,
+        37,
+        "GPU utilization",
+        21,
+        0,
+        false,
+        "white"
+      ],
+      [
+        580,
+        1684,
+        350,
+        39,
+        "Round number",
+        20,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/hardware-settings.svg",
+    "source_file": "figures/original/hardware-settings.png",
+    "source_sha256": "1700167672a575ec983358f0b35743c1d0e9d17c1c5f479fe2ffb98fc212e49c",
+    "sha256": "1c84c0d17c3595672e7c99b5acab356b7665fc3c948da8caf39ab65e49f53068",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 930,
+    "labels": [
+      [
+        90,
+        12,
+        825,
+        29,
+        "Performance comparison: Hardware optimization",
+        19,
+        0,
+        true,
+        "white"
+      ],
+      [
+        120,
+        58,
+        665,
+        18,
+        "Latency per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        24,
+        108,
+        13,
+        212,
+        "Latency (ms)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        337.5,
+        356,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        373,
+        665,
+        17,
+        "Throughput per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        45,
+        424,
+        12,
+        216,
+        "Throughput (tokens/s)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        337.5,
+        680,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        692,
+        665,
+        17,
+        "LLM judge score per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        38,
+        740,
+        15,
+        214,
+        "Mean LLM judge score (%)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        337.5,
+        995,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/combined-settings.svg",
+    "source_file": "figures/original/combined-settings.png",
+    "source_sha256": "aaa1b3cdb8cc9e66045e9db6420a00d6165787d44345762bf76f334fafa03a35",
+    "sha256": "b8c51fa99abbcb9c04a3ed587cb9be335b829b0099566f577851a3152088ae40",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 1037,
+    "labels": [
+      [
+        90,
+        12,
+        932,
+        29,
+        "Performance comparison: Three-parameter combinations",
+        19,
+        0,
+        true,
+        "white"
+      ],
+      [
+        120,
+        57,
+        456,
+        14,
+        "Latency per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        30,
+        104,
+        14,
+        225,
+        "Latency (ms)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        233.0,
+        360,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        376,
+        456,
+        17,
+        "Throughput per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        35,
+        428,
+        15,
+        223,
+        "Throughput (tokens/s)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        233.0,
+        682,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        699,
+        456,
+        19,
+        "LLM judge score per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        38,
+        751,
+        15,
+        223,
+        "Mean LLM judge score (%)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        233.0,
+        1007,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/speculative-decoding.svg",
+    "source_file": "figures/original/speculative-decoding.png",
+    "source_sha256": "ccf54d539d23fa45093de3e60806b689dbed3970da39f1e949b0838e9139cf91",
+    "sha256": "3aba3265b00574deee408da41fce807a164b4584f73fba4381ecf32fabffed52",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 950,
+    "labels": [
+      [
+        90,
+        12,
+        845,
+        29,
+        "Performance comparison: Speculative decoding",
+        19,
+        0,
+        true,
+        "white"
+      ],
+      [
+        120,
+        57,
+        588,
+        14,
+        "Latency per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        24,
+        104,
+        13,
+        220,
+        "Latency (ms)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        299.0,
+        356,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        373,
+        588,
+        17,
+        "Throughput per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        35,
+        425,
+        15,
+        220,
+        "Throughput (tokens/s)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        299.0,
+        679,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        692,
+        588,
+        17,
+        "LLM judge score per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        38,
+        745,
+        15,
+        212,
+        "Mean LLM judge score (%)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        299.0,
+        997,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  },
+  {
+    "file": "figures/english/cache-settings.svg",
+    "source_file": "figures/original/cache-settings.png",
+    "source_sha256": "fe8e3002237be48d613bd44edf58ccb7681ad80f4eeb140522c8f729839d0ee9",
+    "sha256": "2c0071bdf3d4f6d88b81393c917df0ac6ba01eb2417298fbd05e7ccbac916a0c",
+    "transformation": "English vector text overlays; original plot image embedded unchanged",
+    "reference_width": 927,
+    "labels": [
+      [
+        90,
+        12,
+        822,
+        29,
+        "Performance comparison: Cache optimization",
+        19,
+        0,
+        true,
+        "white"
+      ],
+      [
+        120,
+        57,
+        538,
+        14,
+        "Latency per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        24,
+        181,
+        11,
+        80,
+        "Latency (ms)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        274.0,
+        355,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        373,
+        538,
+        17,
+        "Throughput per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        35,
+        425,
+        15,
+        222,
+        "Throughput (tokens/s)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        274.0,
+        681,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ],
+      [
+        120,
+        694,
+        538,
+        17,
+        "LLM judge score per round",
+        13,
+        0,
+        false,
+        "white"
+      ],
+      [
+        38,
+        746,
+        15,
+        213,
+        "Mean LLM judge score (%)",
+        9,
+        -90,
+        false,
+        "white"
+      ],
+      [
+        274.0,
+        996,
+        200,
+        18,
+        "Round",
+        10,
+        0,
+        false,
+        "white"
+      ]
+    ]
+  }
+]
