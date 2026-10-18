@@ -1,0 +1,8 @@
+configuration,latency_ms,throughput_tokens_s
+Baseline,68542,6.46
+f16 cache + FlashAttention,50038,8.97
+FlashAttention + continuous batching,51747,8.93
+FlashAttention + draft-max 3,54679,8.98
+f16 cache + FlashAttention + 4 threads,58764,8.54
+no-mmap,66959,6.70
+no-kv-offload,90412,4.52

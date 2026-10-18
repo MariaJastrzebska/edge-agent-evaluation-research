@@ -1,0 +1,4 @@
+condition,correct,total,mean_request_s
+One thread,12,20,6.69
+Two threads,12,20,10.28
+Always decline,9,20,
