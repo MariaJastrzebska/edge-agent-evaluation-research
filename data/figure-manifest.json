@@ -1,0 +1,274 @@
+[
+  {
+    "file": "figures/original/model-scores.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_scores.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "8c9aabd0c8038a66d14d390bf46df9b490d056d9d2f9316337eaa5b7206ad70d",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/model-radar.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_radar.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "2a53d0cede014d6de2077b1f39519972b1f28958b03c852e7094f5dd894a6484",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/quality-latency.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_scatter.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "7e0b29535b9f9ac2bb6bc34624bfbfaa27325c2fac5404aa01d2e5cf1b6452f6",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/model-latency.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_latency_bars.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "3a0b768586b9d2fac25f4c0c8b82ad8e36b45a00b5caac149f22cfbfbcac12db",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/model-power.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_resources.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "a7ee3d3876c3c7af3d369a3a16c127b9e3434bfa663ee41320c4d796c4af6c74",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/mobile-performance.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/all_models_all_optimizations_mobile_performance_analysis_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "018eaa14b522b46514692582a2ee62bcdd7ba494d56cb800ad262e4c01def718",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/resource-health.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/resource_health_check_unified_2026-01-18_02-36-24.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "a110c3d1bdfb7de93ab86ac48e102ec676ada468a87baf6dab31ba4df443a558",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/granite32-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_granite3_2_2b-instruct-q8_0_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "2a2b32211c959c38fae4f273e7727f142830c6ec266ffd8c17e63d71910d6977",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/granite-micro-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_granite4_micro_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "ae38876c36ecf6a3dd8ecf0d3a5f79e1a8252ce52967381925d9dd126ad66730",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/llama-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_llama3_2_3b-instruct-q4_K_M_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "d173a00cf7467abe85eb54413b55778b74987cc28db862149b892ac18d7435f7",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/nemotron-q5-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_nemotron-mini_4b-instruct-q5_K_M_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "8f631e3a05b8740e9d5caed9bb56e305d0fe45301e12b9e43326bbff48a2d190",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/nemotron-q8-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_nemotron-mini_4b-instruct-q8_0_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "a3c75b1f14c97ce1b0837bcee305b77134b8b24d63254d393b3f2247e69d6e61",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/qwen-timeline.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/run_070_full/throttling_timeline_qwen2_5_3b-instruct-q4_K_M_2026-01-18_00-23-07.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "b52a804bfc5d00981aeac2bed0789b7030cbdee34cc3302fbb2e869f369e594a",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/single-turn-metrics.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/eval/jedna runda.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "6060ce134f9fcc864c3ae54377f29d41bf6b6ce25f4cab33ada211a280bba75a",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/quantization-scores.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/guantisation impact/ROZKLAD WYNIKOW.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "daec6ea770a8512379f8736c440213589463dda4a91279c93601bb5df3040382",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/quantization-rounds.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/guantisation impact/heatmap.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "3191577c3f364aa103bb5c716ceea0407d94fb622b4dee8cb817b778d418c7fb",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/hardware-settings.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/hardware.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "1700167672a575ec983358f0b35743c1d0e9d17c1c5f479fe2ffb98fc212e49c",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/combined-settings.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/3 parameters.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "aaa1b3cdb8cc9e66045e9db6420a00d6165787d44345762bf76f334fafa03a35",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/speculative-decoding.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/speculative.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "ccf54d539d23fa45093de3e60806b689dbed3970da39f1e949b0838e9139cf91",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/cache-settings.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/cache.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "fe8e3002237be48d613bd44edf58ccb7681ad80f4eeb140522c8f729839d0ee9",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/all-configurations.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/poprawa_all.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "85a495dbe48f23b7334588ed2bc4041a0d40c4c9b88c690bb7de2f498d455a1e",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/improved-configurations.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.3.2.optymaizacja inferencji/final_plots/optimisation_impact/poprawa1.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "30e9300eb6b387c82862639816c3b70ccfacc8e5c351aec0b02f75e28073f625",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/structured-validity.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "docs/research/figures/structured-decoding-validity.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "f9d0315e2aa6ac347f82073635d9c1953907c1488a6b5d456615251388876e4c",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/structured-latency.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "docs/research/figures/structured-decoding-latency.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "131765e636116ce3bd88f84fcbaeee8bd039a3f0b6086e651a7c179cf860a054",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/structured-tokens.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "docs/research/figures/structured-decoding-tokens.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "290426b9a8e9494e2d90c4a63ce008cfc35e247b86a44bd2ae9d88fcfb2984d1",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/structured-energy.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "docs/research/figures/structured-decoding-energy.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "4f072b4f1d81eeb53e1ea4635a321524405892eda7994db672d391851a8c7555",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/routing-cases.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "experiments/results/thread-study-2026-10-17/report/case-scores.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "de5aae4cc47a9a03e0d6001d7977971c05c86ebd2537d8e2dc6c332bb007b668",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/routing-cost.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "experiments/results/thread-study-2026-10-17/report/request-cost.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "5340b332566672c4b6f39e03cfbe0c73a3535bf286d8ec2370215f1221fb5196",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/routing-paired.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "experiments/results/thread-study-2026-10-17/report/paired-request-cost.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "1560170d7acba5ef33f974f9bcf7f1dba23872b6c9947a6a289a6c92eb6d4727",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/routing-coverage.png",
+    "source_repo": "edge-llm-lab",
+    "source_path": "experiments/results/thread-study-2026-10-17/report/coverage.png",
+    "source_commit": "d871920a363acb46a9fb2574f9d5e3fae1d71960",
+    "sha256": "6aef8bcd565fc72df4a7b53d2abf253abc4241b664893e0e4c9b0f5b39c1e5be",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/agent-flow.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.1 Opis Aplikacji/multi turn turn function call - Copy-2026-02-13-070438.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "e710d74b7eeab6e49ac7c9e5f5bad80c23a73c03a8ddbfae355c846f235b3e91",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/validation-flow.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.1 Opis Aplikacji/walidacja _ Mermaid Chart-2025-08-13-115452.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "387449dfe1bb778a01b32e11b81704876bf0004c4f754131f11086cab7797d04",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/state-contract.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.1 Opis Aplikacji/json_schema.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "4c5ce3748fdb716b8c46e9e6106a23f01b95925b43fd275818fd1432491937da",
+    "transformation": "none; original image bytes"
+  },
+  {
+    "file": "figures/original/agent-detail.png",
+    "source_repo": "praca-magisterska---M.-Jastrzebska",
+    "source_path": "rysunki/3.1 Opis Aplikacji/FRAGMENT FLOW.png",
+    "source_commit": "de6eed63d368381e6251ccc6a8c7dd4c756a8976",
+    "sha256": "2709fda878a8c6660ae5cffda7de05686bfd739656b812863ac4586f9698baaf",
+    "transformation": "none; original image bytes"
+  }
+]

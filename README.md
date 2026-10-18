@@ -2,6 +2,20 @@
 
 **Maria Magdalena Jastrzębska · Research report · 18 October 2026**
 
+
+## Expanded research dossier
+
+This repository now includes a detailed account of the master's project, 34 original research/application images, two redrawn summary figures, source links, and an assessment in hindsight. Historical thesis work and later experiments are kept separate.
+
+- [Detailed thesis report: architecture, evaluation, results, and limitations](docs/THESIS_REPORT.md)
+- [Annotated gallery of 34 original figures](docs/FIGURE_GALLERY.md)
+- [All 46 runtime configuration labels](docs/RUNTIME_CONFIGURATIONS.md)
+- [Author repositories, pinned manuscript chapters, and upstream tools](docs/REPOSITORIES.md)
+- [Research experience and relevance to the Anthropic Fellows Program](docs/RESEARCH_FIT.md)
+- [Dates, lessons learned, and what I would do differently](docs/RETROSPECTIVE.md)
+
+**Timeline:** dated artifacts extend into August–October 2025; available manuscript history runs from 17 January to 23 February 2026; separate follow-up studies are documented in August and October 2026. This report was expanded on 18 October 2026. Artifact dates are not claimed as verified project-start or defense dates.
+
 *Multi-turn evaluation, structured tool use, inference trade-offs, and the path toward safety evaluations for local agents.*
 
 ## Abstract
@@ -171,3 +185,9 @@ These commands render saved aggregate values; they do not launch a model, contac
 ## Conclusion
 
 The main contribution is an experimental bridge between a small local model and the application that relies on it. Multi-turn traces, structured contracts, reference comparisons, behavioral grading, and runtime measurements make different failure modes visible. Extending that foundation toward explicit adversarial cases and enforced action boundaries offers a practical route from application reliability work to agent safety and security research.
+
+## Lessons learned, in hindsight
+
+The project is strongest as research engineering: connecting a local agent prototype to a task-specific evaluator and systems measurements. Its original evidence is narrower than claims of clinical reliability, guaranteed privacy, or a universal optimization mechanism. A stronger next study would validate the task contract, prioritize correct end-to-end behavior, include simple baselines, and repeat controlled measurements on the target device.
+
+Read the [dated retrospective and proposed author reflection](docs/RETROSPECTIVE.md) for the complete assessment and a concrete redesign of the study.

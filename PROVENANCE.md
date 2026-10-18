@@ -39,3 +39,9 @@ The report is a retrospective synthesis prepared with AI-assisted drafting and f
 - Historical wording about absolute privacy, universal reliability, or complete reproducibility is not repeated as an established result.
 - The August 2026 prompt/schema mismatch is a later evaluation lesson, not retroactively assigned to all original experiments.
 - Federated adaptation, persistent authorization testing, automotive security, and replication/containment experiments are not claimed as completed results here.
+
+## Expanded dossier and original images
+
+On 18 October 2026 the report was expanded with detailed chapter synthesis, a repository map, an annotated gallery, a 46-configuration index, and a dated retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 thesis plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
+
+The model-comparison table in the detailed report is transcribed from the displayed historical figures, not from the differing numbers in the manuscript conclusion. Those discrepancies are explicitly discussed. Dates embedded in diagram/plot filenames are artifact labels, not independently verified experiment timestamps. The closing first-person reflection is proposed wording grounded in source review, rather than a contemporaneous quotation from the author.
