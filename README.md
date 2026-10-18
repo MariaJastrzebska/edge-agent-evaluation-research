@@ -166,6 +166,11 @@ Federated adaptation was an explored direction, not a completed federated-learni
 
 ## Code and provenance
 
+The evaluation laboratory and this report are public. The original mobile
+application and manuscript repositories remain private; their links identify
+source provenance and require access. The report, figure gallery and transcribed
+data can be read here without access to those private repositories.
+
 - [Edge-LLM-Lab](https://github.com/MariaJastrzebska/edge-llm-lab): maintained evaluation framework, datasets, reporting, and integration code.
 - [Mobile application](https://github.com/MariaJastrzebska/fed-mobile): Flutter application and local-inference integration.
 - [Current result galleries](https://github.com/MariaJastrzebska/edge-llm-lab/blob/d871920a363acb46a9fb2574f9d5e3fae1d71960/docs/research/current-reports.md): detailed protocols and limitations for later work.
