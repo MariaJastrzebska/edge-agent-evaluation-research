@@ -38,7 +38,7 @@ Local execution provides an architectural opportunity to reduce transmission of 
 
 ## My contributions
 
-- Built a Flutter prototype and an agent workflow for collecting structured medical information, with a coordinator, specialized agent roles, conversation state, and schema-defined outputs.
+- Built a Flutter prototype and an agent workflow for collecting structured medical information, with an application-level coordinator, specialized agent roles, conversation state, and schema-defined outputs.
 - Developed a Python harness for evaluating complete multi-turn scenarios, including reference-based replay and reference-free assessment.
 - Combined JSON/schema checks, reference-comparison metrics, and a rubric-based LLM judge with per-turn response and performance logging.
 - Investigated model and runtime choices, including weight precision, threading, GPU offload, FlashAttention, cache configuration, and speculative decoding.
@@ -64,7 +64,7 @@ flowchart LR
 
 ### Two complementary evaluation modes
 
-**Reference-based evaluation** uses prepared conversations and expected responses. The original references were developed interactively using a larger model, with manually supplied patient replies and manual review and correction. Each tested response is compared against its reference using structural, textual, semantic, and judge-based measures. Frozen conversation prefixes make comparisons easier, but they do not show how the model recovers from its own earlier mistakes.
+**Reference-based evaluation** uses prepared conversations and expected responses. The original references were developed interactively using a larger model, with manually supplied patient replies and manual review and correction. Each tested response is compared against its reference using structural, textual, semantic, and judge-based measures. The original reference-based comparison relied on a single reference conversation. Its turns are not independent scenarios, so I treat the results as an exploratory case study. Frozen prefixes make comparisons easier, but they do not show how the model recovers from its own earlier mistakes.
 
 **Reference-free evaluation** assesses the developing interaction without a golden response for every turn. It examines adherence to the task rules, progress toward completion, and behavior over the dialogue. This captures a different question from frozen replay, while introducing dependence on the scenario or simulator and the outcome rubric.
 
@@ -102,7 +102,7 @@ The f16-cache/FlashAttention configuration has **27.0% lower reported latency** 
 
 The result supports an engineering conclusion: runtime configuration deserves evaluation alongside model selection. It does not isolate the causal contribution of each optimization, and the aggregate table alone does not supply uncertainty intervals. “f16 cache” is retained as a configuration label; it should not be described as proof of a low-bit cache-quantization benefit.
 
-The broader original analysis compared model families and weight-quantization settings using quality and resource measures. It distinguished the highest judge score from the configuration chosen as a practical compromise. I do not combine those model-selection results with the runtime table into a single ranking: the model versions, precision settings, and experimental conditions differ.
+The broader original analysis compared model families and weight-quantization settings using quality and resource measures. I screened models for their ability to produce structured responses before those comparisons, so the displayed results describe that selected set. It distinguished the highest judge score from the configuration chosen as a practical compromise. I do not combine those model-selection results with the runtime table into a single ranking: the model versions, precision settings, and experimental conditions differ.
 
 ## A later extension: making boundary failures visible
 
@@ -116,7 +116,7 @@ On **17 October 2026**, Edge-LLM-Lab recorded a separate synthetic intake-routin
 | Two CPU threads | 20/20 | 12/20 (60%) | 10.28 s |
 | Always decline | 20 reference targets | 9/20 (45%) | No model execution |
 
-This small study is useful because it exposes specific mismatches rather than hiding them behind a broad claim of safety. It also includes a simple baseline: refusing every request would already match nine targets. The observed 60% agreement should therefore be interpreted against 45%, not against zero.
+The saved responses show two different kinds of mismatch: choosing `record` for a measurement without a unit, and refusing a treatment request in prose instead of the required JSON. I include both [examples and their exact outputs](docs/RESEARCH_REPORT.md#two-cases-behind-the-agreement-score). I also included an always-decline baseline: refusing every request would already match nine targets. The observed 60% agreement should therefore be interpreted against 45%, not against zero.
 
 The two-thread configuration was slower in this recorded run. The shared host, one pass per condition, correlated near-template cases, and lack of controlled warm-up or load prevent a general conclusion about thread counts. No real tools or treatments were executed; agreement with the routing policy is not demonstrated enforcement of an authorization boundary.
 
@@ -140,9 +140,7 @@ I want to extend this work to ask: **does a local tool-using agent preserve auth
 
 A controlled experiment would pair benign tasks with adversarial variants, use synthetic records and mock tools, and compare prompt-only restrictions with enforced tool permissions and human approval. Outcomes would include unauthorized actions, synthetic-data disclosure, legitimate task completion, clarification behavior, and runtime cost. A refusal would count as useful protection only in conjunction with preserved benign performance.
 
-This can transfer to automotive support: an agent could interpret read-only diagnostic data and retrieved documentation while being prevented from taking consequential actions without approval. The transferable research object is the boundary between information, instructions, and permitted actions—not a claim that medical intake and vehicle diagnostics share the same risk model.
-
-This experiment is **proposed future work**. This report does not claim completed self-replication experiments, automotive penetration testing, or demonstrated containment of autonomous cyber capabilities.
+I have not run this experiment yet. The existing routing study measures response agreement; the next step is to observe what happens when an application actually accepts or blocks an action.
 
 ## Limitations and lessons for the next iteration
 
@@ -150,7 +148,7 @@ The original study is exploratory. Model and prompt selection, a limited scenari
 
 LLM-judge scores should be accompanied by deterministic checks and targeted human review. A judge-based average should not obscure a critical field error. Clinical safety would require a separate, appropriately designed validation process.
 
-The subsequent Edge Lab work also identified a prompt/schema mismatch in an August 2026 structured-decoding pilot: uppercase completion states in a prompt example conflicted with a lowercase schema. Comparisons affected by that mismatch cannot support a clean claim about constrained versus unconstrained validity. This is a concrete example of why auditing the evaluation contract matters as much as scoring the model.
+In an earlier August 2026 pilot, uppercase status values in a prompt example conflicted with the lowercase schema. I corrected that before experiment 005 on 12 August. The later source still contains a different inconsistency: an object-valued `action_input` example where the saved schema requires a string. That type error also appears in captured output. I separate these issues in the [detailed report](docs/RESEARCH_REPORT.md#august-2026-structured-output-pilot); neither justifies treating every invalid response as an intrinsic model failure.
 
 Federated adaptation was an explored direction, not a completed federated-learning experiment reported here. The application repository retains dormant foundations for future work. I do not claim measured differential-privacy guarantees or deployed federated training.
 
@@ -190,6 +188,6 @@ The main contribution is an experimental bridge between a small local model and 
 
 ## Lessons learned, in hindsight
 
-What I value most in this project is the connection between the local prototype, the evaluator, and the systems measurements. Looking back, I would narrow the research question earlier and be more careful about how far the results generalize. I would validate the task contract first, test complete conversations, add simple baselines, and repeat controlled measurements on the target device.
+What I value most in this project is the connection between the local prototype, the evaluator, and the systems measurements. Looking back, I would narrow the research question earlier and be more careful about how far the results generalize. I would validate the task contract first, evaluate final-state accuracy and recovery more systematically in the existing dynamic-conversation setup, add simple baselines, and repeat controlled measurements on the target device.
 
 Read the [retrospective](docs/RETROSPECTIVE.md) for what I learned and how I would redesign the study.

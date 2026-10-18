@@ -38,11 +38,15 @@ I used the existing results to prepare this summary and redraw two overview figu
 - Structural validity, reference agreement, clinical safety, and security enforcement are distinct outcomes.
 - Original aggregate optimization results do not establish an isolated causal mechanism or performance across all devices.
 - Historical wording about absolute privacy, universal reliability, or complete reproducibility is not repeated as an established result.
-- The August 2026 prompt/schema mismatch is a later evaluation lesson, not retroactively assigned to all original experiments.
-- Federated adaptation, persistent authorization testing, automotive security, and replication/containment experiments are not claimed as completed results here.
+- The earlier August status-case bug was corrected before experiment 005. That run has a different source-example/schema type inconsistency, described with evidence in the detailed report. Neither issue is retroactively assigned to the original experiments.
+- Federated adaptation and enforced authorization testing remain future work.
 
 ## Original images
 
 When publishing this summary, I included the detailed methods, a repository map, an annotated gallery, the 46-configuration index, and my retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 study plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
 
 The model-comparison table in the detailed report is transcribed from the displayed historical figures, not from the differing numbers in the manuscript conclusion. Those discrepancies are explicitly discussed. Dates embedded in diagram/plot filenames are artifact labels, not independently verified experiment timestamps.
+
+## Selected response excerpts
+
+[data/routing-examples.json](data/routing-examples.json) contains two synthetic October routing cases under both thread settings, extracted from the saved local response captures. It includes the frozen context, expected and actual output, recorded scores, and compressed/uncompressed source hashes. These four excerpts are sufficient to inspect the examples discussed in the report. The complete response capture is not bundled here; the linked trial table and summary support recomputing aggregate scores and request times, while rendering the two summary figures only requires the local CSVs.

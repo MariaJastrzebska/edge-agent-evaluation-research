@@ -2,7 +2,7 @@
 
 I started this project with a practical question: could a small model running locally collect useful information over a conversation? I built a Flutter prototype and Python evaluation tooling, then compared model behavior, quantization settings, and runtime costs. Most of that work took place in 2025, with further work in early 2026. I am publishing the summary in October 2026, alongside later experiments and what I learned from revisiting the results.
 
-What interests me most now is the gap between an output that looks correct and an agent that actually completes a task correctly. I saw responses that passed structural checks while getting argument values wrong. I also saw why per-turn scores could miss errors that accumulate across a conversation. Those problems led me toward evaluating actions, state changes, and permission boundaries.
+What interests me most now is the gap between an output that looks correct and an agent that actually completes a task correctly. The original plots showed structural and argument-agreement metrics disagreeing. Revisiting the scorer also exposed a representation mismatch that could produce this pattern without an incorrect value. In the later routing study, I can inspect the captured output directly: one case selects `record` when the missing unit should trigger clarification. I also saw why per-turn scores could miss errors that accumulate across a conversation. Those problems led me toward evaluating actions, state changes, and permission boundaries.
 
 ## What I bring from this work
 

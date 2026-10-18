@@ -6,23 +6,14 @@ I wrote these reflections in October 2026, looking back on work I carried out ma
 
 ## When the work was created
 
-| Date or period | What the evidence establishes | What it does not establish |
-| --- | --- | --- |
-| 2025 | Most research and development took place during this year | An exact project start day |
-| 13 August 2025 | Application-flow and validation image filenames contain `2025-08-13` | A verified project start date or an immutable creation timestamp |
-| 8 October 2025 | Quantization figure filenames contain `2025-10-08_08-02-40` | That every study experiment ran on this date |
-| 17 January 2026 | First available manuscript commit, `00eaa30`, is labeled “Initial Overleaf Import” | That research began on the import date; the earlier artifacts predate it |
-| 18 January 2026 | The displayed model-comparison/resource figures carry this date in their source filenames | An independently audited experiment timestamp |
-| 13 February 2026 | Later architecture export filenames carry this date | A new experimental validation of the architecture |
-| 23 February 2026 | Last manuscript revision used here, `de6eed6`, is dated this day | The date of every underlying experiment |
-| 10 August 2026 | Repository records place the application/laboratory separation in this period | That all current laboratory functionality was already part of the study |
-| 12 August 2026 | The later structured-output pilot is labeled as recorded on this date | A clean causal test despite the subsequently identified prompt/schema mismatch |
-| 17 October 2026 | Later synthetic routing/thread study | A rerun of the original Apple Silicon experiments |
-| 18 October 2026 | This expanded report, figure curation, and retrospective assessment | A new execution of the historical experiments |
+| Period | Work and records |
+| --- | --- |
+| 2025 | I carried out most of the original research and development. Application diagrams are dated August; quantization exports are dated October. |
+| January–February 2026 | I continued the work and revised the manuscript. Available Git history starts with a January import; model-comparison plots and architecture exports also date from this period. |
+| August 2026 | I continued the evaluation laboratory work, including the structured-output pilots and contract debugging. |
+| October 2026 | I ran the synthetic routing study and assembled this summary and retrospective. |
 
-**Most of the original research was completed in 2025, with manuscript revisions in early 2026.** This summary and retrospective were published in October 2026. The August and October 2026 studies are separate follow-up work. The dates in filenames and Git history below refer to individual artifacts, rather than the start of the whole project.
-
-Dates from filenames are weaker evidence than version history. Git timestamps also describe recorded source history rather than independently certified experiment execution. The [evidence ledger](../PROVENANCE.md) fixes the revisions used for this report.
+File-export and Git dates locate individual artifacts; they do not date the beginning of the whole project. The [source record](../PROVENANCE.md) lists the revisions and experiment dates.
 
 ## How I see the work now
 
@@ -34,7 +25,7 @@ I also spent more effort expanding the configuration matrix than isolating a sma
 
 ## What I would keep
 
-I would keep the concrete information-collection task, the explicit state contract, and the combination of quality and systems measurements. They made failures visible: a response could be valid JSON and still contain the wrong values, or finish quickly without doing useful work.
+I would keep the concrete information-collection task, the explicit state contract, and the combination of quality and systems measurements. They made failures visible: format checks and argument-agreement scores could disagree, or a model could finish quickly without completing the intended task. Revisiting a disagreement also taught me to check the scorer before attributing it to the model.
 
 I would also keep the application as part of the research setup. It helped me distinguish token-generation speed from the time before the user sees an answer. And I would keep the raw outputs and experiment records: being able to revisit them has been more useful than relying on my original summary alone.
 
@@ -42,7 +33,7 @@ I would also keep the application as part of the research setup. It helped me di
 
 ### 1. Validate the benchmark before scaling it
 
-A large run matrix can repeatedly measure a mistake in the task contract. The later uppercase/lowercase status mismatch is a particularly clear example. An evaluator should first pass deliberately constructed valid, invalid, incomplete, and contradictory examples. The prompt, schema, parser, and scorer must agree on the meaning of success.
+A large run matrix can repeatedly measure a mistake in the task contract. The early August status-case mismatch is one example. I corrected it before experiment 005, but a later review still found an object-versus-string conflict in the worked example. Fixing one field did not validate the whole contract. An evaluator should first pass deliberately constructed valid, invalid, incomplete, and contradictory examples. The prompt, schema, parser, and scorer must agree on the meaning of success.
 
 **What I would change:** before running models, I would create a small hand-checked contract-validation set. I would test extraction behavior, status values, required fields, unit handling, and invalid responses. I would inspect raw outputs from every condition before launching the full sweep. This does not replace statistical evaluation; it prevents spending the evaluation budget on an inconsistent task.
 
@@ -56,7 +47,7 @@ Correct syntax is necessary for many integrations, but the application needs cor
 
 Frozen reference histories make per-turn comparisons more controlled, but hide the consequences of the model's own earlier mistakes. A system may perform well when supplied with the correct history and fail when it must maintain that history itself.
 
-**What I would change:** I would keep the original per-turn tests for diagnosis and add closed-loop conversations. These would include user corrections, contradictory values, missing units, declined optional fields, and recovery after an earlier extraction error. I would measure both final state and the path taken to reach it.
+**What I would change:** I would keep the original per-turn tests for diagnosis and use the existing dynamic simulator to measure final-state correctness and recovery more systematically. The scenarios would include user corrections, contradictory values, missing units, declined optional fields, and recovery after an earlier extraction error. I would measure both final state and the path taken to reach it.
 
 ### 4. Treat the judge as an instrument that needs calibration
 
@@ -120,7 +111,7 @@ This design would likely test fewer configurations at first, but produce a stron
 
 Looking back, the most valuable part of my study was building the complete path from a local agent prototype to an evaluation workflow and observing where apparently good metrics broke down. I learned that valid JSON is not the same as correct information, that a high judge score is not clinical validation, and that a runtime speedup needs to be interpreted alongside the work performed and the quality preserved.
 
-If I started again, I would narrow the research question earlier, validate the benchmark contract before expanding the experiment matrix, and evaluate complete conversations in addition to isolated turns. I would use stronger baselines, repeat and randomize measurements, and separate target-device evidence from desktop observations. I would also be more precise about which findings are descriptive and which support a causal explanation.
+If I started again, I would narrow the research question earlier, validate the benchmark contract before expanding the experiment matrix, and report complete-trajectory outcomes from the dynamic simulator alongside the frozen-prefix scores. I would use stronger baselines, repeat and randomize measurements, and separate target-device evidence from desktop observations. I would also be more precise about which findings are descriptive and which support a causal explanation.
 
 I see the project as a foundation in research engineering and empirical evaluation. Its limitations now give me a clearer direction: build experiments that distinguish successful, useful agent behavior from outputs that merely look correct, and make the limits of every conclusion visible.
 

@@ -34,6 +34,7 @@ These are the tools and background resources I used or discussed. I list their r
 | [fllama](https://github.com/Telosnex/fllama) | Flutter integration used for local execution |
 | [Flutter](https://github.com/flutter/flutter) | Application framework |
 | [Pydantic](https://github.com/pydantic/pydantic) | Schema definitions in the Python tooling |
+| [Instructor](https://github.com/567-labs/instructor) | Structured model-judge responses in the evaluation tooling |
 | [Ollama](https://github.com/ollama/ollama) | Preliminary model experimentation |
 | [Transformers](https://github.com/huggingface/transformers) | Preliminary model experimentation and model tooling |
 | [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | Later scoring integration; not part of the original study evidence |

@@ -72,7 +72,7 @@ Seconds are printed on bars while the horizontal axis is milliseconds. These are
 
 ![CPU and GPU power](../figures/original/model-power.png)
 
-Power in mW is not energy per request. Attribution and sampling scope must be checked before explaining architecture-level differences.
+The archived comparison aggregates post-request power samples in mW. These are not integrated request energy or average inference power, and do not establish battery life.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/all_models_with_reference_2026-01-18_00-23-07_resources.png)
 
@@ -96,7 +96,7 @@ The phone-memory line is a reference threshold over desktop measurements. It is 
 
 ![Granite 3.2 resource trajectory](../figures/original/granite32-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_granite3_2_2b-instruct-q8_0_2026-01-18_00-23-07.png)
 
@@ -104,7 +104,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![Granite Micro resource trajectory](../figures/original/granite-micro-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_granite4_micro_2026-01-18_00-23-07.png)
 
@@ -112,7 +112,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![Llama 3.2 resource trajectory](../figures/original/llama-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_llama3_2_3b-instruct-q4_K_M_2026-01-18_00-23-07.png)
 
@@ -120,7 +120,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![Nemotron Q5 resource trajectory](../figures/original/nemotron-q5-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_nemotron-mini_4b-instruct-q5_K_M_2026-01-18_00-23-07.png)
 
@@ -128,7 +128,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![Nemotron Q8 resource trajectory](../figures/original/nemotron-q8-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_nemotron-mini_4b-instruct-q8_0_2026-01-18_00-23-07.png)
 
@@ -136,7 +136,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![Qwen 2.5 resource trajectory](../figures/original/qwen-timeline.png)
 
-Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-utilization traces require sensor validation; they do not prove absence of throttling or GPU execution.
+System-wide RAM/swap snapshots across five rounds. The GPU zero line reflects a missing-telemetry default in the archived plotting path; CPU snapshots cannot rule out within-request throttling.
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/run_070_full/throttling_timeline_qwen2_5_3b-instruct-q4_K_M_2026-01-18_00-23-07.png)
 
@@ -144,7 +144,7 @@ Original RAM/swap observations across five rounds. Flat CPU-frequency and GPU-ut
 
 ![One turn, multiple correctness metrics](../figures/original/single-turn-metrics.png)
 
-Round 4 for Llama 3.2 3B. Argument-value score is zero despite perfect scores on several structure checks, showing why validity and correctness must be separated.
+Round 4 for Llama 3.2 3B. Argument-value agreement is zero beside perfect structural scores. The archived scorer can produce this pattern for identical nested tool calls, so the chart alone does not establish a wrong field value. See the [scorer limitation](RESEARCH_REPORT.md#metrics-have-different-meanings).
 
 [Original source](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/rysunki/eval/jedna%20runda.png)
 
@@ -216,7 +216,7 @@ This is a selected subset, so it should be read alongside all configurations. Do
 
 ![Later pilot: schema-valid extracted objects](../figures/original/structured-validity.png)
 
-Recorded 12 August 2026. A prompt/schema status-case mismatch prevents a clean causal interpretation. Schema validity does not establish correct arguments.
+Experiment 005, recorded 12 August 2026, after the earlier status-case fix. A separate object-versus-string inconsistency remains in the source prompt example and saved schema; see the [detailed interpretation](RESEARCH_REPORT.md#august-2026-structured-output-pilot). Counts describe extracted-object validity, not correct arguments.
 
 [Original source](https://github.com/MariaJastrzebska/edge-llm-lab/blob/d871920a363acb46a9fb2574f9d5e3fae1d71960/docs/research/figures/structured-decoding-validity.png) · Source repository: `edge-llm-lab`.
 
