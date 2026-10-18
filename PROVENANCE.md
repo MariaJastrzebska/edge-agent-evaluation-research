@@ -10,7 +10,7 @@ I carried out most of the original research in **2025** and continued the work i
 | Edge-LLM-Lab | `d871920a363acb46a9fb2574f9d5e3fae1d71960` | Later methodology, synthetic routing study, and capture/scoring integration |
 | fed-mobile | `1d415748c3c9170cc7693cd0e6e403c90f4c8113` | Application architecture and separation of application from evaluation tooling |
 
-The original manuscript's source repository is [available here](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/tree/de6eed63d368381e6251ccc6a8c7dd4c756a8976).
+The original manuscript's [source repository](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/tree/de6eed63d368381e6251ccc6a8c7dd4c756a8976) and fed-mobile are private. Links to them record provenance and require repository access. This report, its reproduced figures and transcribed aggregate data are public.
 
 ## Numeric sources
 

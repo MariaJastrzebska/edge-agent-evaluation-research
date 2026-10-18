@@ -2,6 +2,10 @@
 
 ## My research repositories
 
+**Access:** Edge-LLM-Lab and this report are public. The original manuscript and
+fed-mobile remain private. Their revision-pinned links are retained for provenance
+and require repository access; they are not public code downloads.
+
 | Repository | Role in this report | Source snapshot |
 | --- | --- | --- |
 | [Original research manuscript](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska) | Original manuscript, architecture diagrams, historical evaluation and optimization plots | `de6eed63d368381e6251ccc6a8c7dd4c756a8976` |
