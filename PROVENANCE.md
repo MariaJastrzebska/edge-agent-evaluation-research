@@ -1,6 +1,6 @@
-# Evidence ledger
+# Data and sources
 
-Most of the original research and development took place in **2025**, with further work in early 2026. This repository summary was assembled and published on **18 October 2026**. The publication date does not date the original research; subsequent studies are labeled separately.
+I carried out most of the original research in **2025** and continued the work in early 2026. I published this summary on **18 October 2026**. I list later experiments separately.
 
 ## Source snapshots
 
@@ -10,7 +10,7 @@ Most of the original research and development took place in **2025**, with furth
 | Edge-LLM-Lab | `d871920a363acb46a9fb2574f9d5e3fae1d71960` | Later methodology, synthetic routing study, and capture/scoring integration |
 | fed-mobile | `1d415748c3c9170cc7693cd0e6e403c90f4c8113` | Application architecture and separation of application from evaluation tooling |
 
-The original manuscript's source repository is [available here](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/tree/de6eed63d368381e6251ccc6a8c7dd4c756a8976). Its repository name is retained in this source link so the provenance remains independently inspectable.
+The original manuscript's source repository is [available here](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/tree/de6eed63d368381e6251ccc6a8c7dd4c756a8976).
 
 ## Numeric sources
 
@@ -22,14 +22,14 @@ The figures are redrawn from these CSVs using `scripts/render_figures.py`. No pr
 
 ## Dates and attribution
 
-- Most of the original research was carried out in 2025, as confirmed by the author, with further work in early 2026.
+- I carried out most of the original research in 2025, with further work in early 2026.
 
 - Historical figure filenames include `2025-10-08_08-02-40`. A filename is artifact-level evidence, not a verified project commencement date.
 - Available manuscript Git history begins with an import on 17 January 2026 and continues through 23 February 2026. Earlier work can predate the import.
 - Repository decision records date the application/laboratory separation to 10 August 2026.
 - The synthetic thread study is dated 17 October 2026 and is explicitly separated from the original work.
 
-The report is a retrospective synthesis prepared with AI-assisted drafting and figure scripting from the author's research materials. It is not a newly peer-reviewed publication or a new run of the historical experiments.
+I used the existing results to prepare this summary and redraw two overview figures. I did not rerun the historical experiments.
 
 ## Boundaries on interpretation
 
@@ -41,8 +41,8 @@ The report is a retrospective synthesis prepared with AI-assisted drafting and f
 - The August 2026 prompt/schema mismatch is a later evaluation lesson, not retroactively assigned to all original experiments.
 - Federated adaptation, persistent authorization testing, automotive security, and replication/containment experiments are not claimed as completed results here.
 
-## Expanded dossier and original images
+## Original images
 
-On 18 October 2026 the report was expanded with detailed chapter synthesis, a repository map, an annotated gallery, a 46-configuration index, and a dated retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 study plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
+When publishing this summary, I included the detailed methods, a repository map, an annotated gallery, the 46-configuration index, and my retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 study plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
 
-The model-comparison table in the detailed report is transcribed from the displayed historical figures, not from the differing numbers in the manuscript conclusion. Those discrepancies are explicitly discussed. Dates embedded in diagram/plot filenames are artifact labels, not independently verified experiment timestamps. The closing first-person reflection is proposed wording grounded in source review, rather than a contemporaneous quotation from the author.
+The model-comparison table in the detailed report is transcribed from the displayed historical figures, not from the differing numbers in the manuscript conclusion. Those discrepancies are explicitly discussed. Dates embedded in diagram/plot filenames are artifact labels, not independently verified experiment timestamps.

@@ -5,15 +5,15 @@
 Most of this work was carried out in **2025**. This repository publishes the research summary in **October 2026**, with a retrospective assessment and clearly separated follow-up studies.
 
 
-## Expanded research dossier
+## About this project
 
-This repository now includes a detailed account of the research project, 34 original research/application images, two redrawn summary figures, source links, and an assessment in hindsight. Original research and later experiments are kept separate.
+I have collected the methods, results, original figures, and code links here, along with what I would do differently now. The original research and later experiments are presented separately.
 
 - [Detailed research report: architecture, evaluation, results, and limitations](docs/RESEARCH_REPORT.md)
 - [Annotated gallery of 34 original figures](docs/FIGURE_GALLERY.md)
 - [All 46 runtime configuration labels](docs/RUNTIME_CONFIGURATIONS.md)
-- [Author repositories, pinned manuscript chapters, and upstream tools](docs/REPOSITORIES.md)
-- [Research experience and relevance to the Anthropic Fellows Program](docs/RESEARCH_FIT.md)
+- [My repositories, original write-up, and tools](docs/REPOSITORIES.md)
+- [Why I want to work on agent evaluation and safety](docs/RESEARCH_FIT.md)
 - [Dates, lessons learned, and what I would do differently](docs/RETROSPECTIVE.md)
 
 **Timeline:** most research and development took place in **2025**, with further work in early 2026. This summary was published on 18 October 2026. August and October 2026 studies are subsequent work and are presented separately.
@@ -190,6 +190,6 @@ The main contribution is an experimental bridge between a small local model and 
 
 ## Lessons learned, in hindsight
 
-The project is strongest as research engineering: connecting a local agent prototype to a task-specific evaluator and systems measurements. Its original evidence is narrower than claims of clinical reliability, guaranteed privacy, or a universal optimization mechanism. A stronger next study would validate the task contract, prioritize correct end-to-end behavior, include simple baselines, and repeat controlled measurements on the target device.
+What I value most in this project is the connection between the local prototype, the evaluator, and the systems measurements. Looking back, I would narrow the research question earlier and be more careful about how far the results generalize. I would validate the task contract first, test complete conversations, add simple baselines, and repeat controlled measurements on the target device.
 
-Read the [dated retrospective and proposed author reflection](docs/RETROSPECTIVE.md) for the complete assessment and a concrete redesign of the study.
+Read the [retrospective](docs/RETROSPECTIVE.md) for what I learned and how I would redesign the study.

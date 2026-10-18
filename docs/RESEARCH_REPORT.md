@@ -19,14 +19,14 @@ The work connects systems engineering with empirical model evaluation. A respons
 - [Runtime optimization](#runtime-optimization)
 - [Evidence limitations and reconciliation](#reconciling-the-source-material)
 - [Later studies, kept separate](#later-research-and-methodological-development)
-- [Research qualifications and proposed next project](RESEARCH_FIT.md)
+- [My next research direction](RESEARCH_FIT.md)
 - [Complete annotated figure gallery](FIGURE_GALLERY.md)
 
 ## Research scope and contributions
 
 The study addresses four linked problems. First, a conversational application must turn user statements into persistent, typed state. Second, small models need to be evaluated on that task rather than selected solely from general language benchmarks. Third, the device must sustain inference under memory and latency constraints. Fourth, an implementation must expose failures clearly enough to guide the next experiment.
 
-The implemented application uses Flutter/Dart, local model execution through fllama and llama.cpp, GGUF model files, and SQLite state. A separate Python evaluation environment runs model comparisons, extracts response fields, computes automatic metrics, collects resource measurements, and records experiments. The manuscript describes Neptune.ai tracking. These are complementary contributions: the mobile application provides a concrete deployment problem, while the laboratory makes configurations comparable and failures inspectable.
+I built the application using Flutter/Dart, local model execution through fllama and llama.cpp, GGUF model files, and SQLite state. A separate Python evaluation environment runs model comparisons, extracts response fields, computes automatic metrics, collects resource measurements, and records experiments. I used Neptune.ai to track experiments. These are complementary contributions: the mobile application provides a concrete deployment problem, while the laboratory makes configurations comparable and failures inspectable.
 
 The main comparative experiments use **ConstantDataAgent**, the agent responsible for relatively stable patient information. The application architecture contains other agents, but the presence of those components is not evidence that all were evaluated equally. Specialized clinical dialogue and fine-tuning remain outside the demonstrated performance study.
 
@@ -38,7 +38,7 @@ The theoretical chapters discuss decoder-only Transformers, agent architectures,
 
 *Original study architecture diagram. This illustrates the designed application flow, not measured success rates for every agent.*
 
-The system divides information collection into bounded roles rather than asking one model to conduct an unrestricted interview. The manuscript describes a coordinating agent, a constant-data agent, an agent for fluctuating data and lifestyle, an agent for periodic laboratory information, and a validation agent. Each role has instructions and a data contract. The coordinator selects the relevant stage; specialized agents collect and update the fields appropriate to that stage.
+The system divides information collection into bounded roles rather than asking one model to conduct an unrestricted interview. I divided the workflow between a coordinating agent, a constant-data agent, an agent for fluctuating data and lifestyle, an agent for periodic laboratory information, and a validation agent. Each role has instructions and a data contract. The coordinator selects the relevant stage; specialized agents collect and update the fields appropriate to that stage.
 
 | Component | Responsibility | Evaluation interpretation |
 | --- | --- | --- |
@@ -64,15 +64,15 @@ SQLite supplies persistent state. The application retrieves relevant existing re
 
 ![Original validation flow](../figures/original/validation-flow.png)
 
-The manuscript describes collection, local validation, structural validation, and semantic/user review. Structural checks concern field presence, types, and allowed values. User review allows confirmation, correction, or rejection before durable storage. The design is valuable because it makes the transition from generated text to application state explicit. It does not by itself show that every mistaken or unauthorized update is blocked.
+I designed the flow around collection, local validation, structural validation, and user review. Structural checks concern field presence, types, and allowed values. User review allows confirmation, correction, or rejection before durable storage. The design is valuable because it makes the transition from generated text to application state explicit. It does not by itself show that every mistaken or unauthorized update is blocked.
 
 The prototype deliberately avoids a vector-retrieval subsystem. Structured local storage serves the information-collection task, and adding RAG would introduce an additional memory footprint and retrieval behavior to evaluate. This is an engineering scope decision; the work does not demonstrate that RAG is generally unsuitable for mobile systems.
 
 ### Deployment decisions and observed interaction problems
 
-The manuscript describes preliminary experiments with Ollama and Transformers, and conversion attempts involving ONNX, Core ML, and TensorFlow Lite. The selected deployment route uses GGUF and llama.cpp through fllama. Conversion problems for larger artifacts helped motivate that choice. These observations are specific to the attempted versions and models, rather than a general impossibility result for alternative runtimes.
+I first experimented with Ollama and Transformers, and tried conversion routes involving ONNX, Core ML, and TensorFlow Lite. The selected deployment route uses GGUF and llama.cpp through fllama. Conversion problems for larger artifacts helped motivate that choice. These observations are specific to the attempted versions and models, rather than a general impossibility result for alternative runtimes.
 
-The author also reports modifying fllama integration, including bindings, logging, and error handling. That is evidence of work across the application/runtime boundary; it should not be represented as an upstream contribution without an associated upstream change.
+I also modified the fllama integration, including bindings, logging, and error handling. These were changes for my application; I am not presenting them as contributions merged upstream.
 
 An especially useful observation concerns **time to visible output**. The model may generate metadata before the user-facing `response` field. If only that field is streamed, generation can have started while the user still sees no useful reply. Faster token generation and a responsive interface are therefore related but distinct objectives. This motivates measuring time to the first user-visible answer, alongside total request time and throughput.
 
@@ -82,7 +82,7 @@ The source reports increasing context as another source of inconsistent extracti
 
 ### Reference-based evaluation
 
-Reference conversations were constructed interactively with a larger model, using the agent prompt and structured response format. The author manually supplied simulated patient replies and reviewed/corrected the resulting references. The benchmark is synthetic. There is no basis here to describe it as a clinician-validated patient dataset.
+Reference conversations were constructed interactively with a larger model, using the agent prompt and structured response format. I manually supplied the simulated patient replies and reviewed and corrected the resulting references. I used synthetic conversations, without clinician validation or real patient data.
 
 For a particular turn, the tested model receives the prompt and the relevant reference-conversation context, including a sliding window where configured. Its output is compared with the reference for that turn. This gives relatively controlled inputs across configurations and helps localize field-level differences.
 
@@ -90,7 +90,7 @@ However, the reference prefix also changes the question being measured. A model 
 
 ### Evaluation without a fixed answer
 
-The manuscript also describes a GPT-4o patient simulator responding dynamically to the evaluated agent. Profiles include ordinary cases, inconsistent information, and missing data. In this mode, the evaluator considers adherence to instructions, collection progress, and extracted information against the intended scenario rather than requiring one fixed response.
+I also used a GPT-4o patient simulator to respond dynamically to the evaluated agent. Profiles include ordinary cases, inconsistent information, and missing data. In this mode, the evaluator considers adherence to instructions, collection progress, and extracted information against the intended scenario rather than requiring one fixed response.
 
 This can expose behaviors that scripted references miss, but creates another dependency: the simulator and judge may share assumptions and blind spots. A model-based patient is not equivalent to a real user, and simulated medical dialogue is not a clinical study. The present report does not invent aggregate success rates for this mode when comparable results are not provided.
 
@@ -138,7 +138,7 @@ Qwen and Llama have similar displayed quality and latency, while their reported 
 
 ![Historical power comparison](../figures/original/model-power.png)
 
-The main performance measurements were made on a **MacBook Air**. The manuscript separately reports qualitative deployment checks on an **iPhone 15 Pro**, including syntactic stability over a longer dialogue. The desktop plots should not be relabeled as phone benchmarks. In particular, drawing an 8 GB phone reference line over desktop RAM measurements is a deployment heuristic, not an on-phone measurement or a guaranteed process-memory allowance.
+The main performance measurements were made on a **MacBook Air**. I separately checked deployment on an **iPhone 15 Pro**, including syntactic stability over a longer dialogue. The desktop plots should not be relabeled as phone benchmarks. In particular, drawing an 8 GB phone reference line over desktop RAM measurements is a deployment heuristic, not an on-phone measurement or a guaranteed process-memory allowance.
 
 ### Resource trajectories
 
@@ -212,15 +212,15 @@ A retrospective report should preserve evidence rather than silently force every
 
 | Source issue | Treatment in this report |
 | --- | --- |
-| Conclusion recommends Granite 3.2 Q4_K_M with score 7.82; displayed comparison labels Granite 3.2 Q8_0 with score 8.92 | Treat these as different source claims/configurations; do not attribute the Q8 plot to Q4 |
-| Conclusion mentions Qwen score 9.15; displayed model-score plot gives 9.08 | Use 9.08 when discussing that plot; do not average or reconcile without underlying run records |
-| Narrative describes some power values as energy | Preserve numerical units: mW is power, joules is energy |
-| “Mobile” figures derive from desktop performance measurements | Label desktop measurements and qualitative phone checks separately |
-| Some captions imply a gain or mechanism more strongly than the plotted series support | Describe the plotted observations and state the additional measurement needed |
-| Strong privacy, reasoning, or reliability wording in the original narrative | Replace absolute claims with the specific architecture or evaluation outcome supported |
-| Template examples and illustrative literature diagrams coexist with research figures | Exclude template material from the results gallery; original research images retain provenance |
+| Conclusion recommends Granite 3.2 Q4_K_M with score 7.82; displayed comparison labels Granite 3.2 Q8_0 with score 8.92 | I keep these configurations separate and do not attribute the Q8 plot to Q4 |
+| Conclusion mentions Qwen score 9.15; displayed model-score plot gives 9.08 | I use 9.08 for this plot; resolving the difference requires the underlying run records |
+| Narrative describes some power values as energy | I retain the original units: mW is power, joules is energy |
+| “Mobile” figures derive from desktop performance measurements | I distinguish desktop measurements from qualitative phone checks |
+| Some captions imply a gain or mechanism more strongly than the plotted series support | I describe what is plotted and what I would need to measure to test the explanation |
+| Strong privacy, reasoning, or reliability wording in the original narrative | I limit the conclusion to the architecture or outcome I actually evaluated |
+| Template examples and illustrative literature diagrams coexist with research figures | I leave out template material and link each research image to its source |
 
-These qualifications do not erase the engineering contribution. They make the report useful to a research reviewer: an experiment's value includes what it reveals about its own measurement design.
+Revisiting these inconsistencies changed how I read my own results. I now keep each number tied to its run and configuration, and distinguish observations from explanations that still need testing.
 
 ## Later research and methodological development
 
@@ -254,16 +254,16 @@ The study measures structured routing agreement. It does not execute real medica
 
 The study demonstrates the construction of a local conversational prototype and a task-specific evaluation workflow, followed by empirical comparisons of model configurations and runtime settings. It shows why deployment decisions need quality, latency, memory, and output structure together. It also provides concrete failure examples and reusable artifacts that make the work reviewable.
 
-The next methodological step is to evaluate complete trajectories with independently checked outcomes, explicit baselines, repeated randomized measurements, and a clear distinction between generated suggestions and executed actions. For a safety-oriented project, the proposed extension is a multi-turn permission-boundary benchmark with synthetic tools and state. The [research-fit note](RESEARCH_FIT.md) specifies that proposal and explains which qualifications the completed work supports.
+The next methodological step is to evaluate complete trajectories with independently checked outcomes, explicit baselines, repeated randomized measurements, and a clear distinction between generated suggestions and executed actions. For a safety-oriented project, the proposed extension is a multi-turn permission-boundary benchmark with synthetic tools and state. I describe that direction in [why I want to work on agent evaluation and safety](RESEARCH_FIT.md).
 
 ## Source trail
 
 Primary evidence: [manuscript](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/tree/de6eed63d368381e6251ccc6a8c7dd4c756a8976), especially the application, evaluation, and optimization chapters linked in [the repository map](REPOSITORIES.md). The [evidence ledger](../PROVENANCE.md) fixes source revisions and dates. The [figure manifest](../data/figure-manifest.json) records source paths and SHA-256 hashes for every copied image. The [gallery](FIGURE_GALLERY.md) supplies per-image descriptions and interpretation limits.
 
-This report was prepared with AI-assisted synthesis from the author's materials. No historical experiment was rerun for this document; no new clinical or security validation is claimed.
+I have brought the existing results together here; I did not rerun the historical experiments for this summary.
 
 ## Lessons learned and assessment in hindsight
 
-The strongest contribution is the integrated application and evaluation workflow. The main limitation is that some original conclusions extend beyond the narrow synthetic task and descriptive measurements. Today I would validate the benchmark contract first, define success at the complete-task level, add simple baselines and closed-loop conversations, and run a smaller controlled matrix with repeated measurements on the target device.
+For me, the most valuable part was connecting the application to an evaluation workflow. Looking back, some of my original conclusions were broader than the synthetic task and measurements could support. Today I would validate the benchmark contract first, define success at the complete-task level, add simple baselines and closed-loop conversations, and run a smaller controlled matrix with repeated measurements on the target device.
 
-The full closing [retrospective](RETROSPECTIVE.md) records the project timeline, ten concrete lessons, an independent assessment of strengths and weaknesses, and a proposed first-person reflection.
+In the [retrospective](RETROSPECTIVE.md), I go through the timeline, what I learned, and how I would approach the experiments differently now.

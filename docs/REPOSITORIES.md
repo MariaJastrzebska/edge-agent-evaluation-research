@@ -1,6 +1,6 @@
 # Repository and source map
 
-## Author's research repositories
+## My research repositories
 
 | Repository | Role in this report | Source snapshot |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ All links below pin the manuscript revision used for this report.
 
 ## Upstream tools and related repositories
 
-These are dependencies or background resources, not repositories authored by Maria. Their inclusion does not imply contribution to upstream projects.
+These are the tools and background resources I used or discussed. I list their roles below; using them does not mean I contributed to the upstream projects.
 
 | Repository | Relationship to the work |
 | --- | --- |

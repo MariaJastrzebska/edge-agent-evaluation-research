@@ -1,46 +1,31 @@
-# Research experience and relevance to the Anthropic Fellows Program
+# Why I want to work on agent evaluation and safety
 
-Prepared 18 October 2026 against the [AI Safety & Security Fellows Program description](https://job-boards.greenhouse.io/anthropic/jobs/5183044008). This is an evidence-based positioning note, not a claim of prior frontier-model safety research.
+I started this project with a practical question: could a small model running locally collect useful information over a conversation? I built a Flutter prototype and Python evaluation tooling, then compared model behavior, quantization settings, and runtime costs. Most of that work took place in 2025, with further work in early 2026. I am publishing the summary in October 2026, alongside later experiments and what I learned from revisiting the results.
 
-## Research profile
+What interests me most now is the gap between an output that looks correct and an agent that actually completes a task correctly. I saw responses that passed structural checks while getting argument values wrong. I also saw why per-turn scores could miss errors that accumulate across a conversation. Those problems led me toward evaluating actions, state changes, and permission boundaries.
 
-The underlying research was carried out primarily in **2025**, with further work in early 2026. October 2026 dates this public summary and retrospective, not the original project. Subsequent laboratory studies are identified separately.
+## What I bring from this work
 
-Maria Magdalena Jastrzębska's work combines a locally running conversational prototype with Python tooling for model evaluation, comparative experiments, and resource measurement. The substantive connection to safety research is the difficulty of evaluating an agent that produces structured decisions over several turns: syntax, correct values, appropriate behavior, useful task completion, and permitted actions require different checks.
+I have worked across the application and evaluation layers: local inference through llama.cpp, structured response contracts, Python scoring, experiment records, and resource measurements. Building both sides helped me notice problems that an isolated benchmark would miss, such as the delay before a user sees useful content when the model generates metadata first.
 
-The strongest application narrative is **experience building and investigating an evaluation system, followed by increasingly careful interpretation of its failure modes**. The study provides evidence of implementation and empirical analysis. The later studies add small reproducible evaluation artifacts and expose issues such as weak baselines and inconsistent prompt/schema contracts. Neither should be inflated into demonstrated security containment or clinical validation.
+The configuration experiments also taught me to be careful about explanations. Finding a faster combination is useful, but it does not tell me which change caused the improvement. Comparing models is similarly difficult when their prompts, output lengths, and failure behavior differ. I want my next experiments to make those distinctions explicit from the start.
 
-## Evidence mapped to the role
+My experience is primarily with small models and task-specific evaluation. I have not established that the results generalize to frontier models, and the medical setting was an information-collection use case, not a clinical validation study. What I can build on is the evaluation infrastructure and the experience of diagnosing where its metrics fall short.
 
-| Program interest or requirement | Evidence from this project | Honest scope |
-| --- | --- | --- |
-| Python fluency and empirical implementation | Evaluation harness, response parsing, metrics, experiment records, scoring and plotting | Review implementation in Edge-LLM-Lab; this report is the navigation layer |
-| Working with open models | GGUF/llama.cpp deployment, model/quantization comparisons, runtime controls | Primarily small models; findings do not automatically transfer to frontier systems |
-| Designing and analyzing experiments | Quality/runtime comparisons and round-level analysis | Historical sweeps need stronger causal controls and uncertainty analysis |
-| Agent evaluation | Structured outputs, multi-turn references, argument checks, later record/clarify/decline cases | Reference agreement differs from successful closed-loop execution |
-| Adversarial robustness and AI control | Motivation and infrastructure for future permission-boundary experiments | Existing routing cases are not a completed robustness or containment demonstration |
-| Scalable oversight | Experience using model judges and inspecting disagreements with deterministic checks | No demonstrated scalable-oversight method; judge calibration remains a necessary next step |
-| Clear public research output | Source-linked report, original figures, manifest and evidence ledger | Retrospective portfolio artifact, not a peer-reviewed paper |
-| Ownership of ambiguous technical problems | Application/runtime integration and empirical debugging across quality/resource constraints | Does not establish offensive-security, CVE, or mechanistic-interpretability experience |
+This is the connection I see to the [Anthropic AI Safety & Security Fellows Program](https://job-boards.greenhouse.io/anthropic/jobs/5183044008): I want to use that engineering experience to investigate a narrow, measurable question about agent behavior, and produce results that other researchers can inspect and reproduce.
 
-The job description also includes location and work-authorization requirements. This repository does not make claims about the author's eligibility. It documents research evidence, not application logistics.
+## The question I would investigate next
 
-## Suggested project direction: persistent permission boundaries
+**Can an agent preserve permissions and confirmed state throughout a multi-turn task without becoming so restrictive that it stops being useful?**
 
-**Question:** How often does an agent preserve explicit permissions and confirmed state across a multi-turn conversation, and how much useful behavior is lost when enforcement becomes stricter?
+I would start with synthetic records and mock tools. The cases would include ordinary updates that should succeed, missing information that requires clarification, user corrections, conflicting statements, and attempts to override instructions or send data to an unauthorized destination.
 
-A feasible first project would use synthetic records and mock tools. It would include benign tasks that should succeed, clarification cases, explicit user corrections, conflicting statements, attempts to override the system's role, and attempts to move data to an unavailable or unauthorized destination. No real patient data or external side effects are needed.
+I would compare a prompt-only policy with permissions enforced by the application. For selected actions, I would also test an approval step. An always-decline baseline and a simple deterministic policy would help distinguish useful protection from a system that merely refuses everything.
 
-Compare a prompt-only policy with application-enforced permissions, and optionally an approval-required condition for selected actions. Include an always-decline baseline and a simple deterministic policy for tasks it can handle. The aim is to find a useful safety/utility trade-off, not reward blanket refusal.
+The evaluator would inspect both the proposed tool call and the state change that actually occurred. I would measure unauthorized actions, disclosures in observable outputs, successful permitted tasks, and appropriate clarification. Retries, dialogue length, latency, and energy would provide the cost side of the comparison.
 
-The evaluator should inspect both the proposed tool call and the executed state transition. Primary outcomes would include unauthorized executed actions, unauthorized disclosures in observable outputs, correct permitted task completion, and appropriate clarification. Secondary outcomes would include retries, dialogue length, latency, and energy where measurement is available. A valid JSON action is not the success criterion.
+I would freeze a held-out set before tuning prompts, use paired benign and adversarial cases, retain complete trajectories, and repeat measurements. An ablation would separate the model's compliance with instructions from the application's ability to block a disallowed operation.
 
-Freeze a held-out test set before tuning prompts. Use paired benign/adversarial variants and repeated runs, retain complete trajectories, randomize runtime conditions, and specify the statistical unit. An ablation should distinguish the model's behavioral compliance from the enforcement layer's ability to block a disallowed operation.
+I have not run this experiment yet. I would first validate the task contract and scorer, establish baselines, inspect failures, and then test one targeted intervention on held-out cases. That is the direction I want to take the work: fewer loosely connected comparisons, and a stronger answer to a specific question.
 
-A four-month project could proceed from a narrow threat model and validated scorer, to baseline measurements and failure analysis, to one targeted intervention, and finally to held-out evaluation and a public report. This is a **proposal**, not a description of completed research.
-
-## Suggested application wording
-
-> My research project combined a local conversational-agent prototype with a Python evaluation framework for small language models. I compared structured-response quality and runtime behavior across model, quantization, and inference configurations, and investigated failures that aggregate scores could hide. The work taught me to separate parseability from correct actions, per-turn agreement from complete-task success, and observed performance differences from causal explanations. I now want to apply that experience to controlled evaluations of agent behavior and permission boundaries, with explicit safety and utility baselines.
-
-This wording deliberately emphasizes demonstrated work and research growth. The detailed [retrospective](RETROSPECTIVE.md) explains the changes that would make the next study stronger.
+My [retrospective](RETROSPECTIVE.md) explains the lessons behind that choice. The [repository map](REPOSITORIES.md) links the implementation and experimental artifacts.

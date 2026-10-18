@@ -2,13 +2,13 @@
 
 **Original research: primarily 2025, with further work in early 2026 · Retrospective and repository publication: October 2026.**
 
-Assessment prepared **18 October 2026**, looking back on the earlier research. The author confirms the main research period; source artifacts provide additional chronological detail. This is a retrospective interpretation, not a claim that the original study was designed with every distinction below already resolved. First-person passages are proposed wording for the author's review.
+I wrote these reflections in October 2026, looking back on work I carried out mainly in 2025 and continued in early 2026. Some of the most useful lessons became clearer when I revisited the results and worked on the later experiments.
 
 ## When the work was created
 
 | Date or period | What the evidence establishes | What it does not establish |
 | --- | --- | --- |
-| 2025 | Most research and development took place during this year, as confirmed by the author | An exact project start day |
+| 2025 | Most research and development took place during this year | An exact project start day |
 | 13 August 2025 | Application-flow and validation image filenames contain `2025-08-13` | A verified project start date or an immutable creation timestamp |
 | 8 October 2025 | Quantization figure filenames contain `2025-10-08_08-02-40` | That every study experiment ran on this date |
 | 17 January 2026 | First available manuscript commit, `00eaa30`, is labeled “Initial Overleaf Import” | That research began on the import date; the earlier artifacts predate it |
@@ -20,28 +20,23 @@ Assessment prepared **18 October 2026**, looking back on the earlier research. T
 | 17 October 2026 | Later synthetic routing/thread study | A rerun of the original Apple Silicon experiments |
 | 18 October 2026 | This expanded report, figure curation, and retrospective assessment | A new execution of the historical experiments |
 
-**Most of the original research was completed in 2025, with manuscript revisions in early 2026.** This summary and retrospective were published in October 2026. The August and October 2026 studies are separate follow-up work. The main research period comes from the author; source-file and Git dates document individual artifacts. No exact project start day is inferred.
+**Most of the original research was completed in 2025, with manuscript revisions in early 2026.** This summary and retrospective were published in October 2026. The August and October 2026 studies are separate follow-up work. The dates in filenames and Git history below refer to individual artifacts, rather than the start of the whole project.
 
 Dates from filenames are weaker evidence than version history. Git timestamps also describe recorded source history rather than independently certified experiment execution. The [evidence ledger](../PROVENANCE.md) fixes the revisions used for this report.
 
-## Overall assessment
+## How I see the work now
 
-**This is a substantive engineering-and-evaluation project whose strongest contribution is the integrated research workflow, rather than a new model or a conclusively established optimization mechanism.** The work connects a real implementation problem to model behavior and hardware constraints. Building the application, schemas, evaluator, comparison machinery, and plots required more than running a benchmark command.
+The part I value most is that I built the whole path from a local application to an evaluation workflow. I could change a model or runtime setting, inspect the resulting responses, and compare quality with latency and resource use. Working on the application also exposed problems that I would not have noticed from scores alone.
 
-The most persuasive evidence is concrete: the local prototype, the structured response contract, the ability to compare configurations, examples where different correctness metrics disagree, and observed quality/runtime trade-offs. These artifacts show technical ownership and an ability to investigate a system at multiple layers.
+I was less careful about the scope of some conclusions. The experiments were useful for comparing configurations on my task, but they did not establish clinical reliability or explain every performance difference. I would now separate those claims much more clearly. A model judge gave me a practical way to inspect many responses; it did not turn those judgments into ground truth.
 
-The weakest part is the distance between some observations and the original narrative's claims. A synthetic, narrow-agent evaluation cannot establish clinical reliability. A desktop power trace cannot establish phone battery performance. A configuration sweep cannot by itself explain the causal mechanism behind a speedup. A model judge is useful evidence, but does not make the assessment objective ground truth.
+I also spent more effort expanding the configuration matrix than isolating a small number of hypotheses. The broad comparisons helped me find promising settings. To explain why those settings worked, I would need a more controlled follow-up experiment, with repeated measurements and a held-out set.
 
-This distinction matters more than assigning the study a numerical research score. As a research portfolio, it supports claims about implementation, empirical investigation, and learning from measurement limitations. As a standalone publishable causal study, it would require a narrower question, stronger controls, clearer provenance for every numerical claim, and more complete uncertainty and failure analysis. Novelty would also need a dedicated literature assessment; it is not established by the size of the implementation.
+## What I would keep
 
-## What was worth keeping
+I would keep the concrete information-collection task, the explicit state contract, and the combination of quality and systems measurements. They made failures visible: a response could be valid JSON and still contain the wrong values, or finish quickly without doing useful work.
 
-1. **A concrete task instead of generic chat quality.** Collecting structured information exposes missing fields, incorrect values, and state transitions. This makes failures more actionable than broad impressions of fluency.
-2. **An implemented deployment setting.** The application revealed problems such as delayed user-visible output and context-management costs that an isolated generation benchmark could miss.
-3. **Several evaluation dimensions.** The single-turn plot shows why JSON validity, argument correctness, and judge scores must remain separate. That distinction is directly useful in agent evaluation.
-4. **Quality alongside systems measurements.** Fast low-quality responses are not a successful optimization. Keeping both axes avoids selecting a model merely because it returns quickly.
-5. **Artifacts that can be revisited.** Source, plots, and later recorded captures support retrospective inspection. The present manifest and source map make that inspection easier.
-6. **Willingness to revise the claim.** The later prompt/schema audit and refusal-only baseline illustrate useful research habits: checking the evaluator and asking whether a simple policy explains an apparently favorable result.
+I would also keep the application as part of the research setup. It helped me distinguish token-generation speed from the time before the user sees an answer. And I would keep the raw outputs and experiment records: being able to revisit them has been more useful than relying on my original summary alone.
 
 ## Lessons learned
 
@@ -121,12 +116,12 @@ I would retain the prototype and laboratory, but begin with a smaller, more deci
 
 This design would likely test fewer configurations at first, but produce a stronger answer to a more important question.
 
-## Proposed first-person closing reflection
+## What I take forward
 
-> Looking back, the most valuable part of my study was building the complete path from a local agent prototype to an evaluation workflow and observing where apparently good metrics broke down. I learned that valid JSON is not the same as correct information, that a high judge score is not clinical validation, and that a runtime speedup needs to be interpreted alongside the work performed and the quality preserved.
->
-> If I started again, I would narrow the research question earlier, validate the benchmark contract before expanding the experiment matrix, and evaluate complete conversations in addition to isolated turns. I would use stronger baselines, repeat and randomize measurements, and separate target-device evidence from desktop observations. I would also be more precise about which findings are descriptive and which support a causal explanation.
->
-> I see the project as a foundation in research engineering and empirical evaluation. Its limitations now give me a clearer direction: build experiments that distinguish successful, useful agent behavior from outputs that merely look correct, and make the limits of every conclusion visible.
+Looking back, the most valuable part of my study was building the complete path from a local agent prototype to an evaluation workflow and observing where apparently good metrics broke down. I learned that valid JSON is not the same as correct information, that a high judge score is not clinical validation, and that a runtime speedup needs to be interpreted alongside the work performed and the quality preserved.
 
-This reflection is a proposed articulation of lessons grounded in the reviewed work. It does not claim that the improved experiments have already been completed.
+If I started again, I would narrow the research question earlier, validate the benchmark contract before expanding the experiment matrix, and evaluate complete conversations in addition to isolated turns. I would use stronger baselines, repeat and randomize measurements, and separate target-device evidence from desktop observations. I would also be more precise about which findings are descriptive and which support a causal explanation.
+
+I see the project as a foundation in research engineering and empirical evaluation. Its limitations now give me a clearer direction: build experiments that distinguish successful, useful agent behavior from outputs that merely look correct, and make the limits of every conclusion visible.
+
+These changes describe how I would design the next study; I have not completed those experiments yet.
