@@ -1,6 +1,6 @@
 # Evidence ledger
 
-The author confirms that most thesis research and development took place in **2025** and the thesis was **defended in April 2026**. This repository summary was assembled and published on **18 October 2026**. The publication date does not date the original research; subsequent studies are labeled separately.
+Most of the original research and development took place in **2025**, with further work in early 2026. This repository summary was assembled and published on **18 October 2026**. The publication date does not date the original research; subsequent studies are labeled separately.
 
 ## Source snapshots
 
@@ -22,13 +22,12 @@ The figures are redrawn from these CSVs using `scripts/render_figures.py`. No pr
 
 ## Dates and attribution
 
-- Most thesis work was carried out in 2025; the defense took place in April 2026, as confirmed by the author. No exact day of defense is specified.
+- Most of the original research was carried out in 2025, as confirmed by the author, with further work in early 2026.
 
 - Historical figure filenames include `2025-10-08_08-02-40`. A filename is artifact-level evidence, not a verified project commencement date.
 - Available manuscript Git history begins with an import on 17 January 2026 and continues through 23 February 2026. Earlier work can predate the import.
 - Repository decision records date the application/laboratory separation to 10 August 2026.
 - The synthetic thread study is dated 17 October 2026 and is explicitly separated from the original work.
-- The author reports an academic assessment of 5.0/5.0. This is an author-supplied fact; this repository does not contain a grade certificate or claim journal/conference acceptance.
 
 The report is a retrospective synthesis prepared with AI-assisted drafting and figure scripting from the author's research materials. It is not a newly peer-reviewed publication or a new run of the historical experiments.
 
@@ -44,6 +43,6 @@ The report is a retrospective synthesis prepared with AI-assisted drafting and f
 
 ## Expanded dossier and original images
 
-On 18 October 2026 the report was expanded with detailed chapter synthesis, a repository map, an annotated gallery, a 46-configuration index, and a dated retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 thesis plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
+On 18 October 2026 the report was expanded with detailed chapter synthesis, a repository map, an annotated gallery, a 46-configuration index, and a dated retrospective. The [figure manifest](data/figure-manifest.json) records 34 byte-preserved originals: 26 study plots/architecture images and eight later-study plots. These differ from the two CSV-based redraws described above. Each gallery entry links the original at its recorded revision.
 
 The model-comparison table in the detailed report is transcribed from the displayed historical figures, not from the differing numbers in the manuscript conclusion. Those discrepancies are explicitly discussed. Dates embedded in diagram/plot filenames are artifact labels, not independently verified experiment timestamps. The closing first-person reflection is proposed wording grounded in source review, rather than a contemporaneous quotation from the author.

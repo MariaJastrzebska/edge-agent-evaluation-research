@@ -1,9 +1,9 @@
 # Small language models as local information-collection agents
 
-**Detailed master's thesis research summary — Maria Magdalena Jastrzębska**
-**Research conducted primarily in 2025 · Thesis defended April 2026**
+**Detailed research report — Maria Magdalena Jastrzębska**
+**Research conducted primarily in 2025, with further work in early 2026**
 
-Most of the research and development described here was completed in 2025, followed by thesis finalization in early 2026 and defense in April 2026. This English summary was published on 18 October 2026, together with a retrospective assessment. The publication date is not the date of the original research. Original manuscript and figure labels are predominantly Polish. Later August and October 2026 experiments are identified separately.
+Most of the research and development described here was completed in 2025, followed by further work and manuscript revisions in early 2026. This English summary was published on 18 October 2026, together with a retrospective assessment. The publication date is not the date of the original research. Original manuscript and figure labels are predominantly Polish. Later August and October 2026 experiments are identified separately.
 
 This project investigates a practical research question: **can a small, locally executed language model collect structured information across a conversation, with useful quality and acceptable resource costs?** A diabetes information-collection assistant provides the application setting. The contribution combines an application prototype, a Python evaluation framework, comparative model experiments, and runtime optimization. The strongest evidence concerns structured conversational behavior and inference performance, rather than diagnosis, clinical outcomes, or security guarantees.
 
@@ -24,7 +24,7 @@ The work connects systems engineering with empirical model evaluation. A respons
 
 ## Research scope and contributions
 
-The thesis addresses four linked problems. First, a conversational application must turn user statements into persistent, typed state. Second, small models need to be evaluated on that task rather than selected solely from general language benchmarks. Third, the device must sustain inference under memory and latency constraints. Fourth, an implementation must expose failures clearly enough to guide the next experiment.
+The study addresses four linked problems. First, a conversational application must turn user statements into persistent, typed state. Second, small models need to be evaluated on that task rather than selected solely from general language benchmarks. Third, the device must sustain inference under memory and latency constraints. Fourth, an implementation must expose failures clearly enough to guide the next experiment.
 
 The implemented application uses Flutter/Dart, local model execution through fllama and llama.cpp, GGUF model files, and SQLite state. A separate Python evaluation environment runs model comparisons, extracts response fields, computes automatic metrics, collects resource measurements, and records experiments. The manuscript describes Neptune.ai tracking. These are complementary contributions: the mobile application provides a concrete deployment problem, while the laboratory makes configurations comparable and failures inspectable.
 
@@ -36,13 +36,13 @@ The theoretical chapters discuss decoder-only Transformers, agent architectures,
 
 ![Original application flow](../figures/original/agent-flow.png)
 
-*Original thesis architecture diagram. This illustrates the designed application flow, not measured success rates for every agent.*
+*Original study architecture diagram. This illustrates the designed application flow, not measured success rates for every agent.*
 
 The system divides information collection into bounded roles rather than asking one model to conduct an unrestricted interview. The manuscript describes a coordinating agent, a constant-data agent, an agent for fluctuating data and lifestyle, an agent for periodic laboratory information, and a validation agent. Each role has instructions and a data contract. The coordinator selects the relevant stage; specialized agents collect and update the fields appropriate to that stage.
 
 | Component | Responsibility | Evaluation interpretation |
 | --- | --- | --- |
-| Coordinator | Direct the conversation to an appropriate collection stage | Part of the application design; no comprehensive routing benchmark is inferred from the thesis |
+| Coordinator | Direct the conversation to an appropriate collection stage | Part of the application design; no comprehensive routing benchmark is inferred from the study |
 | ConstantDataAgent | Collect and update stable information | Main scenario used for comparative performance experiments |
 | Fluctuating-data agent | Collect changing observations and lifestyle information | Broader prototype scope |
 | Periodic-data agent | Collect periodic laboratory information | Broader prototype scope, requiring domain-specific assessment |
@@ -117,7 +117,7 @@ The evaluation logs retain model responses and reference outputs along with turn
 
 ## Comparative model results
 
-The following numbers are transcribed from the supplied historical comparison figures. They belong to the displayed model configurations and run, not to every experiment mentioned in the thesis narrative.
+The following numbers are transcribed from the supplied historical comparison figures. They belong to the displayed model configurations and run, not to every experiment mentioned in the study narrative.
 
 | Configuration in the figures | Mean judge score / 10 | Mean request latency, s | Reported CPU power, mW |
 | --- | ---: | ---: | ---: |
@@ -156,7 +156,7 @@ The quantization experiments examine Granite 3.1 dense models with 2B and 8B par
 
 ![Judge-score distributions by quantization](../figures/original/quantization-scores.png)
 
-The historical plot shows substantial variation across turns/configurations. The thesis highlights Q4_1 as a promising 2B option and Q3_K_L as a potentially useful more compressed alternative. These are within-study observations. A higher sample median than FP16 does not show that quantization generally improves reasoning, and differences should not be promoted to statistically established superiority without a defined replication unit and uncertainty analysis.
+The historical plot shows substantial variation across turns/configurations. The study highlights Q4_1 as a promising 2B option and Q3_K_L as a potentially useful more compressed alternative. These are within-study observations. A higher sample median than FP16 does not show that quantization generally improves reasoning, and differences should not be promoted to statistically established superiority without a defined replication unit and uncertainty analysis.
 
 The 8B configurations generally occupy a higher region of the displayed judge-score plot, with runtime costs visible in the accompanying latency figures. This makes model size a deployment decision rather than a purely quality-driven choice. The most accurate configuration in the figure may not fit the intended latency or memory budget.
 
@@ -224,7 +224,7 @@ These qualifications do not erase the engineering contribution. They make the re
 
 ## Later research and methodological development
 
-The following studies belong to subsequent work in Edge-LLM-Lab. They must not be represented as results of the original thesis or pooled with the Apple Silicon optimization table.
+The following studies belong to subsequent work in Edge-LLM-Lab. They must not be represented as results of the original study or pooled with the Apple Silicon optimization table.
 
 ### August 2026 structured-output pilot
 
@@ -252,7 +252,7 @@ The study measures structured routing agreement. It does not execute real medica
 
 ## What the work establishes and what comes next
 
-The thesis demonstrates the construction of a local conversational prototype and a task-specific evaluation workflow, followed by empirical comparisons of model configurations and runtime settings. It shows why deployment decisions need quality, latency, memory, and output structure together. It also provides concrete failure examples and reusable artifacts that make the work reviewable.
+The study demonstrates the construction of a local conversational prototype and a task-specific evaluation workflow, followed by empirical comparisons of model configurations and runtime settings. It shows why deployment decisions need quality, latency, memory, and output structure together. It also provides concrete failure examples and reusable artifacts that make the work reviewable.
 
 The next methodological step is to evaluate complete trajectories with independently checked outcomes, explicit baselines, repeated randomized measurements, and a clear distinction between generated suggestions and executed actions. For a safety-oriented project, the proposed extension is a multi-turn permission-boundary benchmark with synthetic tools and state. The [research-fit note](RESEARCH_FIT.md) specifies that proposal and explains which qualifications the completed work supports.
 

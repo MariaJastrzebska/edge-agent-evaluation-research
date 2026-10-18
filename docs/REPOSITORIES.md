@@ -4,12 +4,12 @@
 
 | Repository | Role in this report | Source snapshot |
 | --- | --- | --- |
-| [Master's thesis](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska) | Original manuscript, architecture diagrams, historical evaluation and optimization plots | `de6eed63d368381e6251ccc6a8c7dd4c756a8976` |
+| [Original research manuscript](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska) | Original manuscript, architecture diagrams, historical evaluation and optimization plots | `de6eed63d368381e6251ccc6a8c7dd4c756a8976` |
 | [Edge-LLM-Lab](https://github.com/MariaJastrzebska/edge-llm-lab) | Python evaluation tooling, later research and replay/scoring evidence | `d871920a363acb46a9fb2574f9d5e3fae1d71960` |
 | [fed-mobile](https://github.com/MariaJastrzebska/fed-mobile) | Flutter application and local agent architecture | `1d415748c3c9170cc7693cd0e6e403c90f4c8113` |
 | [edge-agent-evaluation-research](https://github.com/MariaJastrzebska/edge-agent-evaluation-research) | This retrospective report, annotated gallery, data transcriptions and provenance | Current report; publication history is available in Git |
 
-The repositories have different purposes. Later laboratory work is not retroactively included in the thesis. A repository's name also does not establish completion of every topic it mentions: in particular, federated adaptation is not presented here as a completed experimental contribution.
+The repositories have different purposes. Later laboratory work is not retroactively included in the study. A repository's name also does not establish completion of every topic it mentions: in particular, federated adaptation is not presented here as a completed experimental contribution.
 
 ## Primary manuscript chapters
 
@@ -36,7 +36,7 @@ These are dependencies or background resources, not repositories authored by Mar
 | [Pydantic](https://github.com/pydantic/pydantic) | Schema definitions in the Python tooling |
 | [Ollama](https://github.com/ollama/ollama) | Preliminary model experimentation |
 | [Transformers](https://github.com/huggingface/transformers) | Preliminary model experimentation and model tooling |
-| [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | Later scoring integration; not part of the original thesis evidence |
+| [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | Later scoring integration; not part of the original study evidence |
 | [PyTorch](https://github.com/pytorch/pytorch) | Broader model tooling discussed in the manuscript |
 | [TensorFlow](https://github.com/tensorflow/tensorflow) | Alternative deployment/conversion ecosystem discussed |
 | [ONNX](https://github.com/onnx/onnx) | Conversion route explored in the manuscript |
@@ -44,6 +44,6 @@ These are dependencies or background resources, not repositories authored by Mar
 | [vLLM](https://github.com/vllm-project/vllm) | Background server-inference comparison, not the selected mobile runtime |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | Background agent orchestration, not the selected application runtime |
 | [PySyft](https://github.com/OpenMined/PySyft) | Background privacy/federated-learning discussion, not a completed experiment |
-| [EE-dyplom](https://github.com/SP5LMA/EE-dyplom) | LaTeX thesis template; template examples are not research evidence |
+| [EE-dyplom](https://github.com/SP5LMA/EE-dyplom) | LaTeX document template; template examples are not research evidence |
 
 For each reproduced research image, the [manifest](../data/figure-manifest.json) supplies its exact source repository, path, revision and hash. External repositories retain their respective licenses; no new blanket license is assigned to their materials by this report.

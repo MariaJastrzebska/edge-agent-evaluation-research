@@ -1,22 +1,22 @@
 # Evaluating Small Language Models for On-Device Medical Information Collection
 
-**Maria Magdalena Jastrzębska · Master’s thesis research, 2025–2026 · Defended April 2026**
+**Maria Magdalena Jastrzębska · Research conducted in 2025–2026**
 
-Most of this work was carried out in **2025**. This repository publishes the research summary in **October 2026**, with a retrospective assessment and clearly separated post-thesis follow-up studies.
+Most of this work was carried out in **2025**. This repository publishes the research summary in **October 2026**, with a retrospective assessment and clearly separated follow-up studies.
 
 
 ## Expanded research dossier
 
-This repository now includes a detailed account of the master's project, 34 original research/application images, two redrawn summary figures, source links, and an assessment in hindsight. Historical thesis work and later experiments are kept separate.
+This repository now includes a detailed account of the research project, 34 original research/application images, two redrawn summary figures, source links, and an assessment in hindsight. Original research and later experiments are kept separate.
 
-- [Detailed thesis report: architecture, evaluation, results, and limitations](docs/THESIS_REPORT.md)
+- [Detailed research report: architecture, evaluation, results, and limitations](docs/RESEARCH_REPORT.md)
 - [Annotated gallery of 34 original figures](docs/FIGURE_GALLERY.md)
 - [All 46 runtime configuration labels](docs/RUNTIME_CONFIGURATIONS.md)
 - [Author repositories, pinned manuscript chapters, and upstream tools](docs/REPOSITORIES.md)
 - [Research experience and relevance to the Anthropic Fellows Program](docs/RESEARCH_FIT.md)
 - [Dates, lessons learned, and what I would do differently](docs/RETROSPECTIVE.md)
 
-**Timeline:** most research and development took place in **2025**; the thesis was finalized in early 2026 and **defended in April 2026**. The summary was published here on 18 October 2026. August and October 2026 studies are subsequent work, not part of the defended thesis.
+**Timeline:** most research and development took place in **2025**, with further work in early 2026. This summary was published on 18 October 2026. August and October 2026 studies are subsequent work and are presented separately.
 
 *Multi-turn evaluation, structured tool use, inference trade-offs, and the path toward safety evaluations for local agents.*
 
@@ -158,15 +158,13 @@ Federated adaptation was an explored direction, not a completed federated-learni
 
 | Date or period | Evidence and scope |
 | --- | --- |
-| 2025 | Most thesis research and development took place during this year. |
+| 2025 | Most research and development took place during this year. |
 | 8 October 2025 | Historical experiment figure filenames carry this timestamp. This is artifact provenance, not proof of the project’s exact start date. |
 | 17 January–23 February 2026 | Available manuscript Git history spans the initial import and subsequent revisions. Import dates do not date all underlying experiments. |
-| April 2026 | Master’s thesis defended. |
 | 10 August 2026 onward | Repository records document separation of the mobile application from its maintained evaluation laboratory and subsequent methodology work. |
 | 17 October 2026 | Later synthetic routing/thread study and capture/scoring/Inspect integration reports. |
 | 18 October 2026 | This retrospective research report and redrawn summary figures were prepared. Historical experiments were not rerun for this article. |
 
-The underlying academic work received a **5.0/5.0 assessment**, as reported by the author. This article is a research report synthesizing that work and clearly dated subsequent development.
 
 ## Code and provenance
 

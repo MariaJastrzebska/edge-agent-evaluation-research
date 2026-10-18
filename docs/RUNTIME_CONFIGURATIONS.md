@@ -1,6 +1,6 @@
 # Runtime configuration index
 
-Verbatim labels from the thesis table of 46 configurations, transcribed into Markdown. These IDs apply to the full comparison, not automatically to selected-subset charts. Labels do not substitute for executable commands, exact runtime defaults, or versioned configuration files.
+Verbatim labels from the study table of 46 configurations, transcribed into Markdown. These IDs apply to the full comparison, not automatically to selected-subset charts. Labels do not substitute for executable commands, exact runtime defaults, or versioned configuration files.
 
 [Source chapter](https://github.com/MariaJastrzebska/praca-magisterska---M.-Jastrzebska/blob/de6eed63d368381e6251ccc6a8c7dd4c756a8976/tekst/rozdzialy/praktyka/optymalizacja.tex) · [Full chart](../figures/original/all-configurations.png)
 

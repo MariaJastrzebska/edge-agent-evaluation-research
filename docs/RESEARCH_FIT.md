@@ -4,11 +4,11 @@ Prepared 18 October 2026 against the [AI Safety & Security Fellows Program descr
 
 ## Research profile
 
-The underlying master’s research was carried out primarily in **2025**, and the thesis was **defended in April 2026**. October 2026 dates this public summary and retrospective, not the original project. Subsequent laboratory studies are identified separately.
+The underlying research was carried out primarily in **2025**, with further work in early 2026. October 2026 dates this public summary and retrospective, not the original project. Subsequent laboratory studies are identified separately.
 
 Maria Magdalena Jastrzębska's work combines a locally running conversational prototype with Python tooling for model evaluation, comparative experiments, and resource measurement. The substantive connection to safety research is the difficulty of evaluating an agent that produces structured decisions over several turns: syntax, correct values, appropriate behavior, useful task completion, and permitted actions require different checks.
 
-The strongest application narrative is **experience building and investigating an evaluation system, followed by increasingly careful interpretation of its failure modes**. The thesis provides evidence of implementation and empirical analysis. The later studies add small reproducible evaluation artifacts and expose issues such as weak baselines and inconsistent prompt/schema contracts. Neither should be inflated into demonstrated security containment or clinical validation.
+The strongest application narrative is **experience building and investigating an evaluation system, followed by increasingly careful interpretation of its failure modes**. The study provides evidence of implementation and empirical analysis. The later studies add small reproducible evaluation artifacts and expose issues such as weak baselines and inconsistent prompt/schema contracts. Neither should be inflated into demonstrated security containment or clinical validation.
 
 ## Evidence mapped to the role
 
@@ -41,6 +41,6 @@ A four-month project could proceed from a narrow threat model and validated scor
 
 ## Suggested application wording
 
-> My master's project combined a local conversational-agent prototype with a Python evaluation framework for small language models. I compared structured-response quality and runtime behavior across model, quantization, and inference configurations, and investigated failures that aggregate scores could hide. The work taught me to separate parseability from correct actions, per-turn agreement from complete-task success, and observed performance differences from causal explanations. I now want to apply that experience to controlled evaluations of agent behavior and permission boundaries, with explicit safety and utility baselines.
+> My research project combined a local conversational-agent prototype with a Python evaluation framework for small language models. I compared structured-response quality and runtime behavior across model, quantization, and inference configurations, and investigated failures that aggregate scores could hide. The work taught me to separate parseability from correct actions, per-turn agreement from complete-task success, and observed performance differences from causal explanations. I now want to apply that experience to controlled evaluations of agent behavior and permission boundaries, with explicit safety and utility baselines.
 
 This wording deliberately emphasizes demonstrated work and research growth. The detailed [retrospective](RETROSPECTIVE.md) explains the changes that would make the next study stronger.
