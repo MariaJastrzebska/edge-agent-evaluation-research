@@ -1,7 +1,9 @@
 # Small language models as local information-collection agents
 
 **Detailed master's thesis research summary — Maria Magdalena Jastrzębska**
-Retrospective synthesis, 18 October 2026. Written in English for research reviewers; original manuscript and figure labels are predominantly Polish.
+**Research conducted primarily in 2025 · Thesis defended April 2026**
+
+Most of the research and development described here was completed in 2025, followed by thesis finalization in early 2026 and defense in April 2026. This English summary was published on 18 October 2026, together with a retrospective assessment. The publication date is not the date of the original research. Original manuscript and figure labels are predominantly Polish. Later August and October 2026 experiments are identified separately.
 
 This project investigates a practical research question: **can a small, locally executed language model collect structured information across a conversation, with useful quality and acceptable resource costs?** A diabetes information-collection assistant provides the application setting. The contribution combines an application prototype, a Python evaluation framework, comparative model experiments, and runtime optimization. The strongest evidence concerns structured conversational behavior and inference performance, rather than diagnosis, clinical outcomes, or security guarantees.
 

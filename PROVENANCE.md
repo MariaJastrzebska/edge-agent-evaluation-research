@@ -1,6 +1,6 @@
 # Evidence ledger
 
-Report assembled on 18 October 2026. Dates below identify source history and measurements, not a newly executed study.
+The author confirms that most thesis research and development took place in **2025** and the thesis was **defended in April 2026**. This repository summary was assembled and published on **18 October 2026**. The publication date does not date the original research; subsequent studies are labeled separately.
 
 ## Source snapshots
 
@@ -21,6 +21,8 @@ The original manuscript's source repository is [available here](https://github.c
 The figures are redrawn from these CSVs using `scripts/render_figures.py`. No private transcripts, patient records, credentials, or model weights are included. The later study has 40 model requests, not 40 independent scenario families.
 
 ## Dates and attribution
+
+- Most thesis work was carried out in 2025; the defense took place in April 2026, as confirmed by the author. No exact day of defense is specified.
 
 - Historical figure filenames include `2025-10-08_08-02-40`. A filename is artifact-level evidence, not a verified project commencement date.
 - Available manuscript Git history begins with an import on 17 January 2026 and continues through 23 February 2026. Earlier work can predate the import.

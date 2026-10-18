@@ -4,6 +4,8 @@ Prepared 18 October 2026 against the [AI Safety & Security Fellows Program descr
 
 ## Research profile
 
+The underlying master’s research was carried out primarily in **2025**, and the thesis was **defended in April 2026**. October 2026 dates this public summary and retrospective, not the original project. Subsequent laboratory studies are identified separately.
+
 Maria Magdalena Jastrzębska's work combines a locally running conversational prototype with Python tooling for model evaluation, comparative experiments, and resource measurement. The substantive connection to safety research is the difficulty of evaluating an agent that produces structured decisions over several turns: syntax, correct values, appropriate behavior, useful task completion, and permitted actions require different checks.
 
 The strongest application narrative is **experience building and investigating an evaluation system, followed by increasingly careful interpretation of its failure modes**. The thesis provides evidence of implementation and empirical analysis. The later studies add small reproducible evaluation artifacts and expose issues such as weak baselines and inconsistent prompt/schema contracts. Neither should be inflated into demonstrated security containment or clinical validation.

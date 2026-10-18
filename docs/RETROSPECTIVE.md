@@ -1,23 +1,27 @@
 # Dates, lessons learned, and assessment in hindsight
 
-Assessment prepared **18 October 2026**, based on the source artifacts linked in this repository. This is a retrospective interpretation, not a claim that the original study was designed with every distinction below already resolved. First-person passages are proposed wording for the author's review.
+**Original research: primarily 2025 · Thesis defense: April 2026 · Retrospective and repository publication: October 2026.**
+
+Assessment prepared **18 October 2026**, looking back on the earlier thesis work. The author confirms the main research period and defense month; source artifacts provide additional chronological detail. This is a retrospective interpretation, not a claim that the original study was designed with every distinction below already resolved. First-person passages are proposed wording for the author's review.
 
 ## When the work was created
 
 | Date or period | What the evidence establishes | What it does not establish |
 | --- | --- | --- |
+| 2025 | Most thesis research and development took place during this year, as confirmed by the author | An exact project start day |
 | 13 August 2025 | Application-flow and validation image filenames contain `2025-08-13` | A verified project start date or an immutable creation timestamp |
 | 8 October 2025 | Quantization figure filenames contain `2025-10-08_08-02-40` | That every thesis experiment ran on this date |
 | 17 January 2026 | First available manuscript commit, `00eaa30`, is labeled “Initial Overleaf Import” | That research began on the import date; the earlier artifacts predate it |
 | 18 January 2026 | The displayed model-comparison/resource figures carry this date in their source filenames | An independently audited experiment timestamp |
 | 13 February 2026 | Later architecture export filenames carry this date | A new experimental validation of the architecture |
 | 23 February 2026 | Last manuscript revision used here, `de6eed6`, is dated this day | A verified defense or degree-award date |
+| April 2026 | Master’s thesis defended, as confirmed by the author | An exact defense day |
 | 10 August 2026 | Repository records place the application/laboratory separation in this period | That all current laboratory functionality was already part of the thesis |
 | 12 August 2026 | The later structured-output pilot is labeled as recorded on this date | A clean causal test despite the subsequently identified prompt/schema mismatch |
 | 17 October 2026 | Later synthetic routing/thread study | A rerun of the original Apple Silicon experiments |
 | 18 October 2026 | This expanded report, figure curation, and retrospective assessment | A new execution of the historical experiments |
 
-The defensible summary is: **the artifacts document work extending back into 2025, the available manuscript history runs from January to February 2026, and separate follow-up work is documented in August and October 2026.** The exact research start, submission, and defense dates are not established by the reviewed evidence and are intentionally not invented.
+**Most of the thesis work was completed in 2025, the manuscript was finalized in early 2026, and the thesis was defended in April 2026.** This summary and retrospective were published in October 2026. The August and October 2026 studies are separate post-thesis work. The main research period and defense month come from the author; source-file and Git dates document individual artifacts. No exact start, submission, or defense day is inferred.
 
 Dates from filenames are weaker evidence than version history. Git timestamps also describe recorded source history rather than independently certified experiment execution. The [evidence ledger](../PROVENANCE.md) fixes the revisions used for this report.
 
