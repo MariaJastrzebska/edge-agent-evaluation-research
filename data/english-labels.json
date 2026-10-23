@@ -1,1663 +1,6125 @@
 [
   {
-    "file": "figures/english/model-scores.svg",
-    "source_file": "figures/original/model-scores.png",
-    "source_sha256": "8c9aabd0c8038a66d14d390bf46df9b490d056d9d2f9316337eaa5b7206ad70d",
-    "sha256": "b4cb41d1f6a4cdee46c5ee5edaca9c7368ce588abd38af4b8ae27fdc02d9bd6e",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 2048,
-    "labels": [
-      [
-        0,
-        0,
-        2048,
-        60,
-        "Model score comparison",
-        29,
-        0,
-        false,
-        "white"
-      ],
-      [
-        12,
-        230,
-        43,
-        260,
-        "GPT judge score",
-        24,
-        -90,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/model-power.svg",
+    "file": "figures/english/model-power.png",
+    "svg_file": "figures/english/model-power.svg",
     "source_file": "figures/original/model-power.png",
     "source_sha256": "a7ee3d3876c3c7af3d369a3a16c127b9e3434bfa663ee41320c4d796c4af6c74",
-    "sha256": "8f3e9d487e45f5abb2888d8eae64cb0e8615cea38cfa657a85c4da3e94c37648",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 2048,
-    "labels": [
+    "sha256": "dd9ef7efc809ac02b80ce40c6aafa66a91739518c31487af6741524d1174505f",
+    "svg_sha256": "4787797c628e488f00821212129c8929f84b963e9570fbac730d23bc3069b301",
+    "dimensions_px": [
+      3600,
+      1800
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          105,
+          105,
+          3600,
+          1800
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        0,
-        0,
-        2048,
-        60,
-        "Resource usage comparison",
-        29,
-        0,
-        false,
-        "white"
+        1530,
+        47,
+        2265,
+        99
       ],
       [
-        12,
-        260,
+        1538,
+        48,
+        2256,
+        98
+      ],
+      [
+        42,
+        547,
+        82,
+        754
+      ],
+      [
         43,
-        220,
-        "Power (mW)",
-        24,
-        -90,
-        false,
-        "white"
+        520,
+        81,
+        782
       ]
-    ]
-  },
-  {
-    "file": "figures/english/model-latency.svg",
-    "source_file": "figures/original/model-latency.png",
-    "source_sha256": "3a0b768586b9d2fac25f4c0c8b82ad8e36b45a00b5caac149f22cfbfbcac12db",
-    "sha256": "437f2137fe2a0da8a8be0ba8af1cfc291c3bab40130bf1fd611d6edfaa9aaed8",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1930,
+    ],
     "labels": [
-      [
-        0,
-        0,
-        1930,
-        65,
-        "Model latency comparison",
-        36,
-        0,
-        true,
-        "white"
-      ],
-      [
-        600,
-        68,
-        1050,
-        38,
-        "Model latency comparison",
-        28,
-        0,
-        false,
-        "white"
-      ],
-      [
-        680,
-        1230,
-        900,
-        45,
-        "Mean latency (ms)",
-        24,
-        0,
-        false,
-        "white"
-      ]
+      {
+        "text": "Resource usage comparison",
+        "source_text_bounds_px": [
+          1531,
+          48,
+          2264,
+          98
+        ],
+        "erasure_bounds_px": [
+          1530,
+          47,
+          2265,
+          99
+        ],
+        "english_text_bounds_px": [
+          1538,
+          48,
+          2256,
+          98
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 51,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Power (mW)",
+        "source_text_bounds_px": [
+          43,
+          548,
+          81,
+          753
+        ],
+        "erasure_bounds_px": [
+          42,
+          547,
+          82,
+          754
+        ],
+        "english_text_bounds_px": [
+          43,
+          520,
+          81,
+          782
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 43,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/quality-latency.svg",
+    "file": "figures/english/quality-latency.png",
+    "svg_file": "figures/english/quality-latency.svg",
     "source_file": "figures/original/quality-latency.png",
     "source_sha256": "7e0b29535b9f9ac2bb6bc34624bfbfaa27325c2fac5404aa01d2e5cf1b6452f6",
-    "sha256": "26a4ae28055f5bd6aafe7333d9a3e8c9e4893fcc72db25ee58f55f15adfab01d",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1754,
-    "labels": [
-      [
-        0,
-        0,
-        1754,
-        68,
-        "Model performance vs latency",
-        42,
-        0,
-        true,
-        "white"
+    "sha256": "22c2329f5c36a26f129115b5eba62bb906cfad22be4744a7c65fe9b3c5cdfb07",
+    "svg_sha256": "d0b8ba32f947ec571f47ce0581567469b57fcb2e747e50b35aa005f5f54a0d67",
+    "dimensions_px": [
+      2948,
+      2366
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          91,
+          259,
+          2948,
+          2281
+        ]
       ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        230,
-        76,
-        950,
-        74,
-        "Model performance vs latency\n(Bubble size proportional to model size)",
+        1059,
         29,
-        0,
-        false,
-        "white"
+        1908,
+        101
       ],
       [
-        5,
-        430,
-        48,
-        620,
-        "Mean GPT score (0-10) \u2192 Higher is better",
-        24,
-        -90,
-        false,
-        "white"
+        878,
+        30,
+        2088,
+        99
       ],
       [
-        300,
-        1357,
-        1000,
-        47,
-        "Mean latency (ms) \u2192 Lower is better",
-        25,
-        0,
-        false,
-        "white"
+        756,
+        145,
+        1527,
+        190
+      ],
+      [
+        800,
+        146,
+        1482,
+        189
+      ],
+      [
+        681,
+        190,
+        1605,
+        252
+      ],
+      [
+        746,
+        194,
+        1541,
+        248
+      ],
+      [
+        28,
+        830,
+        79,
+        1640
+      ],
+      [
+        30,
+        723,
+        78,
+        1758
+      ],
+      [
+        777,
+        2286,
+        1507,
+        2337
+      ],
+      [
+        685,
+        2288,
+        1599,
+        2336
       ]
+    ],
+    "labels": [
+      {
+        "text": "Model performance vs latency",
+        "source_text_bounds_px": [
+          1060,
+          30,
+          1907,
+          100
+        ],
+        "erasure_bounds_px": [
+          1059,
+          29,
+          1908,
+          101
+        ],
+        "english_text_bounds_px": [
+          878,
+          30,
+          2088,
+          99
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 71,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Model performance vs latency",
+        "source_text_bounds_px": [
+          757,
+          146,
+          1526,
+          190
+        ],
+        "erasure_bounds_px": [
+          756,
+          145,
+          1527,
+          190
+        ],
+        "english_text_bounds_px": [
+          800,
+          146,
+          1482,
+          189
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 45,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "(Bubble size \u221d model size)",
+        "source_text_bounds_px": [
+          682,
+          190,
+          1604,
+          251
+        ],
+        "erasure_bounds_px": [
+          681,
+          190,
+          1605,
+          252
+        ],
+        "english_text_bounds_px": [
+          746,
+          194,
+          1541,
+          248
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 60,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mean GPT score (0-10) \u2192 Higher is better",
+        "source_text_bounds_px": [
+          29,
+          831,
+          78,
+          1639
+        ],
+        "erasure_bounds_px": [
+          28,
+          830,
+          79,
+          1640
+        ],
+        "english_text_bounds_px": [
+          30,
+          723,
+          78,
+          1758
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 50,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mean latency (ms) \u2192 Lower is better",
+        "source_text_bounds_px": [
+          778,
+          2287,
+          1506,
+          2336
+        ],
+        "erasure_bounds_px": [
+          777,
+          2286,
+          1507,
+          2337
+        ],
+        "english_text_bounds_px": [
+          685,
+          2288,
+          1599,
+          2336
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 50,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/model-radar.svg",
+    "file": "figures/english/model-radar.png",
+    "svg_file": "figures/english/model-radar.svg",
     "source_file": "figures/original/model-radar.png",
     "source_sha256": "2a53d0cede014d6de2077b1f39519972b1f28958b03c852e7094f5dd894a6484",
-    "sha256": "ccf60e035df9f8816ac81706f8c92aa4156c7dae1c323347e904ad100da3452b",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 810,
-    "labels": [
+    "sha256": "fcee3fc046ceaa4ed88e1cb533cbd4a38eb2203510861cfcb8fa527144ad8247",
+    "svg_sha256": "ecbc2d7a8fee923d05a57cebf81fb108d37636f6b30b3356f80274e13380de37",
+    "dimensions_px": [
+      810,
+      589
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          123,
+          147,
+          518,
+          542
+        ],
+        [
+          590,
+          147,
+          810,
+          265
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        0,
-        0,
-        810,
-        35,
-        "Mobile performance radar",
-        21,
-        0,
-        true,
-        "white"
+        180,
+        7,
+        475,
+        31
       ],
       [
-        150,
-        40,
-        350,
-        45,
-        "Mobile performance radar\n(Outer edge = better)",
-        16,
-        0,
-        true,
-        "white"
-      ],
-      [
-        255,
-        104,
-        130,
-        32,
-        "Latency\n(3621-37785 ms)",
-        12,
-        0,
-        true,
-        "white"
-      ],
-      [
-        0,
-        325,
-        118,
-        39,
-        "Model size\n(1.9-4.5 GB)",
-        12,
-        0,
-        true,
-        "white"
-      ],
-      [
-        525,
-        325,
-        90,
-        39,
-        "GPT score\n(0-10)",
-        12,
-        0,
-        true,
-        "white"
+        170,
+        8,
+        494,
+        30
       ],
       [
         210,
-        549,
-        220,
-        35,
-        "Energy efficiency\n(343-3958 mW)",
-        12,
-        0,
-        true,
-        "white"
+        43,
+        433,
+        60
+      ],
+      [
+        204,
+        44,
+        440,
+        59
+      ],
+      [
+        188,
+        60,
+        452,
+        79
+      ],
+      [
+        209,
+        60,
+        431,
+        78
+      ],
+      [
+        271,
+        107,
+        369,
+        122
+      ],
+      [
+        286,
+        108,
+        353,
+        122
+      ],
+      [
+        7,
+        331,
+        110,
+        344
+      ],
+      [
+        16,
+        332,
+        100,
+        343
+      ],
+      [
+        531,
+        332,
+        600,
+        345
+      ],
+      [
+        527,
+        333,
+        611,
+        344
+      ],
+      [
+        237,
+        554,
+        403,
+        568
+      ],
+      [
+        262,
+        555,
+        378,
+        568
       ]
+    ],
+    "labels": [
+      {
+        "text": "Mobile performance radar",
+        "source_text_bounds_px": [
+          181,
+          8,
+          474,
+          30
+        ],
+        "erasure_bounds_px": [
+          180,
+          7,
+          475,
+          31
+        ],
+        "english_text_bounds_px": [
+          170,
+          8,
+          494,
+          30
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 22,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mobile performance radar",
+        "source_text_bounds_px": [
+          211,
+          44,
+          432,
+          60
+        ],
+        "erasure_bounds_px": [
+          210,
+          43,
+          433,
+          60
+        ],
+        "english_text_bounds_px": [
+          204,
+          44,
+          440,
+          59
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "(Outer edge = better)",
+        "source_text_bounds_px": [
+          189,
+          60,
+          451,
+          78
+        ],
+        "erasure_bounds_px": [
+          188,
+          60,
+          452,
+          79
+        ],
+        "english_text_bounds_px": [
+          209,
+          60,
+          431,
+          78
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 18,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency",
+        "source_text_bounds_px": [
+          272,
+          108,
+          368,
+          122
+        ],
+        "erasure_bounds_px": [
+          271,
+          107,
+          369,
+          122
+        ],
+        "english_text_bounds_px": [
+          286,
+          108,
+          353,
+          122
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 15,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Model size",
+        "source_text_bounds_px": [
+          8,
+          332,
+          109,
+          343
+        ],
+        "erasure_bounds_px": [
+          7,
+          331,
+          110,
+          344
+        ],
+        "english_text_bounds_px": [
+          16,
+          332,
+          100,
+          343
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 14,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "GPT score",
+        "source_text_bounds_px": [
+          532,
+          333,
+          599,
+          344
+        ],
+        "erasure_bounds_px": [
+          531,
+          332,
+          600,
+          345
+        ],
+        "english_text_bounds_px": [
+          527,
+          333,
+          611,
+          344
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 15,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Energy efficiency",
+        "source_text_bounds_px": [
+          238,
+          555,
+          402,
+          568
+        ],
+        "erasure_bounds_px": [
+          237,
+          554,
+          403,
+          568
+        ],
+        "english_text_bounds_px": [
+          262,
+          555,
+          378,
+          568
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/mobile-performance.svg",
+    "file": "figures/english/mobile-performance.png",
+    "svg_file": "figures/english/mobile-performance.svg",
     "source_file": "figures/original/mobile-performance.png",
     "source_sha256": "018eaa14b522b46514692582a2ee62bcdd7ba494d56cb800ad262e4c01def718",
-    "sha256": "65384b65b65fc2ff9f0b1333e433a662c4994e283e121fa1c6062db1ef330022",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1400,
-    "labels": [
-      [
-        370,
-        108,
-        800,
-        34,
-        "Model latency comparison (Lower is better)",
-        21,
-        0,
-        false,
-        "white"
+    "sha256": "5f68e1fa13efd547d4b3485645dd09bb6e2946d509b02e0b4a0f171d5a699f2e",
+    "svg_sha256": "f47259cacb043b5b8badb66e1fe147950f360985d456a105baecf339fa0a4ccf",
+    "dimensions_px": [
+      3571,
+      4574
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          92,
+          362,
+          3571,
+          2589
+        ],
+        [
+          173,
+          2665,
+          3571,
+          4477
+        ]
       ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        1,
-        378,
-        35,
-        236,
-        "Latency (ms)",
-        17,
-        -90,
-        false,
-        "white"
-      ],
-      [
+        1398,
         300,
-        1015,
-        950,
+        2393,
+        352
+      ],
+      [
+        1341,
+        301,
+        2450,
+        351
+      ],
+      [
+        28,
+        1094,
+        72,
+        1374
+      ],
+      [
         29,
-        "Throughput vs latency (Bubble size proportional to model size)",
-        20,
-        0,
-        false,
-        "white"
+        1094,
+        71,
+        1375
       ],
       [
-        34,
-        1220,
-        33,
-        340,
-        "Throughput (tokens per second)",
-        17,
-        -90,
-        false,
-        "white"
+        1108,
+        2610,
+        2684,
+        2660
       ],
       [
-        500,
-        1755,
-        520,
-        36,
-        "Mean latency (ms)",
-        18,
-        0,
-        false,
-        "white"
+        1108,
+        2611,
+        2684,
+        2659
+      ],
+      [
+        106,
+        3201,
+        152,
+        3881
+      ],
+      [
+        108,
+        3178,
+        151,
+        3903
+      ],
+      [
+        1674,
+        4495,
+        2116,
+        4546
+      ],
+      [
+        1662,
+        4496,
+        2127,
+        4544
       ]
+    ],
+    "labels": [
+      {
+        "text": "Model latency comparison (Lower is better)",
+        "source_text_bounds_px": [
+          1399,
+          301,
+          2392,
+          351
+        ],
+        "erasure_bounds_px": [
+          1398,
+          300,
+          2393,
+          352
+        ],
+        "english_text_bounds_px": [
+          1341,
+          301,
+          2450,
+          351
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 51,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          29,
+          1095,
+          71,
+          1373
+        ],
+        "erasure_bounds_px": [
+          28,
+          1094,
+          72,
+          1374
+        ],
+        "english_text_bounds_px": [
+          29,
+          1094,
+          71,
+          1375
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 43,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput vs latency (Bubble size proportional to model size)",
+        "source_text_bounds_px": [
+          1109,
+          2611,
+          2683,
+          2659
+        ],
+        "erasure_bounds_px": [
+          1108,
+          2610,
+          2684,
+          2660
+        ],
+        "english_text_bounds_px": [
+          1108,
+          2611,
+          2684,
+          2659
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 50,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput (tokens per second)",
+        "source_text_bounds_px": [
+          107,
+          3202,
+          151,
+          3880
+        ],
+        "erasure_bounds_px": [
+          106,
+          3201,
+          152,
+          3881
+        ],
+        "english_text_bounds_px": [
+          108,
+          3178,
+          151,
+          3903
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 45,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mean latency (ms)",
+        "source_text_bounds_px": [
+          1675,
+          4496,
+          2115,
+          4545
+        ],
+        "erasure_bounds_px": [
+          1674,
+          4495,
+          2116,
+          4546
+        ],
+        "english_text_bounds_px": [
+          1662,
+          4496,
+          2127,
+          4544
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 50,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/quantization-scores.svg",
+    "file": "figures/english/quantization-scores.png",
+    "svg_file": "figures/english/quantization-scores.svg",
     "source_file": "figures/original/quantization-scores.png",
     "source_sha256": "daec6ea770a8512379f8736c440213589463dda4a91279c93601bb5df3040382",
-    "sha256": "368fa298ca51c866212dbb8b406ffd28181a6054510a45f74cf6dc5dfab172ca",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1139,
-    "labels": [
+    "sha256": "6d186c09eea8b7c047bd0d77d96f77984708ca61437e85dcf4e9ac03a4fb35d4",
+    "svg_sha256": "f2cc8204feb2551fa85633f80c23d3134ae4646f6fde3a803adc7fa86518a3d7",
+    "dimensions_px": [
+      1139,
+      743
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          105,
+          84,
+          1139,
+          743
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        125,
-        0,
-        1000,
-        83,
-        "LLM judge score distribution",
-        43,
-        0,
-        true,
-        "white"
+        203,
+        30,
+        1072,
+        81
       ],
       [
-        69,
-        170,
-        34,
-        285,
-        "LLM judge score (%)",
-        16,
-        -90,
-        true,
-        "white"
+        234,
+        31,
+        1041,
+        80
+      ],
+      [
+        79,
+        204,
+        97,
+        434
+      ],
+      [
+        80,
+        228,
+        95,
+        411
       ]
+    ],
+    "labels": [
+      {
+        "text": "LLM judge score distribution",
+        "source_text_bounds_px": [
+          204,
+          31,
+          1071,
+          80
+        ],
+        "erasure_bounds_px": [
+          203,
+          30,
+          1072,
+          81
+        ],
+        "english_text_bounds_px": [
+          234,
+          31,
+          1041,
+          80
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 50,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "LLM judge score (%)",
+        "source_text_bounds_px": [
+          80,
+          205,
+          96,
+          433
+        ],
+        "erasure_bounds_px": [
+          79,
+          204,
+          97,
+          434
+        ],
+        "english_text_bounds_px": [
+          80,
+          228,
+          95,
+          411
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/quantization-rounds.svg",
+    "file": "figures/english/quantization-rounds.png",
+    "svg_file": "figures/english/quantization-rounds.svg",
     "source_file": "figures/original/quantization-rounds.png",
     "source_sha256": "3191577c3f364aa103bb5c716ceea0407d94fb622b4dee8cb817b778d418c7fb",
-    "sha256": "5a5e3b3878d33a695a69d3052c1331d28411f06146fa30b9d03d0a85ab240ce3",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1135,
-    "labels": [
-      [
-        0,
-        0,
-        1135,
-        83,
-        "Latency across conversation rounds",
-        42,
-        0,
-        true,
-        "white"
+    "sha256": "9ec5bad85e4253364f1f9400c50398418e13b8127c7ae3cc37936606af933152",
+    "svg_sha256": "d14aebcd52b28c92ab7f40d2b22e5f62f2f6bcffedb965b84c2551a26b70bc64",
+    "dimensions_px": [
+      1135,
+      1048
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          110,
+          85,
+          1135,
+          490
+        ],
+        [
+          845,
+          490,
+          1135,
+          565
+        ],
+        [
+          0,
+          646,
+          972,
+          1048
+        ]
       ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
         78,
-        170,
-        32,
-        210,
-        "Latency (ms)",
-        19,
-        -90,
-        true,
-        "white"
+        27,
+        932,
+        69
       ],
       [
-        405,
-        490,
-        240,
-        35,
-        "Round",
-        20,
-        0,
-        true,
-        "white"
+        114,
+        28,
+        895,
+        68
       ],
       [
-        100,
-        596,
-        990,
-        47,
-        "Latency heatmap by model and round (ms)",
-        30,
-        0,
-        true,
-        "white"
+        86,
+        208,
+        108,
+        351
+      ],
+      [
+        87,
+        202,
+        107,
+        356
+      ],
+      [
+        471,
+        498,
+        538,
+        516
+      ],
+      [
+        466,
+        499,
+        542,
+        515
+      ],
+      [
+        142,
+        607,
+        977,
+        641
+      ],
+      [
+        158,
+        608,
+        960,
+        640
       ],
       [
         973,
-        730,
-        35,
-        194,
-        "Latency (ms)",
-        18,
-        -90,
-        true,
-        "white"
+        739,
+        1000,
+        901
+      ],
+      [
+        975,
+        740,
+        997,
+        901
       ]
+    ],
+    "labels": [
+      {
+        "text": "Latency across successive rounds",
+        "source_text_bounds_px": [
+          79,
+          28,
+          931,
+          68
+        ],
+        "erasure_bounds_px": [
+          78,
+          27,
+          932,
+          69
+        ],
+        "english_text_bounds_px": [
+          114,
+          28,
+          895,
+          68
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 41,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          87,
+          209,
+          107,
+          350
+        ],
+        "erasure_bounds_px": [
+          86,
+          208,
+          108,
+          351
+        ],
+        "english_text_bounds_px": [
+          87,
+          202,
+          107,
+          356
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          472,
+          499,
+          537,
+          515
+        ],
+        "erasure_bounds_px": [
+          471,
+          498,
+          538,
+          516
+        ],
+        "english_text_bounds_px": [
+          466,
+          499,
+          542,
+          515
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency heatmap by model and round (ms)",
+        "source_text_bounds_px": [
+          143,
+          608,
+          976,
+          640
+        ],
+        "erasure_bounds_px": [
+          142,
+          607,
+          977,
+          641
+        ],
+        "english_text_bounds_px": [
+          158,
+          608,
+          960,
+          640
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 33,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          973,
+          740,
+          999,
+          900
+        ],
+        "erasure_bounds_px": [
+          973,
+          739,
+          1000,
+          901
+        ],
+        "english_text_bounds_px": [
+          975,
+          740,
+          997,
+          901
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 22,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/all-configurations.svg",
-    "source_file": "figures/original/all-configurations.png",
-    "source_sha256": "85a495dbe48f23b7334588ed2bc4041a0d40c4c9b88c690bb7de2f498d455a1e",
-    "sha256": "a253635b55cc5a57fdfacf09cf628e574721b539bd6e6e9b1092c217425bf65c",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1984,
-    "labels": [
+    "file": "figures/english/improved-configurations.png",
+    "svg_file": "figures/english/improved-configurations.svg",
+    "source_file": "figures/original/improved-configurations.png",
+    "source_sha256": "30e9300eb6b387c82862639816c3b70ccfacc8e5c351aec0b02f75e28073f625",
+    "sha256": "55c13e8a8d6709ec55e6a37ff1678db394e46e89635a8e896ad929ffb74e79ee",
+    "svg_sha256": "15d13ae4ff5944685ecf78cf35717b796a39da013141750ff55f92363c03539a",
+    "dimensions_px": [
+      1021,
+      666
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          35,
+          153,
+          450,
+          400
+        ],
+        [
+          46,
+          443,
+          450,
+          666
+        ],
+        [
+          483,
+          274,
+          1021,
+          600
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        0,
-        0,
-        1984,
-        54,
-        "Runtime configuration comparison",
-        38,
-        0,
-        true,
-        "white"
+        130,
+        20,
+        983,
+        69
       ],
       [
-        260,
-        105,
-        520,
-        40,
-        "Total latency",
-        23,
-        0,
-        true,
-        "white"
+        238,
+        22,
+        875,
+        67
       ],
       [
-        250,
-        740,
-        520,
-        43,
-        "Throughput",
-        23,
-        0,
-        true,
-        "white"
+        242,
+        133,
+        298,
+        147
       ],
       [
-        1220,
-        289,
-        550,
-        44,
-        "Latency breakdown",
+        244,
+        134,
+        297,
+        146
+      ],
+      [
+        198,
+        418,
+        296,
+        433
+      ],
+      [
+        207,
+        419,
+        287,
+        432
+      ],
+      [
+        670,
+        255,
+        780,
+        269
+      ],
+      [
+        664,
+        256,
+        785,
+        267
+      ],
+      [
         25,
-        0,
-        true,
-        "white"
+        234,
+        34,
+        276
+      ],
+      [
+        26,
+        232,
+        33,
+        277
+      ],
+      [
+        37,
+        499,
+        45,
+        583
+      ],
+      [
+        38,
+        504,
+        45,
+        577
+      ],
+      [
+        471,
+        369,
+        480,
+        411
+      ],
+      [
+        472,
+        368,
+        479,
+        413
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Improved configurations",
+        "source_text_bounds_px": [
+          131,
+          21,
+          982,
+          68
+        ],
+        "erasure_bounds_px": [
+          130,
+          20,
+          983,
+          69
+        ],
+        "english_text_bounds_px": [
+          238,
+          22,
+          875,
+          67
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 46,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency",
+        "source_text_bounds_px": [
+          243,
+          134,
+          297,
+          146
+        ],
+        "erasure_bounds_px": [
+          242,
+          133,
+          298,
+          147
+        ],
+        "english_text_bounds_px": [
+          244,
+          134,
+          297,
+          146
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Throughput",
+        "source_text_bounds_px": [
+          199,
+          419,
+          295,
+          432
+        ],
+        "erasure_bounds_px": [
+          198,
+          418,
+          296,
+          433
+        ],
+        "english_text_bounds_px": [
+          207,
+          419,
+          287,
+          432
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency breakdown",
+        "source_text_bounds_px": [
+          671,
+          256,
+          779,
+          268
+        ],
+        "erasure_bounds_px": [
+          670,
+          255,
+          780,
+          269
+        ],
+        "english_text_bounds_px": [
+          664,
+          256,
+          785,
+          267
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Time (ms)",
+        "source_text_bounds_px": [
+          26,
+          235,
+          33,
+          275
+        ],
+        "erasure_bounds_px": [
+          25,
+          234,
+          34,
+          276
+        ],
+        "english_text_bounds_px": [
+          26,
+          232,
+          33,
+          277
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Tokens per second",
+        "source_text_bounds_px": [
+          38,
+          500,
+          45,
+          582
+        ],
+        "erasure_bounds_px": [
+          37,
+          499,
+          45,
+          583
+        ],
+        "english_text_bounds_px": [
+          38,
+          504,
+          45,
+          577
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 7,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Time (ms)",
+        "source_text_bounds_px": [
+          472,
+          370,
+          479,
+          410
+        ],
+        "erasure_bounds_px": [
+          471,
+          369,
+          480,
+          411
+        ],
+        "english_text_bounds_px": [
+          472,
+          368,
+          479,
+          413
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/single-turn-metrics.png",
+    "svg_file": "figures/english/single-turn-metrics.svg",
+    "source_file": "figures/original/single-turn-metrics.png",
+    "source_sha256": "6060ce134f9fcc864c3ae54377f29d41bf6b6ce25f4cab33ada211a280bba75a",
+    "sha256": "137b33e8b0a2a166e672fef276a540bd7577a051d3667d98aded9eb7d355ab7e",
+    "svg_sha256": "10dd1149ca995f2d809436452acee637c2e3263dcd2e8af705960c0134861280",
+    "dimensions_px": [
+      684,
+      1032
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          52,
+          38,
+          684,
+          762
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        222,
+        6,
+        485,
+        21
+      ],
+      [
+        244,
+        7,
+        463,
+        21
+      ],
+      [
+        111,
+        19,
+        597,
+        37
+      ],
+      [
+        115,
+        20,
+        593,
+        34
+      ],
+      [
+        37,
+        303,
+        52,
+        368
+      ],
+      [
+        39,
+        300,
+        51,
+        372
+      ],
+      [
+        1,
+        793,
+        684,
+        808
       ],
       [
         0,
-        305,
+        793,
+        614,
+        808
+      ],
+      [
+        1,
+        808,
+        684,
+        823
+      ],
+      [
+        0,
+        808,
+        632,
+        823
+      ],
+      [
+        1,
+        823,
+        684,
+        838
+      ],
+      [
+        0,
+        823,
+        560,
+        838
+      ],
+      [
+        1,
+        838,
+        684,
+        853
+      ],
+      [
+        0,
+        838,
+        452,
+        853
+      ],
+      [
+        1,
+        853,
+        684,
+        868
+      ],
+      [
+        0,
+        853,
+        560,
+        868
+      ],
+      [
+        1,
+        868,
+        684,
+        883
+      ],
+      [
+        0,
+        868,
+        598,
+        883
+      ],
+      [
+        1,
+        883,
+        684,
+        898
+      ],
+      [
+        0,
+        883,
+        656,
+        898
+      ],
+      [
+        1,
+        898,
+        684,
+        913
+      ],
+      [
+        0,
+        898,
+        636,
+        913
+      ],
+      [
+        1,
+        913,
+        684,
+        928
+      ],
+      [
+        0,
+        913,
+        479,
+        928
+      ],
+      [
+        1,
+        928,
+        684,
+        943
+      ],
+      [
+        0,
+        928,
+        569,
+        943
+      ],
+      [
+        1,
+        943,
+        684,
+        958
+      ],
+      [
+        0,
+        943,
+        569,
+        958
+      ],
+      [
+        1,
+        958,
+        684,
+        973
+      ],
+      [
+        0,
+        958,
+        623,
+        973
+      ],
+      [
+        1,
+        973,
+        684,
+        988
+      ],
+      [
+        0,
+        973,
+        650,
+        988
+      ],
+      [
+        1,
+        988,
+        684,
+        1003
+      ],
+      [
+        0,
+        988,
+        623,
+        1003
+      ],
+      [
+        1,
+        1003,
+        684,
+        1018
+      ],
+      [
+        0,
+        1003,
+        632,
+        1018
+      ]
+    ],
+    "labels": [
+      {
+        "text": "LLM metrics analysis - Single turn",
+        "source_text_bounds_px": [
+          223,
+          7,
+          484,
+          21
+        ],
+        "erasure_bounds_px": [
+          222,
+          6,
+          485,
+          21
+        ],
+        "english_text_bounds_px": [
+          244,
+          7,
+          463,
+          21
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Model: llama3.2:3b-instruct-q4_K_M | Agent: constant_data_en | Round: 4",
+        "source_text_bounds_px": [
+          112,
+          19,
+          596,
+          36
+        ],
+        "erasure_bounds_px": [
+          111,
+          19,
+          597,
+          37
+        ],
+        "english_text_bounds_px": [
+          115,
+          20,
+          593,
+          34
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Score (0-1)",
+        "source_text_bounds_px": [
+          38,
+          304,
+          52,
+          367
+        ],
+        "erasure_bounds_px": [
+          37,
+          303,
+          52,
+          368
+        ],
+        "english_text_bounds_px": [
+          39,
+          300,
+          51,
+          372
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "\u2022 json_validity: checks for valid JSON syntax without parsing errors",
+        "source_text_bounds_px": [
+          2,
+          793,
+          684,
+          808
+        ],
+        "erasure_bounds_px": [
+          1,
+          793,
+          684,
+          808
+        ],
+        "english_text_bounds_px": [
+          0,
+          793,
+          614,
+          808
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 tool_args_values: direct, case-insensitive argument-value comparison",
+        "source_text_bounds_px": [
+          2,
+          808,
+          684,
+          823
+        ],
+        "erasure_bounds_px": [
+          1,
+          808,
+          684,
+          823
+        ],
+        "english_text_bounds_px": [
+          0,
+          808,
+          632,
+          823
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 levenshtein_similarity: edit distance between response texts",
+        "source_text_bounds_px": [
+          2,
+          823,
+          684,
+          838
+        ],
+        "erasure_bounds_px": [
+          1,
+          823,
+          684,
+          838
+        ],
+        "english_text_bounds_px": [
+          0,
+          823,
+          560,
+          838
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 p_bert: BERTScore precision; semantic similarity",
+        "source_text_bounds_px": [
+          2,
+          838,
+          684,
+          853
+        ],
+        "erasure_bounds_px": [
+          1,
+          838,
+          684,
+          853
+        ],
+        "english_text_bounds_px": [
+          0,
+          838,
+          452,
+          853
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 r_bert: BERTScore recall; coverage relative to the reference",
+        "source_text_bounds_px": [
+          2,
+          853,
+          684,
+          868
+        ],
+        "erasure_bounds_px": [
+          1,
+          853,
+          684,
+          868
+        ],
+        "english_text_bounds_px": [
+          0,
+          853,
+          560,
+          868
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 bleu: BLEU metric for evaluating machine-translation quality",
+        "source_text_bounds_px": [
+          2,
+          868,
+          684,
+          883
+        ],
+        "erasure_bounds_px": [
+          1,
+          868,
+          684,
+          883
+        ],
+        "english_text_bounds_px": [
+          0,
+          868,
+          598,
+          883
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 rougeL: ROUGE-L; longest common subsequence for summary evaluation",
+        "source_text_bounds_px": [
+          2,
+          883,
+          684,
+          898
+        ],
+        "erasure_bounds_px": [
+          1,
+          883,
+          684,
+          898
+        ],
+        "english_text_bounds_px": [
+          0,
+          883,
+          656,
+          898
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 meteor: METEOR includes synonyms and stemming in text comparison",
+        "source_text_bounds_px": [
+          2,
+          898,
+          684,
+          913
+        ],
+        "erasure_bounds_px": [
+          1,
+          898,
+          684,
+          913
+        ],
+        "english_text_bounds_px": [
+          0,
+          898,
+          636,
+          913
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 gpt_judge: mean score across all GPT Judge criteria",
+        "source_text_bounds_px": [
+          2,
+          913,
+          684,
+          928
+        ],
+        "erasure_bounds_px": [
+          1,
+          913,
+          684,
+          928
+        ],
+        "english_text_bounds_px": [
+          0,
+          913,
+          479,
+          928
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 required_fields: verifies all required fields in the response",
+        "source_text_bounds_px": [
+          2,
+          928,
+          684,
+          943
+        ],
+        "erasure_bounds_px": [
+          1,
+          928,
+          684,
+          943
+        ],
+        "english_text_bounds_px": [
+          0,
+          928,
+          569,
+          943
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 jaccard_similarity: Jaccard similarity based on shared tokens",
+        "source_text_bounds_px": [
+          2,
+          943,
+          684,
+          958
+        ],
+        "erasure_bounds_px": [
+          1,
+          943,
+          684,
+          958
+        ],
+        "english_text_bounds_px": [
+          0,
+          943,
+          569,
+          958
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 gpt_context_relevance: GPT Judge assessment of contextual relevance",
+        "source_text_bounds_px": [
+          2,
+          958,
+          684,
+          973
+        ],
+        "erasure_bounds_px": [
+          1,
+          958,
+          684,
+          973
+        ],
+        "english_text_bounds_px": [
+          0,
+          958,
+          623,
+          973
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 gpt_question_naturalness: GPT Judge assessment of question naturalness",
+        "source_text_bounds_px": [
+          2,
+          973,
+          684,
+          988
+        ],
+        "erasure_bounds_px": [
+          1,
+          973,
+          684,
+          988
+        ],
+        "english_text_bounds_px": [
+          0,
+          973,
+          650,
+          988
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 gpt_reasoning_logic: GPT Judge assessment of the response reasoning",
+        "source_text_bounds_px": [
+          2,
+          988,
+          684,
+          1003
+        ],
+        "erasure_bounds_px": [
+          1,
+          988,
+          684,
+          1003
+        ],
+        "english_text_bounds_px": [
+          0,
+          988,
+          623,
+          1003
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      },
+      {
+        "text": "\u2022 gpt_tool_call_correctness: GPT Judge assessment of tool-call quality",
+        "source_text_bounds_px": [
+          2,
+          1003,
+          684,
+          1018
+        ],
+        "erasure_bounds_px": [
+          1,
+          1003,
+          684,
+          1018
+        ],
+        "english_text_bounds_px": [
+          0,
+          1003,
+          632,
+          1018
+        ],
+        "font": "DejaVu Sans Mono",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          189,
+          223,
+          235
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/resource-health.png",
+    "svg_file": "figures/english/resource-health.svg",
+    "source_file": "figures/original/resource-health.png",
+    "source_sha256": "a110c3d1bdfb7de93ab86ac48e102ec676ada468a87baf6dab31ba4df443a558",
+    "sha256": "c5c0efcae158b2e20ec8f1a33682dc9bb38b347bf51ffc5f9ab8704978bb279a",
+    "svg_sha256": "a770d042ef2248522670c191248c92be407dc6683cae6140802b2dfdc3acdfa8",
+    "dimensions_px": [
+      3569,
+      4170
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          112,
+          97,
+          3569,
+          247
+        ],
+        [
+          112,
+          323,
+          3569,
+          1385
+        ],
+        [
+          133,
+          1482,
+          2858,
+          2766
+        ],
+        [
+          2858,
+          1740,
+          3569,
+          2766
+        ],
+        [
+          97,
+          2868,
+          2763,
+          4166
+        ],
+        [
+          2763,
+          3069,
+          3569,
+          4166
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        55,
+        473,
+        99,
+        818
+      ],
+      [
+        56,
+        472,
+        98,
+        820
+      ],
+      [
+        3040,
+        262,
+        3277,
+        306
+      ],
+      [
+        3041,
+        263,
+        3268,
+        302
+      ],
+      [
+        1337,
+        1421,
+        2404,
+        1471
+      ],
+      [
+        1450,
+        1422,
+        2292,
+        1470
+      ],
+      [
+        81,
+        1845,
+        125,
+        2217
+      ],
+      [
+        82,
+        1843,
+        124,
+        2219
+      ],
+      [
+        2981,
+        1518,
+        3320,
+        1554
+      ],
+      [
+        2982,
+        1519,
+        3267,
+        1557
+      ],
+      [
+        2980,
+        1572,
+        3474,
+        1610
+      ],
+      [
+        2981,
+        1573,
+        3291,
+        1611
+      ],
+      [
+        2972,
+        1627,
+        3513,
+        1665
+      ],
+      [
+        2972,
+        1628,
+        3329,
+        1663
+      ],
+      [
+        2981,
+        1681,
+        3453,
+        1723
+      ],
+      [
+        2982,
+        1682,
+        3436,
+        1720
+      ],
+      [
+        1278,
+        2802,
+        2457,
+        2855
+      ],
+      [
+        1336,
+        2803,
+        2399,
+        2854
+      ],
+      [
         27,
-        160,
-        "Time (ms)",
-        15,
-        -90,
-        true,
-        "white"
+        3177,
+        72,
+        3655
+      ],
+      [
+        28,
+        3126,
+        71,
+        3707
+      ],
+      [
+        2889,
+        2901,
+        3504,
+        2941
+      ],
+      [
+        2890,
+        2902,
+        3414,
+        2940
+      ],
+      [
+        2887,
+        2958,
+        3202,
+        2989
+      ],
+      [
+        2888,
+        2959,
+        3149,
+        2989
+      ],
+      [
+        2880,
+        3006,
+        3511,
+        3057
+      ],
+      [
+        2880,
+        3007,
+        3123,
+        3037
+      ]
+    ],
+    "labels": [
+      {
+        "text": "RAM usage (GB)",
+        "source_text_bounds_px": [
+          56,
+          474,
+          98,
+          817
+        ],
+        "erasure_bounds_px": [
+          55,
+          473,
+          99,
+          818
+        ],
+        "english_text_bounds_px": [
+          56,
+          472,
+          98,
+          820
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 43,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "RAM usage",
+        "source_text_bounds_px": [
+          3041,
+          263,
+          3276,
+          305
+        ],
+        "erasure_bounds_px": [
+          3040,
+          262,
+          3277,
+          306
+        ],
+        "english_text_bounds_px": [
+          3041,
+          263,
+          3268,
+          302
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 41,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Memory pressure: SWAP / SSD",
+        "source_text_bounds_px": [
+          1338,
+          1422,
+          2403,
+          1470
+        ],
+        "erasure_bounds_px": [
+          1337,
+          1421,
+          2404,
+          1471
+        ],
+        "english_text_bounds_px": [
+          1450,
+          1422,
+          2292,
+          1470
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 49,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "SWAP usage (GB)",
+        "source_text_bounds_px": [
+          82,
+          1846,
+          124,
+          2216
+        ],
+        "erasure_bounds_px": [
+          81,
+          1845,
+          125,
+          2217
+        ],
+        "english_text_bounds_px": [
+          82,
+          1843,
+          124,
+          2219
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 43,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Warning (1GB)",
+        "source_text_bounds_px": [
+          2982,
+          1519,
+          3319,
+          1553
+        ],
+        "erasure_bounds_px": [
+          2981,
+          1518,
+          3320,
+          1554
+        ],
+        "english_text_bounds_px": [
+          2982,
+          1519,
+          3267,
+          1557
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "High load (2GB)",
+        "source_text_bounds_px": [
+          2981,
+          1573,
+          3473,
+          1609
+        ],
+        "erasure_bounds_px": [
+          2980,
+          1572,
+          3474,
+          1610
+        ],
+        "english_text_bounds_px": [
+          2981,
+          1573,
+          3291,
+          1611
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Critical load (4GB)",
+        "source_text_bounds_px": [
+          2972,
+          1628,
+          3513,
+          1664
+        ],
+        "erasure_bounds_px": [
+          2972,
+          1627,
+          3513,
+          1665
+        ],
+        "english_text_bounds_px": [
+          2972,
+          1628,
+          3329,
+          1663
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "SWAP (virtual memory)",
+        "source_text_bounds_px": [
+          2982,
+          1682,
+          3452,
+          1723
+        ],
+        "erasure_bounds_px": [
+          2981,
+          1681,
+          3453,
+          1723
+        ],
+        "english_text_bounds_px": [
+          2982,
+          1682,
+          3436,
+          1720
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "CPU stability (No throttling = 100%)",
+        "source_text_bounds_px": [
+          1279,
+          2803,
+          2456,
+          2854
+        ],
+        "erasure_bounds_px": [
+          1278,
+          2802,
+          2457,
+          2855
+        ],
+        "english_text_bounds_px": [
+          1336,
+          2803,
+          2399,
+          2854
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 52,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "% of maximum frequency",
+        "source_text_bounds_px": [
+          28,
+          3178,
+          71,
+          3654
+        ],
+        "erasure_bounds_px": [
+          27,
+          3177,
+          72,
+          3655
+        ],
+        "english_text_bounds_px": [
+          28,
+          3126,
+          71,
+          3707
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 45,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Nominal frequency (100%)",
+        "source_text_bounds_px": [
+          2890,
+          2902,
+          3503,
+          2940
+        ],
+        "erasure_bounds_px": [
+          2889,
+          2901,
+          3504,
+          2941
+        ],
+        "english_text_bounds_px": [
+          2890,
+          2902,
+          3414,
+          2940
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Clock at start",
+        "source_text_bounds_px": [
+          2888,
+          2959,
+          3201,
+          2988
+        ],
+        "erasure_bounds_px": [
+          2887,
+          2958,
+          3202,
+          2989
+        ],
+        "english_text_bounds_px": [
+          2888,
+          2959,
+          3149,
+          2989
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Clock at end",
+        "source_text_bounds_px": [
+          2880,
+          3007,
+          3511,
+          3057
+        ],
+        "erasure_bounds_px": [
+          2880,
+          3006,
+          3511,
+          3057
+        ],
+        "english_text_bounds_px": [
+          2880,
+          3007,
+          3123,
+          3037
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 39,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/hardware-settings.png",
+    "svg_file": "figures/english/hardware-settings.svg",
+    "source_file": "figures/original/hardware-settings.png",
+    "source_sha256": "1700167672a575ec983358f0b35743c1d0e9d17c1c5f479fe2ffb98fc212e49c",
+    "sha256": "f3996aad2dfbc71c45f33c1cb11d3d06799643c8265dc089d0ffdb4e132edb58",
+    "svg_sha256": "819982175825d4c91e4f78ba9cca5c80dd4fa0f5bb68e664090dd0a4dd00c266",
+    "dimensions_px": [
+      930,
+      1041
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          38,
+          78,
+          930,
+          356
+        ],
+        [
+          58,
+          394,
+          930,
+          680
+        ],
+        [
+          54,
+          710,
+          930,
+          995
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        186,
+        19,
+        673,
+        41
+      ],
+      [
+        138,
+        20,
+        721,
+        40
+      ],
+      [
+        330,
+        59,
+        452,
+        76
+      ],
+      [
+        318,
+        60,
+        465,
+        75
+      ],
+      [
+        26,
+        185,
+        37,
+        245
+      ],
+      [
+        27,
+        186,
+        37,
+        245
+      ],
+      [
+        426,
+        361,
+        457,
+        371
+      ],
+      [
+        428,
+        362,
+        456,
+        370
+      ],
+      [
+        346,
+        374,
+        511,
+        390
+      ],
+      [
+        356,
+        375,
+        500,
+        389
+      ],
+      [
+        47,
+        450,
+        57,
+        561
+      ],
+      [
+        48,
+        460,
+        57,
+        550
+      ],
+      [
+        321,
+        683,
+        522,
+        698
+      ],
+      [
+        404,
+        686,
+        439,
+        695
+      ],
+      [
+        321,
+        694,
+        531,
+        709
+      ],
+      [
+        340,
+        695,
+        513,
+        709
+      ],
+      [
+        40,
+        770,
+        53,
+        916
       ],
       [
         42,
-        910,
-        30,
-        240,
-        "Tokens per second",
-        15,
-        -90,
-        true,
-        "white"
+        770,
+        53,
+        915
       ],
       [
-        946,
-        535,
-        32,
-        180,
-        "Time (ms)",
-        17,
-        -90,
-        true,
-        "white"
+        431,
+        998,
+        461,
+        1008
+      ],
+      [
+        432,
+        999,
+        460,
+        1007
       ]
+    ],
+    "labels": [
+      {
+        "text": "Performance comparison: Hardware optimization",
+        "source_text_bounds_px": [
+          187,
+          20,
+          672,
+          41
+        ],
+        "erasure_bounds_px": [
+          186,
+          19,
+          673,
+          41
+        ],
+        "english_text_bounds_px": [
+          138,
+          20,
+          721,
+          40
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency per round",
+        "source_text_bounds_px": [
+          331,
+          60,
+          451,
+          75
+        ],
+        "erasure_bounds_px": [
+          330,
+          59,
+          452,
+          76
+        ],
+        "english_text_bounds_px": [
+          318,
+          60,
+          465,
+          75
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          27,
+          186,
+          37,
+          244
+        ],
+        "erasure_bounds_px": [
+          26,
+          185,
+          37,
+          245
+        ],
+        "english_text_bounds_px": [
+          27,
+          186,
+          37,
+          245
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          427,
+          362,
+          456,
+          370
+        ],
+        "erasure_bounds_px": [
+          426,
+          361,
+          457,
+          371
+        ],
+        "english_text_bounds_px": [
+          428,
+          362,
+          456,
+          370
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput per round",
+        "source_text_bounds_px": [
+          347,
+          375,
+          510,
+          389
+        ],
+        "erasure_bounds_px": [
+          346,
+          374,
+          511,
+          390
+        ],
+        "english_text_bounds_px": [
+          356,
+          375,
+          500,
+          389
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput (tokens/s)",
+        "source_text_bounds_px": [
+          48,
+          451,
+          57,
+          560
+        ],
+        "erasure_bounds_px": [
+          47,
+          450,
+          57,
+          561
+        ],
+        "english_text_bounds_px": [
+          48,
+          460,
+          57,
+          550
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          322,
+          684,
+          521,
+          698
+        ],
+        "erasure_bounds_px": [
+          321,
+          683,
+          522,
+          698
+        ],
+        "english_text_bounds_px": [
+          404,
+          686,
+          439,
+          695
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "LLM judge score per round",
+        "source_text_bounds_px": [
+          322,
+          695,
+          530,
+          709
+        ],
+        "erasure_bounds_px": [
+          321,
+          694,
+          531,
+          709
+        ],
+        "english_text_bounds_px": [
+          340,
+          695,
+          513,
+          709
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Mean LLM judge score (%)",
+        "source_text_bounds_px": [
+          41,
+          771,
+          53,
+          915
+        ],
+        "erasure_bounds_px": [
+          40,
+          770,
+          53,
+          916
+        ],
+        "english_text_bounds_px": [
+          42,
+          770,
+          53,
+          915
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          432,
+          999,
+          460,
+          1007
+        ],
+        "erasure_bounds_px": [
+          431,
+          998,
+          461,
+          1008
+        ],
+        "english_text_bounds_px": [
+          432,
+          999,
+          460,
+          1007
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/improved-configurations.svg",
-    "source_file": "figures/original/improved-configurations.png",
-    "source_sha256": "30e9300eb6b387c82862639816c3b70ccfacc8e5c351aec0b02f75e28073f625",
-    "sha256": "1265ec229491da25d79335c25c57b51dc6e2b7a59aaa3d4ef9b86b0e3b52ac22",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1021,
-    "labels": [
+    "file": "figures/english/combined-settings.png",
+    "svg_file": "figures/english/combined-settings.svg",
+    "source_file": "figures/original/combined-settings.png",
+    "source_sha256": "aaa1b3cdb8cc9e66045e9db6420a00d6165787d44345762bf76f334fafa03a35",
+    "sha256": "161c1fad9adbef2986b8b00f3ae09cbaac9984b8c952ed29cec1a74e892cae94",
+    "svg_sha256": "311ab67f6dffe644950e22035f9cc924dee9edc07a94a497fddf2499aded3d7a",
+    "dimensions_px": [
+      1037,
+      1041
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          45,
+          74,
+          1037,
+          360
+        ],
+        [
+          51,
+          398,
+          1037,
+          682
+        ],
+        [
+          54,
+          721,
+          1037,
+          1007
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        0,
-        0,
-        1021,
-        76,
-        "Selected higher-performing configurations",
-        37,
-        0,
-        true,
-        "white"
+        190,
+        19,
+        552,
+        41
       ],
       [
-        168,
-        125,
-        210,
+        90,
+        20,
+        770,
+        40
+      ],
+      [
+        281,
+        59,
+        403,
+        71
+      ],
+      [
+        292,
+        60,
+        393,
+        71
+      ],
+      [
+        31,
+        187,
+        44,
+        247
+      ],
+      [
+        32,
+        181,
+        43,
+        253
+      ],
+      [
+        321,
+        364,
+        351,
+        374
+      ],
+      [
+        322,
+        365,
+        350,
+        373
+      ],
+      [
+        274,
+        379,
+        439,
+        393
+      ],
+      [
+        290,
+        380,
+        423,
+        393
+      ],
+      [
+        37,
+        452,
+        48,
+        563
+      ],
+      [
+        38,
+        462,
+        47,
+        552
+      ],
+      [
+        359,
+        686,
+        389,
+        696
+      ],
+      [
+        360,
+        687,
+        388,
+        695
+      ],
+      [
+        249,
+        701,
+        459,
+        718
+      ],
+      [
+        248,
+        702,
+        461,
+        717
+      ],
+      [
+        40,
+        770,
+        53,
+        916
+      ],
+      [
+        42,
+        770,
+        53,
+        915
+      ],
+      [
+        417,
+        1010,
+        447,
+        1020
+      ],
+      [
+        418,
+        1011,
+        446,
+        1019
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Performance comparison: Three-parameter combinations",
+        "source_text_bounds_px": [
+          191,
+          20,
+          551,
+          41
+        ],
+        "erasure_bounds_px": [
+          190,
+          19,
+          552,
+          41
+        ],
+        "english_text_bounds_px": [
+          90,
+          20,
+          770,
+          40
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency per round",
+        "source_text_bounds_px": [
+          282,
+          60,
+          402,
+          71
+        ],
+        "erasure_bounds_px": [
+          281,
+          59,
+          403,
+          71
+        ],
+        "english_text_bounds_px": [
+          292,
+          60,
+          393,
+          71
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          32,
+          188,
+          43,
+          246
+        ],
+        "erasure_bounds_px": [
+          31,
+          187,
+          44,
+          247
+        ],
+        "english_text_bounds_px": [
+          32,
+          181,
+          43,
+          253
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          322,
+          365,
+          350,
+          373
+        ],
+        "erasure_bounds_px": [
+          321,
+          364,
+          351,
+          374
+        ],
+        "english_text_bounds_px": [
+          322,
+          365,
+          350,
+          373
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput per round",
+        "source_text_bounds_px": [
+          275,
+          380,
+          438,
+          393
+        ],
+        "erasure_bounds_px": [
+          274,
+          379,
+          439,
+          393
+        ],
+        "english_text_bounds_px": [
+          290,
+          380,
+          423,
+          393
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput (tokens/s)",
+        "source_text_bounds_px": [
+          38,
+          453,
+          47,
+          562
+        ],
+        "erasure_bounds_px": [
+          37,
+          452,
+          48,
+          563
+        ],
+        "english_text_bounds_px": [
+          38,
+          462,
+          47,
+          552
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          360,
+          687,
+          388,
+          695
+        ],
+        "erasure_bounds_px": [
+          359,
+          686,
+          389,
+          696
+        ],
+        "english_text_bounds_px": [
+          360,
+          687,
+          388,
+          695
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "LLM judge score per round",
+        "source_text_bounds_px": [
+          250,
+          702,
+          458,
+          717
+        ],
+        "erasure_bounds_px": [
+          249,
+          701,
+          459,
+          718
+        ],
+        "english_text_bounds_px": [
+          248,
+          702,
+          461,
+          717
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Mean LLM judge score (%)",
+        "source_text_bounds_px": [
+          41,
+          771,
+          53,
+          915
+        ],
+        "erasure_bounds_px": [
+          40,
+          770,
+          53,
+          916
+        ],
+        "english_text_bounds_px": [
+          42,
+          770,
+          53,
+          915
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          418,
+          1011,
+          446,
+          1019
+        ],
+        "erasure_bounds_px": [
+          417,
+          1010,
+          447,
+          1020
+        ],
+        "english_text_bounds_px": [
+          418,
+          1011,
+          446,
+          1019
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/speculative-decoding.png",
+    "svg_file": "figures/english/speculative-decoding.svg",
+    "source_file": "figures/original/speculative-decoding.png",
+    "source_sha256": "ccf54d539d23fa45093de3e60806b689dbed3970da39f1e949b0838e9139cf91",
+    "sha256": "b70c337b88376731a5d045bbc2a0b1bcac921eef1060825645a14243f6167c0b",
+    "svg_sha256": "54873018e418ad681c7e163f9527099066743cb57e023408e13535481b4bfe96",
+    "dimensions_px": [
+      950,
+      1034
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          38,
+          74,
+          950,
+          356
+        ],
+        [
+          51,
+          395,
+          950,
+          679
+        ],
+        [
+          52,
+          715,
+          950,
+          997
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        172,
+        19,
+        688,
+        41
+      ],
+      [
+        147,
+        20,
+        713,
+        40
+      ],
+      [
+        330,
+        59,
+        452,
+        71
+      ],
+      [
+        340,
+        60,
+        441,
+        71
+      ],
+      [
+        26,
+        185,
+        37,
+        245
+      ],
+      [
+        27,
+        186,
+        37,
+        245
+      ],
+      [
+        391,
+        359,
+        422,
+        369
+      ],
+      [
+        392,
+        360,
+        420,
+        368
+      ],
+      [
+        346,
+        374,
+        511,
+        390
+      ],
+      [
+        356,
+        375,
+        500,
+        389
+      ],
+      [
+        37,
+        452,
+        48,
+        563
+      ],
+      [
+        38,
+        462,
+        47,
+        552
+      ],
+      [
+        349,
+        682,
+        517,
+        697
+      ],
+      [
+        416,
+        686,
+        451,
+        695
+      ],
+      [
+        316,
+        695,
+        525,
+        709
+      ],
+      [
+        340,
+        696,
+        500,
+        709
+      ],
+      [
+        40,
+        770,
+        51,
+        916
+      ],
+      [
+        41,
+        784,
+        51,
+        903
+      ],
+      [
+        390,
+        1000,
+        420,
+        1010
+      ],
+      [
+        391,
+        1001,
+        419,
+        1009
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Performance comparison: Speculative decoding",
+        "source_text_bounds_px": [
+          173,
+          20,
+          687,
+          41
+        ],
+        "erasure_bounds_px": [
+          172,
+          19,
+          688,
+          41
+        ],
+        "english_text_bounds_px": [
+          147,
+          20,
+          713,
+          40
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency per round",
+        "source_text_bounds_px": [
+          331,
+          60,
+          451,
+          71
+        ],
+        "erasure_bounds_px": [
+          330,
+          59,
+          452,
+          71
+        ],
+        "english_text_bounds_px": [
+          340,
+          60,
+          441,
+          71
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          27,
+          186,
+          37,
+          244
+        ],
+        "erasure_bounds_px": [
+          26,
+          185,
+          37,
+          245
+        ],
+        "english_text_bounds_px": [
+          27,
+          186,
+          37,
+          245
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          392,
+          360,
+          421,
+          368
+        ],
+        "erasure_bounds_px": [
+          391,
+          359,
+          422,
+          369
+        ],
+        "english_text_bounds_px": [
+          392,
+          360,
+          420,
+          368
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput per round",
+        "source_text_bounds_px": [
+          347,
+          375,
+          510,
+          389
+        ],
+        "erasure_bounds_px": [
+          346,
+          374,
+          511,
+          390
+        ],
+        "english_text_bounds_px": [
+          356,
+          375,
+          500,
+          389
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput (tokens/s)",
+        "source_text_bounds_px": [
+          38,
+          453,
+          47,
+          562
+        ],
+        "erasure_bounds_px": [
+          37,
+          452,
+          48,
+          563
+        ],
+        "english_text_bounds_px": [
+          38,
+          462,
+          47,
+          552
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          350,
+          683,
+          516,
+          697
+        ],
+        "erasure_bounds_px": [
+          349,
+          682,
+          517,
+          697
+        ],
+        "english_text_bounds_px": [
+          416,
+          686,
+          451,
+          695
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "LLM judge score per round",
+        "source_text_bounds_px": [
+          317,
+          696,
+          524,
+          709
+        ],
+        "erasure_bounds_px": [
+          316,
+          695,
+          525,
+          709
+        ],
+        "english_text_bounds_px": [
+          340,
+          696,
+          500,
+          709
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Mean LLM judge score (%)",
+        "source_text_bounds_px": [
+          41,
+          771,
+          51,
+          915
+        ],
+        "erasure_bounds_px": [
+          40,
+          770,
+          51,
+          916
+        ],
+        "english_text_bounds_px": [
+          41,
+          784,
+          51,
+          903
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          391,
+          1001,
+          419,
+          1009
+        ],
+        "erasure_bounds_px": [
+          390,
+          1000,
+          420,
+          1010
+        ],
+        "english_text_bounds_px": [
+          391,
+          1001,
+          419,
+          1009
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/cache-settings.png",
+    "svg_file": "figures/english/cache-settings.svg",
+    "source_file": "figures/original/cache-settings.png",
+    "source_sha256": "fe8e3002237be48d613bd44edf58ccb7681ad80f4eeb140522c8f729839d0ee9",
+    "sha256": "c184722103be50ac868c5316796297c4eb2f395e622d234a0f9fed3b27cb260c",
+    "svg_sha256": "ab721fd276666c39f46d1fbf581b95d87f967732dc5e4ee8b100e94d0b98d003",
+    "dimensions_px": [
+      927,
+      1041
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          37,
+          74,
+          927,
+          355
+        ],
+        [
+          51,
+          394,
+          927,
+          681
+        ],
+        [
+          52,
+          716,
+          927,
+          996
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        197,
+        19,
+        642,
+        41
+      ],
+      [
+        150,
+        20,
+        689,
+        40
+      ],
+      [
+        320,
+        59,
+        442,
+        71
+      ],
+      [
+        330,
+        60,
+        431,
+        71
+      ],
+      [
+        26,
+        185,
+        36,
+        245
+      ],
+      [
+        27,
+        189,
+        36,
+        241
+      ],
+      [
+        103,
+        355,
+        647,
+        371
+      ],
+      [
+        358,
+        358,
+        393,
+        367
+      ],
+      [
+        293,
+        374,
+        458,
+        390
+      ],
+      [
+        304,
+        375,
+        448,
+        389
+      ],
+      [
+        37,
+        450,
+        48,
+        561
+      ],
+      [
+        38,
+        460,
+        47,
+        550
+      ],
+      [
+        271,
+        683,
+        472,
+        699
+      ],
+      [
+        354,
+        687,
+        389,
+        696
+      ],
+      [
+        271,
+        696,
+        480,
+        711
+      ],
+      [
+        289,
+        697,
+        462,
+        711
+      ],
+      [
+        35,
+        770,
+        49,
+        916
+      ],
+      [
+        36,
+        770,
+        47,
+        915
+      ],
+      [
+        354,
+        1000,
+        384,
+        1010
+      ],
+      [
+        355,
+        1001,
+        383,
+        1009
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Performance comparison: Cache optimization",
+        "source_text_bounds_px": [
+          198,
+          20,
+          641,
+          41
+        ],
+        "erasure_bounds_px": [
+          197,
+          19,
+          642,
+          41
+        ],
+        "english_text_bounds_px": [
+          150,
+          20,
+          689,
+          40
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency per round",
+        "source_text_bounds_px": [
+          321,
+          60,
+          441,
+          71
+        ],
+        "erasure_bounds_px": [
+          320,
+          59,
+          442,
+          71
+        ],
+        "english_text_bounds_px": [
+          330,
+          60,
+          431,
+          71
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          27,
+          186,
+          36,
+          244
+        ],
+        "erasure_bounds_px": [
+          26,
+          185,
+          36,
+          245
+        ],
+        "english_text_bounds_px": [
+          27,
+          189,
+          36,
+          241
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          104,
+          355,
+          646,
+          370
+        ],
+        "erasure_bounds_px": [
+          103,
+          355,
+          647,
+          371
+        ],
+        "english_text_bounds_px": [
+          358,
+          358,
+          393,
+          367
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput per round",
+        "source_text_bounds_px": [
+          294,
+          375,
+          457,
+          389
+        ],
+        "erasure_bounds_px": [
+          293,
+          374,
+          458,
+          390
+        ],
+        "english_text_bounds_px": [
+          304,
+          375,
+          448,
+          389
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput (tokens/s)",
+        "source_text_bounds_px": [
+          38,
+          451,
+          47,
+          560
+        ],
+        "erasure_bounds_px": [
+          37,
+          450,
+          48,
+          561
+        ],
+        "english_text_bounds_px": [
+          38,
+          460,
+          47,
+          550
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 8,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          272,
+          684,
+          471,
+          699
+        ],
+        "erasure_bounds_px": [
+          271,
+          683,
+          472,
+          699
+        ],
+        "english_text_bounds_px": [
+          354,
+          687,
+          389,
+          696
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "LLM judge score per round",
+        "source_text_bounds_px": [
+          272,
+          697,
+          479,
+          711
+        ],
+        "erasure_bounds_px": [
+          271,
+          696,
+          480,
+          711
+        ],
+        "english_text_bounds_px": [
+          289,
+          697,
+          462,
+          711
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 13,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Mean LLM judge score (%)",
+        "source_text_bounds_px": [
+          36,
+          771,
+          48,
+          915
+        ],
+        "erasure_bounds_px": [
+          35,
+          770,
+          49,
+          916
+        ],
+        "english_text_bounds_px": [
+          36,
+          770,
+          47,
+          915
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Round",
+        "source_text_bounds_px": [
+          355,
+          1001,
+          383,
+          1009
+        ],
+        "erasure_bounds_px": [
+          354,
+          1000,
+          384,
+          1010
+        ],
+        "english_text_bounds_px": [
+          355,
+          1001,
+          383,
+          1009
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/quantization-performance.png",
+    "svg_file": "figures/english/quantization-performance.svg",
+    "source_file": "figures/original/quantization-performance.png",
+    "source_sha256": "0b6877e92583d0ba126fad673ae1063092bdeca657d8d9454e005a6ddb2af30b",
+    "sha256": "3bf27b5a826c08cf634a9da946fc0dbd3e134eed34945d8d0dcca9d1d5314c78",
+    "svg_sha256": "145b26f8390d0f16e9503d2ac08467a7ff751226a61e973d46d8266eff1d0614",
+    "dimensions_px": [
+      1065,
+      1029
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          60,
+          61,
+          1065,
+          567
+        ],
+        [
+          60,
+          596,
+          1065,
+          1029
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        313,
+        37,
+        561,
+        55
+      ],
+      [
+        290,
+        38,
+        585,
+        53
+      ],
+      [
+        41,
+        223,
+        59,
+        330
+      ],
+      [
+        42,
+        224,
+        57,
+        329
+      ],
+      [
+        239,
+        567,
+        643,
+        590
+      ],
+      [
+        295,
+        568,
+        587,
+        588
+      ],
+      [
+        40,
+        693,
+        59,
+        884
+      ],
+      [
+        41,
+        694,
+        58,
+        883
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Latency comparison (lower is better)",
+        "source_text_bounds_px": [
+          314,
+          38,
+          560,
+          54
+        ],
+        "erasure_bounds_px": [
+          313,
+          37,
+          561,
+          55
+        ],
+        "english_text_bounds_px": [
+          290,
+          38,
+          585,
+          53
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Latency (ms)",
+        "source_text_bounds_px": [
+          42,
+          224,
+          58,
+          329
+        ],
+        "erasure_bounds_px": [
+          41,
+          223,
+          59,
+          330
+        ],
+        "english_text_bounds_px": [
+          42,
+          224,
+          57,
+          329
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 16,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Throughput vs total latency",
+        "source_text_bounds_px": [
+          240,
+          567,
+          642,
+          589
+        ],
+        "erasure_bounds_px": [
+          239,
+          567,
+          643,
+          590
+        ],
+        "english_text_bounds_px": [
+          295,
+          568,
+          587,
+          588
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      },
+      {
+        "text": "Throughput (tokens/s)",
+        "source_text_bounds_px": [
+          41,
+          694,
+          58,
+          883
+        ],
+        "erasure_bounds_px": [
+          40,
+          693,
+          59,
+          884
+        ],
+        "english_text_bounds_px": [
+          41,
+          694,
+          58,
+          883
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 17,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          254,
+          254,
+          254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/quantization-quality-latency.png",
+    "svg_file": "figures/english/quantization-quality-latency.svg",
+    "source_file": "figures/original/quantization-quality-latency.png",
+    "source_sha256": "c240d0dbe91c174157bc797bae299a6359680d61c77fe3c92c5611c7bb3b5ec5",
+    "sha256": "5f5e543aa56a926e872853fc99b7d22b1a24fe0df3ec5056cc06c7332fbe9044",
+    "svg_sha256": "09425c6f3b1f0c4901d8f6bb63ea53ae13e3962885d98fe1d9b524f60fef3aca",
+    "dimensions_px": [
+      771,
+      651
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          28,
+          75,
+          771,
+          623
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        289,
+        7,
+        526,
+        29
+      ],
+      [
+        268,
+        8,
+        548,
+        28
+      ],
+      [
+        186,
+        34,
+        445,
+        54
+      ],
+      [
+        164,
+        35,
+        467,
+        54
+      ],
+      [
+        161,
+        53,
+        469,
+        74
+      ],
+      [
+        176,
+        54,
+        454,
+        73
+      ],
+      [
+        6,
+        214,
         25,
-        "Latency",
-        13,
-        0,
-        true,
-        "white"
+        465
+      ],
+      [
+        8,
+        194,
+        22,
+        485
+      ],
+      [
+        193,
+        625,
+        437,
+        644
       ],
       [
         160,
-        411,
-        210,
-        25,
-        "Throughput",
-        13,
-        0,
-        true,
-        "white"
+        626,
+        471,
+        643
+      ]
+    ],
+    "labels": [
+      {
+        "text": "Performance vs latency",
+        "source_text_bounds_px": [
+          290,
+          8,
+          525,
+          28
+        ],
+        "erasure_bounds_px": [
+          289,
+          7,
+          526,
+          29
+        ],
+        "english_text_bounds_px": [
+          268,
+          8,
+          548,
+          28
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Model performance vs latency",
+        "source_text_bounds_px": [
+          187,
+          35,
+          444,
+          54
+        ],
+        "erasure_bounds_px": [
+          186,
+          34,
+          445,
+          54
+        ],
+        "english_text_bounds_px": [
+          164,
+          35,
+          467,
+          54
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 20,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "(Bubble size \u221d model size)",
+        "source_text_bounds_px": [
+          162,
+          53,
+          468,
+          73
+        ],
+        "erasure_bounds_px": [
+          161,
+          53,
+          469,
+          74
+        ],
+        "english_text_bounds_px": [
+          176,
+          54,
+          454,
+          73
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 21,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mean GPT score (%) \u2192 Higher is better",
+        "source_text_bounds_px": [
+          7,
+          215,
+          24,
+          464
+        ],
+        "erasure_bounds_px": [
+          6,
+          214,
+          25,
+          465
+        ],
+        "english_text_bounds_px": [
+          8,
+          194,
+          22,
+          485
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 15,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Mean latency (ms) \u2192 Lower is better",
+        "source_text_bounds_px": [
+          194,
+          626,
+          436,
+          643
+        ],
+        "erasure_bounds_px": [
+          193,
+          625,
+          437,
+          644
+        ],
+        "english_text_bounds_px": [
+          160,
+          626,
+          471,
+          643
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 17,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "file": "figures/english/resource-comparison.png",
+    "svg_file": "figures/english/resource-comparison.svg",
+    "source_file": "figures/original/resource-comparison.png",
+    "source_sha256": "3362840ec6a1df7a2e5c190a58c2df82a3631b16d23b5e03678731c7b5ca637d",
+    "sha256": "2bf02485c79d4fafea537b86e71d503d5178f78ce245b48375564779477091fb",
+    "svg_sha256": "b2e776267d9c435f2f57ef89f466c3ee2b24ac94ae5cde10367f7cb147f5ecee",
+    "dimensions_px": [
+      668,
+      883
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          24,
+          49,
+          668,
+          282
+        ],
+        [
+          27,
+          337,
+          668,
+          573
+        ],
+        [
+          30,
+          629,
+          668,
+          862
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
+      [
+        204,
+        21,
+        506,
+        35
       ],
       [
-        623,
+        193,
+        22,
+        517,
+        35
+      ],
+      [
+        8,
+        115,
+        23,
+        219
+      ],
+      [
+        11,
+        122,
+        21,
+        212
+      ],
+      [
+        269,
+        286,
+        438,
+        299
+      ],
+      [
+        262,
+        287,
+        446,
+        298
+      ],
+      [
         248,
-        220,
-        24,
-        "Latency breakdown",
-        13,
-        0,
-        true,
-        "white"
+        309,
+        468,
+        322
       ],
       [
-        21,
-        218,
-        13,
-        100,
-        "Time (ms)",
-        8,
-        -90,
-        true,
-        "white"
+        252,
+        310,
+        464,
+        321
       ],
       [
-        34,
-        485,
-        11,
-        110,
-        "Tokens per second",
-        8,
-        -90,
-        true,
-        "white"
-      ],
-      [
-        470,
-        342,
         10,
-        95,
-        "Time (ms)",
-        8,
-        -90,
-        true,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/resource-health.svg",
-    "source_file": "figures/original/resource-health.png",
-    "source_sha256": "a110c3d1bdfb7de93ab86ac48e102ec676ada468a87baf6dab31ba4df443a558",
-    "sha256": "5b9347a6262daa9dae4c803b4c5bfc6b080a794e806fdfeadf9e1c8e5b0e22bd",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1471,
-    "labels": [
-      [
-        7,
-        175,
-        33,
-        220,
-        "RAM usage (GB)",
-        17,
-        -90,
-        false,
-        "white"
+        403,
+        24,
+        499
       ],
       [
-        1243,
-        104,
-        210,
-        28,
-        "RAM usage",
-        17,
-        0,
-        false,
-        "white"
-      ],
-      [
-        300,
-        571,
-        900,
-        40,
-        "Memory pressure: SWAP / SSD",
-        23,
-        0,
-        true,
-        "white"
-      ],
-      [
-        4,
-        746,
-        49,
-        220,
-        "SWAP usage (GB)",
-        17,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        1220,
-        618,
-        235,
-        88,
-        "Warning (1 GB)\nHigh load (2 GB)\nCritical load (4 GB)\nSWAP (virtual memory)",
-        16,
-        0,
-        false,
-        "white"
-      ],
-      [
-        250,
-        1143,
-        1000,
-        38,
-        "CPU stability (No throttling = 100%)",
-        23,
-        0,
-        true,
-        "white"
-      ],
-      [
-        5,
-        1260,
-        35,
-        300,
-        "% of maximum frequency",
-        17,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        1187,
-        1189,
-        268,
-        73,
-        "Nominal frequency (100%)\nClock at start\nClock at end",
-        16,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/single-turn-metrics.svg",
-    "source_file": "figures/original/single-turn-metrics.png",
-    "source_sha256": "6060ce134f9fcc864c3ae54377f29d41bf6b6ce25f4cab33ada211a280bba75a",
-    "sha256": "b21d335e1b589493a37c1760359097a858318f1220b9b98878f5ea2a31d69960",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 684,
-    "labels": [
-      [
-        0,
-        0,
-        684,
-        20,
-        "LLM metrics analysis: single turn",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        0,
-        20,
-        684,
-        17,
-        "Model: llama3.2:3b-instruct-q4_K_M | Agent: constant_data_en | Round: 4",
         12,
-        0,
-        false,
-        "white"
+        406,
+        22,
+        496
       ],
       [
-        34,
-        265,
+        269,
+        576,
+        442,
+        590
+      ],
+      [
+        264,
+        578,
+        448,
+        589
+      ],
+      [
+        209,
+        602,
+        512,
+        617
+      ],
+      [
+        172,
+        603,
+        549,
+        617
+      ],
+      [
+        15,
+        695,
+        27,
+        789
+      ],
+      [
+        16,
+        697,
         26,
-        145,
-        "Score (0-1)",
-        11,
-        -90,
-        false,
-        "white"
+        787
       ],
       [
-        0,
-        762,
-        684,
-        270,
-        "METRICS LEGEND\n\njson_validity: checks whether the response contains parseable JSON\ntool_args_values: direct comparison of argument values (case-insensitive)\nlevenshtein_similarity: edit similarity between response texts\np_bert: BERTScore precision; a semantic comparison measure\nr_bert: BERTScore recall; reference-content coverage\nbleu: BLEU score for output text quality\nrouge: ROUGE-L, the longest common subsequence with the reference\nmeteor: METEOR, using synonyms and word stems\ngpt_judge: mean of all GPT Judge rubric scores\nrequired_fields: checks the presence of required response fields\njaccard_similarity: Jaccard similarity over shared tokens\ngpt_context_relevance: GPT Judge assessment of contextual relevance\ngpt_question_naturalness: GPT Judge assessment of question naturalness\ngpt_reasoning_logic: GPT Judge assessment of written reasoning logic\ngpt_tool_call_correctness: GPT Judge assessment of tool-call correctness",
-        10.5,
-        0,
-        false,
-        "#baddE9"
+        276,
+        866,
+        443,
+        879
+      ],
+      [
+        268,
+        867,
+        452,
+        878
       ]
+    ],
+    "labels": [
+      {
+        "text": "Resource timeline: llama3.2:3b-instruct-q4_K_M",
+        "source_text_bounds_px": [
+          205,
+          22,
+          505,
+          35
+        ],
+        "erasure_bounds_px": [
+          204,
+          21,
+          506,
+          35
+        ],
+        "english_text_bounds_px": [
+          193,
+          22,
+          517,
+          35
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 12,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Memory usage (GB)",
+        "source_text_bounds_px": [
+          9,
+          116,
+          23,
+          218
+        ],
+        "erasure_bounds_px": [
+          8,
+          115,
+          23,
+          219
+        ],
+        "english_text_bounds_px": [
+          11,
+          122,
+          21,
+          212
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "CPU stability (Thermal Throttling)",
+        "source_text_bounds_px": [
+          270,
+          287,
+          437,
+          298
+        ],
+        "erasure_bounds_px": [
+          269,
+          286,
+          438,
+          299
+        ],
+        "english_text_bounds_px": [
+          262,
+          287,
+          446,
+          298
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Resource timeline: granite4:micro",
+        "source_text_bounds_px": [
+          249,
+          310,
+          467,
+          322
+        ],
+        "erasure_bounds_px": [
+          248,
+          309,
+          468,
+          322
+        ],
+        "english_text_bounds_px": [
+          252,
+          310,
+          464,
+          321
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Memory usage (GB)",
+        "source_text_bounds_px": [
+          11,
+          404,
+          23,
+          498
+        ],
+        "erasure_bounds_px": [
+          10,
+          403,
+          24,
+          499
+        ],
+        "english_text_bounds_px": [
+          12,
+          406,
+          22,
+          496
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "CPU stability (Thermal Throttling)",
+        "source_text_bounds_px": [
+          270,
+          577,
+          441,
+          589
+        ],
+        "erasure_bounds_px": [
+          269,
+          576,
+          442,
+          590
+        ],
+        "english_text_bounds_px": [
+          264,
+          578,
+          448,
+          589
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Resource timeline: qwen2.5:3b-instruct-q4_K_M",
+        "source_text_bounds_px": [
+          210,
+          603,
+          511,
+          617
+        ],
+        "erasure_bounds_px": [
+          209,
+          602,
+          512,
+          617
+        ],
+        "english_text_bounds_px": [
+          172,
+          603,
+          549,
+          617
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 14,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Memory usage (GB)",
+        "source_text_bounds_px": [
+          16,
+          696,
+          26,
+          788
+        ],
+        "erasure_bounds_px": [
+          15,
+          695,
+          27,
+          789
+        ],
+        "english_text_bounds_px": [
+          16,
+          697,
+          26,
+          787
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 9,
+        "bold": false,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "CPU stability (Thermal Throttling)",
+        "source_text_bounds_px": [
+          277,
+          867,
+          442,
+          878
+        ],
+        "erasure_bounds_px": [
+          276,
+          866,
+          443,
+          879
+        ],
+        "english_text_bounds_px": [
+          268,
+          867,
+          452,
+          878
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 11,
+        "bold": false,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   },
   {
-    "file": "figures/english/granite32-timeline.svg",
-    "source_file": "figures/original/granite32-timeline.png",
-    "source_sha256": "2a2b32211c959c38fae4f273e7727f142830c6ec266ffd8c17e63d71910d6977",
-    "sha256": "b0ac73d68c96bd777504b12160e27f995c1eb581ece6344d802c423a6c25e032",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
-    "labels": [
+    "file": "figures/english/all-configurations.png",
+    "svg_file": "figures/english/all-configurations.svg",
+    "source_file": "figures/original/all-configurations.png",
+    "source_sha256": "85a495dbe48f23b7334588ed2bc4041a0d40c4c9b88c690bb7de2f498d455a1e",
+    "sha256": "f0cacbd512665510625bbe2f5473ebbdcbc897d3f99a865f21d284d185ffca47",
+    "svg_sha256": "938caaa36f6858787e9de33b49317b8bd017febc74a1c39641b118f959ca948f",
+    "dimensions_px": [
+      5901,
+      3781
+    ],
+    "transformation": "English text patches on original raster; no plotted data regenerated",
+    "validation": {
+      "changed_pixels_outside_label_masks": 0,
+      "dimensions_unchanged": true,
+      "original_file_unchanged": true,
+      "protected_plot_and_tick_regions_unchanged": true,
+      "protected_regions_px": [
+        [
+          83,
+          434,
+          2766,
+          1933
+        ],
+        [
+          199,
+          2347,
+          2796,
+          3762
+        ],
+        [
+          2909,
+          993,
+          5901,
+          2950
+        ]
+      ],
+      "channel_exact_comparison": "all RGBA channels, native-resolution decoded PNGs",
+      "svg_render_pixel_identical_to_png": true
+    },
+    "label_masks_px": [
       [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: granite3.2:2b-instruct-q8_0",
+        2087,
         24,
-        0,
-        true,
-        "white"
+        3730,
+        144
       ],
       [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
+        2053,
+        26,
+        3764,
+        143
       ],
       [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
+        1167,
+        353,
+        1786,
+        413
       ],
       [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
+        1264,
+        354,
+        1689,
+        412
       ],
       [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
+        1234,
+        2237,
+        1724,
+        2299
       ],
       [
-        580,
+        1274,
+        2238,
         1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
+        2298
+      ],
+      [
+        4208,
+        897,
+        4788,
+        964
+      ],
+      [
+        4128,
+        898,
+        4868,
+        963
+      ],
+      [
+        26,
+        1024,
+        67,
+        1250
+      ],
+      [
+        27,
+        1013,
+        66,
+        1261
+      ],
+      [
+        146,
+        2797,
+        191,
+        3251
+      ],
+      [
+        147,
+        2790,
+        190,
+        3259
+      ],
+      [
+        2847,
+        1654,
+        2893,
+        1909
+      ],
+      [
+        2848,
+        1643,
+        2892,
+        1920
       ]
-    ]
-  },
-  {
-    "file": "figures/english/granite-micro-timeline.svg",
-    "source_file": "figures/original/granite-micro-timeline.png",
-    "source_sha256": "ae38876c36ecf6a3dd8ecf0d3a5f79e1a8252ce52967381925d9dd126ad66730",
-    "sha256": "3d4c9789011094645ac1f03f2c549b595146d14554732b7be8a772d45e613527",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
+    ],
     "labels": [
-      [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: granite4:micro",
-        24,
-        0,
-        true,
-        "white"
-      ],
-      [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        580,
-        1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/llama-timeline.svg",
-    "source_file": "figures/original/llama-timeline.png",
-    "source_sha256": "d173a00cf7467abe85eb54413b55778b74987cc28db862149b892ac18d7435f7",
-    "sha256": "b41069229090b13b86c6571b91a36a83c7435145a27d6c22a86bc29225508048",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
-    "labels": [
-      [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: llama3.2:3b-instruct-q4_K_M",
-        24,
-        0,
-        true,
-        "white"
-      ],
-      [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        580,
-        1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/nemotron-q5-timeline.svg",
-    "source_file": "figures/original/nemotron-q5-timeline.png",
-    "source_sha256": "8f631e3a05b8740e9d5caed9bb56e305d0fe45301e12b9e43326bbff48a2d190",
-    "sha256": "3d7a711e40b463211111ad1ebf5d2eff443a4ebb617eafbd85405d109297c71b",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
-    "labels": [
-      [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: nemotron-mini:4b-instruct-q5_K_M",
-        24,
-        0,
-        true,
-        "white"
-      ],
-      [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        580,
-        1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/nemotron-q8-timeline.svg",
-    "source_file": "figures/original/nemotron-q8-timeline.png",
-    "source_sha256": "a3c75b1f14c97ce1b0837bcee305b77134b8b24d63254d393b3f2247e69d6e61",
-    "sha256": "ab59f04db58705016e7e42b4460df6062348254303bae68818e75ffe9cc61e5a",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
-    "labels": [
-      [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: nemotron-mini:4b-instruct-q8_0",
-        24,
-        0,
-        true,
-        "white"
-      ],
-      [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        580,
-        1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/qwen-timeline.svg",
-    "source_file": "figures/original/qwen-timeline.png",
-    "source_sha256": "b52a804bfc5d00981aeac2bed0789b7030cbdee34cc3302fbb2e869f369e594a",
-    "sha256": "b6fe4bd5a9676d28cf9c952dbd3bcdb7a207daba2b73be1ae057ffbffbfdc230",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1440,
-    "labels": [
-      [
-        0,
-        0,
-        1440,
-        43,
-        "Resource timeline: qwen2.5:3b-instruct-q4_K_M",
-        24,
-        0,
-        true,
-        "white"
-      ],
-      [
-        8,
-        173,
-        36,
-        260,
-        "Memory usage (GB)",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        420,
-        581,
-        690,
-        35,
-        "CPU stability (thermal throttling)",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        3,
-        713,
-        37,
-        295,
-        "% of maximum frequency",
-        20,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        520,
-        1126,
-        470,
-        37,
-        "GPU utilization",
-        21,
-        0,
-        false,
-        "white"
-      ],
-      [
-        580,
-        1684,
-        350,
-        39,
-        "Round number",
-        20,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/hardware-settings.svg",
-    "source_file": "figures/original/hardware-settings.png",
-    "source_sha256": "1700167672a575ec983358f0b35743c1d0e9d17c1c5f479fe2ffb98fc212e49c",
-    "sha256": "1c84c0d17c3595672e7c99b5acab356b7665fc3c948da8caf39ab65e49f53068",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 930,
-    "labels": [
-      [
-        90,
-        12,
-        825,
-        29,
-        "Performance comparison: Hardware optimization",
-        19,
-        0,
-        true,
-        "white"
-      ],
-      [
-        120,
-        58,
-        665,
-        18,
-        "Latency per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        24,
-        108,
-        13,
-        212,
-        "Latency (ms)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        337.5,
-        356,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        373,
-        665,
-        17,
-        "Throughput per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        45,
-        424,
-        12,
-        216,
-        "Throughput (tokens/s)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        337.5,
-        680,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        692,
-        665,
-        17,
-        "LLM judge score per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        38,
-        740,
-        15,
-        214,
-        "Mean LLM judge score (%)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        337.5,
-        995,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/combined-settings.svg",
-    "source_file": "figures/original/combined-settings.png",
-    "source_sha256": "aaa1b3cdb8cc9e66045e9db6420a00d6165787d44345762bf76f334fafa03a35",
-    "sha256": "b8c51fa99abbcb9c04a3ed587cb9be335b829b0099566f577851a3152088ae40",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 1037,
-    "labels": [
-      [
-        90,
-        12,
-        932,
-        29,
-        "Performance comparison: Three-parameter combinations",
-        19,
-        0,
-        true,
-        "white"
-      ],
-      [
-        120,
-        57,
-        456,
-        14,
-        "Latency per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        30,
-        104,
-        14,
-        225,
-        "Latency (ms)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        233.0,
-        360,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        376,
-        456,
-        17,
-        "Throughput per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        35,
-        428,
-        15,
-        223,
-        "Throughput (tokens/s)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        233.0,
-        682,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        699,
-        456,
-        19,
-        "LLM judge score per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        38,
-        751,
-        15,
-        223,
-        "Mean LLM judge score (%)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        233.0,
-        1007,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/speculative-decoding.svg",
-    "source_file": "figures/original/speculative-decoding.png",
-    "source_sha256": "ccf54d539d23fa45093de3e60806b689dbed3970da39f1e949b0838e9139cf91",
-    "sha256": "3aba3265b00574deee408da41fce807a164b4584f73fba4381ecf32fabffed52",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 950,
-    "labels": [
-      [
-        90,
-        12,
-        845,
-        29,
-        "Performance comparison: Speculative decoding",
-        19,
-        0,
-        true,
-        "white"
-      ],
-      [
-        120,
-        57,
-        588,
-        14,
-        "Latency per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        24,
-        104,
-        13,
-        220,
-        "Latency (ms)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        299.0,
-        356,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        373,
-        588,
-        17,
-        "Throughput per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        35,
-        425,
-        15,
-        220,
-        "Throughput (tokens/s)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        299.0,
-        679,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        692,
-        588,
-        17,
-        "LLM judge score per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        38,
-        745,
-        15,
-        212,
-        "Mean LLM judge score (%)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        299.0,
-        997,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ]
-    ]
-  },
-  {
-    "file": "figures/english/cache-settings.svg",
-    "source_file": "figures/original/cache-settings.png",
-    "source_sha256": "fe8e3002237be48d613bd44edf58ccb7681ad80f4eeb140522c8f729839d0ee9",
-    "sha256": "2c0071bdf3d4f6d88b81393c917df0ac6ba01eb2417298fbd05e7ccbac916a0c",
-    "transformation": "English vector text overlays; original plot image embedded unchanged",
-    "reference_width": 927,
-    "labels": [
-      [
-        90,
-        12,
-        822,
-        29,
-        "Performance comparison: Cache optimization",
-        19,
-        0,
-        true,
-        "white"
-      ],
-      [
-        120,
-        57,
-        538,
-        14,
-        "Latency per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        24,
-        181,
-        11,
-        80,
-        "Latency (ms)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        274.0,
-        355,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        373,
-        538,
-        17,
-        "Throughput per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        35,
-        425,
-        15,
-        222,
-        "Throughput (tokens/s)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        274.0,
-        681,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ],
-      [
-        120,
-        694,
-        538,
-        17,
-        "LLM judge score per round",
-        13,
-        0,
-        false,
-        "white"
-      ],
-      [
-        38,
-        746,
-        15,
-        213,
-        "Mean LLM judge score (%)",
-        9,
-        -90,
-        false,
-        "white"
-      ],
-      [
-        274.0,
-        996,
-        200,
-        18,
-        "Round",
-        10,
-        0,
-        false,
-        "white"
-      ]
+      {
+        "text": "Optimization comparison",
+        "source_text_bounds_px": [
+          2088,
+          25,
+          3729,
+          143
+        ],
+        "erasure_bounds_px": [
+          2087,
+          24,
+          3730,
+          144
+        ],
+        "english_text_bounds_px": [
+          2053,
+          26,
+          3764,
+          143
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 121,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Total latency",
+        "source_text_bounds_px": [
+          1168,
+          354,
+          1785,
+          412
+        ],
+        "erasure_bounds_px": [
+          1167,
+          353,
+          1786,
+          413
+        ],
+        "english_text_bounds_px": [
+          1264,
+          354,
+          1689,
+          412
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 59,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Throughput",
+        "source_text_bounds_px": [
+          1235,
+          2238,
+          1723,
+          2298
+        ],
+        "erasure_bounds_px": [
+          1234,
+          2237,
+          1724,
+          2299
+        ],
+        "english_text_bounds_px": [
+          1274,
+          2238,
+          1684,
+          2298
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 62,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Latency breakdown",
+        "source_text_bounds_px": [
+          4209,
+          898,
+          4787,
+          963
+        ],
+        "erasure_bounds_px": [
+          4208,
+          897,
+          4788,
+          964
+        ],
+        "english_text_bounds_px": [
+          4128,
+          898,
+          4868,
+          963
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 67,
+        "bold": true,
+        "rotation_degrees": 0,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Time (ms)",
+        "source_text_bounds_px": [
+          27,
+          1025,
+          66,
+          1249
+        ],
+        "erasure_bounds_px": [
+          26,
+          1024,
+          67,
+          1250
+        ],
+        "english_text_bounds_px": [
+          27,
+          1013,
+          66,
+          1261
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 44,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Tokens per second",
+        "source_text_bounds_px": [
+          147,
+          2798,
+          190,
+          3250
+        ],
+        "erasure_bounds_px": [
+          146,
+          2797,
+          191,
+          3251
+        ],
+        "english_text_bounds_px": [
+          147,
+          2790,
+          190,
+          3259
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 45,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "text": "Time (ms)",
+        "source_text_bounds_px": [
+          2848,
+          1655,
+          2892,
+          1908
+        ],
+        "erasure_bounds_px": [
+          2847,
+          1654,
+          2893,
+          1909
+        ],
+        "english_text_bounds_px": [
+          2848,
+          1643,
+          2892,
+          1920
+        ],
+        "font": "DejaVu Sans",
+        "font_size_px": 49,
+        "bold": true,
+        "rotation_degrees": -90,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     ]
   }
 ]
